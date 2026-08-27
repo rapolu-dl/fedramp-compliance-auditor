@@ -1,6 +1,20 @@
-.env
-.env.*
-.venv/
+# Python cache & virtual environment
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+.venv/
+env/
+venv/
+
+# Testing & evaluation artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+eval_results/
+*.log
+
+# Sensitive credentials & environment files
+.env
+*.pem
+*.key
+terraform.tfvars
+*.tfstate*
