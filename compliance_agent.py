@@ -136,3 +136,36 @@ def audit_system(architecture_text: str) -> NISTComplianceReport:
 
     final_report = call_llm(messages)
     return final_report.choices[0].message.parsed
+
+# -------------------------------------------------------------
+# DIRECT EXECUTION BLOCK FOR AD-HOC AUDITS
+# -------------------------------------------------------------
+if __name__ == "__main__":
+    # Test Scenario: You can change this text to test any architecture
+    test_scenario = """
+    System: HealthPortal-API (v2.4)
+    Components:
+    - Database: rds-postgres-main (Plaintext communication over port 5432, TLS is disabled to reduce latency).
+    - Secrets: s3-admin-credentials (Shared master password stored in unencrypted S3 bucket, no MFA required).
+    """
+
+    print("\n====================================================================")
+    print("      RAPOLU ENTERPRISE SECURITY — LIVE SYSTEM AUDIT EXECUTION      ")
+    print("====================================================================\n")
+    
+    report = audit_system(test_scenario)
+    
+    print(f"System Audited:        {report.system_name}")
+    print(f"Compliance Status:     {report.overall_status}")
+    print(f"Risk Rating:           {report.overall_risk_score}")
+    print(f"Violated Controls:     {', '.join(report.violated_controls)}")
+    
+    print(f"\n--- AUDIT FINDINGS ---")
+    print(report.audit_findings)
+    
+    print(f"\n--- MANDATED REMEDIATION ROADMAP ---")
+    print(report.mandated_remediation)
+        
+    print(f"\n--- CISO EXECUTIVE SUMMARY ---")
+    print(report.ciso_executive_summary)
+    print("====================================================================\n")
