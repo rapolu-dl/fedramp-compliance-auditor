@@ -1,0 +1,7 @@
+{
+  "id": "TC-003",
+  "test_name": "Partially Compliant (TLS Active, Missing KMS CMK)",
+  "architecture": "System: Staging-Gateway\nComponents: staging-api-gateway (TLS 1.3 enabled, MFA enforced, but using default AWS managed keys instead of KMS CMK).",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE"
+}

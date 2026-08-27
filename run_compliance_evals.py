@@ -1,56 +1,54 @@
+import os
+import glob
+import json
 import time
 from compliance_agent import audit_system
 
-# Golden Evaluation Dataset across 3 distinct Federal Scenarios
-compliance_eval_dataset = [
-    {
-        "test_name": "Critical Failure (Plaintext DB & Unencrypted S3)",
-        "architecture": (
-            "System: HealthPortal-API\n"
-            "Components: rds-postgres-main (plaintext port 5432, no TLS), "
-            "s3-admin-credentials (unencrypted shared password file, no MFA)."
-        ),
-        "expected_status": "NON_COMPLIANT",
-        "expected_risk": "CRITICAL"
-    },
-    {
-        "test_name": "Zero-Trust Sovereign GovCloud (Fully Compliant)",
-        "architecture": (
-            "System: GovCloud-PaymentGateway\n"
-            "Components: prod-zero-trust-mesh (Istio mTLS strict, AWS KMS CMK encryption at rest, "
-            "IAM Identity Center hardware MFA enforced, all public ingress blocked via PrivateLink)."
-        ),
-        "expected_status": "COMPLIANT",
-        "expected_risk": "LOW"
-    },
-    {
-        "test_name": "Partially Compliant (TLS Active, Missing KMS CMK)",
-        "architecture": (
-            "System: Staging-Gateway\n"
-            "Components: staging-api-gateway (TLS 1.3 enabled, MFA enforced, but using default AWS managed keys instead of KMS CMK)."
-        ),
-        "expected_status": "PARTIALLY_COMPLIANT",
-        "expected_risk": "MODERATE"
-    }
-]
+TEST_CASES_DIR = "test_cases"
+
+def load_all_test_cases(directory: str):
+    """Auto-discovers and loads all .json files in the test directory."""
+    if not os.path.exists(directory):
+        raise FileNotFoundError(f"Directory '{directory}' does not exist.")
+    
+    json_files = sorted(glob.glob(os.path.join(directory, "*.json")))
+    test_cases = []
+    
+    for file_path in json_files:
+        with open(file_path, "r") as f:
+            data = json.load(f)
+            data["_source_file"] = os.path.basename(file_path)
+            test_cases.append(data)
+            
+    return test_cases
+
 
 def run_benchmark():
+    test_cases = load_all_test_cases(TEST_CASES_DIR)
+    
     print("\n=======================================================")
-    print("   RUNNING FEDRAMP / NIST COMPLIANCE EVALS BENCHMARK   ")
+    print(f"   RUNNING FEDRAMP / NIST COMPLIANCE EVALUATION SUITE  ")
+    print(f"   Auto-discovered {len(test_cases)} test case files in '{TEST_CASES_DIR}/'")
     print("=======================================================\n")
 
     passed_tests = 0
-    total_tests = len(compliance_eval_dataset)
+    total_tests = len(test_cases)
     total_latency = 0.0
 
-    for i, test in enumerate(compliance_eval_dataset, 1):
-        print(f"[{i}/{total_tests}] Testing Scenario: '{test['test_name']}'...")
+    for i, test in enumerate(test_cases, 1):
+        test_id = test.get("id", f"TC-{i:03d}")
+        test_name = test.get("test_name", "Unnamed Scenario")
+        file_name = test.get("_source_file", "")
+        
+        print(f"[{i}/{total_tests}] [{test_id}] [{file_name}]")
+        print(f"      Scenario: '{test_name}'...")
         
         start_time = time.time()
         result = audit_system(test["architecture"])
         elapsed = time.time() - start_time
         total_latency += elapsed
 
+        # Match against result.overall_status and result.overall_risk_score
         status_match = (result.overall_status == test["expected_status"])
         risk_match = (result.overall_risk_score == test["expected_risk"])
 
@@ -62,8 +60,8 @@ def run_benchmark():
         else:
             badge = "FAIL ❌"
 
-        print(f"      -> Status: {badge} | Latency: {elapsed:.2f}s")
-        print(f"      -> Output: Status={result.overall_status} | RiskScore={result.overall_risk_score}\n")
+        print(f"      -> Verdict: {badge} | Latency: {elapsed:.2f}s")
+        print(f"      -> Output: Status={result.overall_status} | Risk={result.overall_risk_score}\n")
 
     accuracy_rate = (passed_tests / total_tests) * 100
     avg_latency = total_latency / total_tests

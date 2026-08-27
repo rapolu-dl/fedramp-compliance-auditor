@@ -1,0 +1,7 @@
+{
+  "id": "TC-002",
+  "test_name": "Zero-Trust Sovereign GovCloud (Fully Compliant)",
+  "architecture": "System: GovCloud-PaymentGateway\nComponents: prod-zero-trust-mesh (Istio mTLS strict, AWS KMS CMK encryption at rest, IAM Identity Center hardware MFA enforced, all public ingress blocked via PrivateLink).",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

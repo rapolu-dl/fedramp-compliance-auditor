@@ -1,0 +1,7 @@
+{
+  "id": "TC-004",
+  "test_name": "Public Ingress Violation (Direct Public Database)",
+  "architecture": "System: Analytics-Pipeline\nComponents: analytics-aurora-db (public subnet with 0.0.0.0/0 ingress allowed for remote contractor access, storage encrypted with AES-256).",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

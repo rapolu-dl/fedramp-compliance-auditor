@@ -1,0 +1,7 @@
+{
+  "id": "TC-001",
+  "test_name": "Critical Failure (Plaintext DB & Unencrypted S3)",
+  "architecture": "System: HealthPortal-API\nComponents: rds-postgres-main (plaintext port 5432, no TLS), s3-admin-credentials (unencrypted shared password file, no MFA).",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}
