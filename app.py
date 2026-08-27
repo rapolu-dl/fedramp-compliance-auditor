@@ -1,6 +1,6 @@
 import streamlit as st
+import httpx
 import time
-from compliance_agent import audit_system
 
 # 1. Page Configuration
 st.set_page_config(
@@ -9,17 +9,20 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🛡️ FedRAMP & NIST 800-53 AI Security Auditor")
-st.caption("Rapolu Enterprise Security — Autonomous Cloud Architecture & System Security Plan (SSP) Auditor")
+# PASTE YOUR NEW LAMBDA URL HERE:
+LAMBDA_URL = "https://wpxepjworf3scoxhayew3pvvcy0xtyjv.lambda-url.us-east-1.on.aws/"
 
-# 2. Sidebar - Framework Details & Benchmark Metrics
+st.title("🛡️ FedRAMP & NIST 800-53 AI Security Auditor")
+st.caption("Rapolu Enterprise Security — Serverless Cloud Architecture & System Security Plan (SSP) Auditor")
+
+# 2. Sidebar
 with st.sidebar:
-    st.header("⚙️ Audit Engine Specifications")
+    st.header("⚙️ Architecture Details")
     st.markdown("""
+    - **Frontend**: Streamlit Cloud
+    - **Backend**: AWS Lambda (Serverless)
     - **Standards**: NIST SP 800-53 Rev 5 / FedRAMP High
-    - **Control Families**: AC, SC, IA, SI, AU, CM, CP
-    - **Model**: `gpt-4o-mini` with Pydantic Validation
-    - **Catalog**: 1,189 Official Federal Controls
+    - **Control Catalog**: 1,189 Federal Controls
     """)
     st.markdown("---")
     st.header("📊 Evaluation Benchmark")
@@ -58,10 +61,7 @@ scenarios = {
     )
 }
 
-selected_scenario = st.selectbox(
-    "Choose a reference architecture scenario (or paste custom specs below):",
-    list(scenarios.keys())
-)
+selected_scenario = st.selectbox("Choose a reference scenario (or paste custom specs below):", list(scenarios.keys()))
 
 architecture_input = st.text_area(
     "Architecture Security Specification:",
@@ -69,65 +69,68 @@ architecture_input = st.text_area(
     height=130
 )
 
-# 4. Trigger Audit Execution
-if st.button("🚀 Run FedRAMP High Compliance Audit", type="primary"):
+# 4. Trigger Audit via AWS Lambda Backend
+if st.button("🚀 Run FedRAMP High Compliance Audit (via AWS Lambda)", type="primary"):
     if not architecture_input.strip():
         st.warning("Please provide an architecture description to audit.")
     else:
-        with st.spinner("Querying NIST 800-53 Rev 5 Catalog... Evaluating FedRAMP High Baselines..."):
+        with st.spinner("Dispatching spec to AWS Lambda backend... querying NIST 800-53 catalog..."):
             start_time = time.time()
-            report = audit_system(architecture_input)
-            latency = time.time() - start_time
+            try:
+                response = httpx.post(
+                    LAMBDA_URL,
+                    json={"architecture_spec": architecture_input},
+                    timeout=30.0
+                )
+                latency = time.time() - start_time
 
-        st.success(f"Audit completed in {latency:.2f} seconds!")
+                if response.status_code == 200:
+                    report = response.json()
+                    st.success(f"AWS Lambda audit completed in {latency:.2f} seconds!")
 
-        # Top Metric Row
-        col1, col2, col3, col4 = st.columns(4)
-        with col1:
-            st.metric(label="System Audited", value=report.system_name)
-        with col2:
-            status = report.overall_status
-            if status == "COMPLIANT":
-                st.metric(label="Compliance Status", value="COMPLIANT 🟢")
-            elif status == "PARTIALLY_COMPLIANT":
-                st.metric(label="Compliance Status", value="PARTIAL 🟡")
-            else:
-                st.metric(label="Compliance Status", value="NON-COMPLIANT 🔴")
-        with col3:
-            risk = report.overall_risk_score
-            st.metric(label="Risk Rating", value=f"{risk} ⚠️" if risk in ["CRITICAL", "HIGH"] else f"{risk} 🛡️")
-        with col4:
-            st.metric(label="NIST Controls Violated", value=len(report.violated_controls))
+                    # Top Metric Row
+                    col1, col2, col3, col4 = st.columns(4)
+                    with col1:
+                        st.metric(label="System Audited", value=report.get("system_name", "N/A"))
+                    with col2:
+                        status = report.get("overall_status", "N/A")
+                        if status == "COMPLIANT":
+                            st.metric(label="Compliance Status", value="COMPLIANT 🟢")
+                        elif status == "PARTIALLY_COMPLIANT":
+                            st.metric(label="Compliance Status", value="PARTIAL 🟡")
+                        else:
+                            st.metric(label="Compliance Status", value="NON-COMPLIANT 🔴")
+                    with col3:
+                        risk = report.get("overall_risk_score", "N/A")
+                        st.metric(label="Risk Rating", value=f"{risk} ⚠️" if risk in ["CRITICAL", "HIGH"] else f"{risk} 🛡️")
+                    with col4:
+                        controls = report.get("violated_controls", [])
+                        st.metric(label="NIST Controls Violated", value=len(controls))
 
-        st.markdown("---")
+                    st.markdown("---")
 
-        # Violated Controls List
-        if report.violated_controls:
-            st.subheader("📋 Violated NIST 800-53 Control Identifiers")
-            controls_html = " ".join([f"`{c}`" for c in report.violated_controls])
-            st.markdown(f"**Identified Gaps:** {controls_html}")
-        else:
-            st.success("✅ All evaluated FedRAMP High baseline controls satisfied!")
+                    if controls:
+                        st.subheader("📋 Violated NIST 800-53 Control Identifiers")
+                        controls_html = " ".join([f"`{c}`" for c in controls])
+                        st.markdown(f"**Identified Gaps:** {controls_html}")
+                    else:
+                        st.success("✅ All evaluated FedRAMP High baseline controls satisfied!")
 
-        st.markdown("---")
+                    st.markdown("---")
 
-        # Detailed Breakdown Columns
-        col_left, col_right = st.columns(2)
+                    col_left, col_right = st.columns(2)
+                    with col_left:
+                        st.subheader("🔍 Technical Audit Findings")
+                        st.info(report.get("audit_findings", "N/A"))
 
-        with col_left:
-            st.subheader("🔍 Technical Audit Findings")
-            st.info(report.audit_findings)
+                        st.subheader("🛠️ Mandated Remediation Roadmap")
+                        st.write(report.get("mandated_remediation", "N/A"))
 
-            st.subheader("🛠️ Mandated Remediation Roadmap")
-            st.write(report.mandated_remediation)
+                    with col_right:
+                        st.subheader("📜 Formal CISO Attestation Summary")
+                        st.success(report.get("ciso_executive_summary", "N/A"))
+                else:
+                    st.error(f"Lambda Error ({response.status_code}): {response.text}")
 
-        with col_right:
-            st.subheader("📜 Formal CISO Attestation Summary")
-            st.success(report.ciso_executive_summary)
-            
-            st.download_button(
-                label="📥 Export System Security Plan (SSP) Report",
-                data=f"# CISO Audit Report - {report.system_name}\n\nStatus: {report.overall_status}\nRisk: {report.overall_risk_score}\n\n## Findings\n{report.audit_findings}\n\n## Remediation\n{report.mandated_remediation}\n\n## Executive Summary\n{report.ciso_executive_summary}",
-                file_name=f"FedRAMP_Audit_{report.system_name.replace(' ', '_')}.md",
-                mime="text/markdown"
-            )
+            except Exception as e:
+                st.error(f"Connection failed: {e}")
