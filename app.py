@@ -162,7 +162,7 @@ def normalize_backend_response(payload: Any) -> Dict[str, Any]:
 
 
 def invoke_remote_lambda(architecture: str, lambda_url: str) -> Dict[str, Any]:
-    request_body = json.dumps({"architecture": architecture}).encode("utf-8")
+    request_body = json.dumps({"architecture_spec": architecture}).encode("utf-8")
 
     request = urllib.request.Request(
         lambda_url,
