@@ -90,12 +90,22 @@ def _secret_or_env(*names: str) -> Optional[str]:
     return None
 
 
+DEFAULT_LAMBDA_URL = "https://wpxepjworf3scoxhayew3pvvcy0xtyjv.lambda-url.us-east-1.on.aws/"
+
+
 def get_lambda_url() -> Optional[str]:
-    return _secret_or_env(
-        "LAMBDA_FUNCTION_URL",
-        "AWS_LAMBDA_URL",
-        "LAMBDA_URL",
-        "FUNCTION_URL",
+    """
+    Use an environment variable when supplied; otherwise preserve the
+    repository's original AWS Lambda Function URL used by the deployed app.
+    """
+    return (
+        _secret_or_env(
+            "LAMBDA_FUNCTION_URL",
+            "AWS_LAMBDA_URL",
+            "LAMBDA_URL",
+            "FUNCTION_URL",
+        )
+        or DEFAULT_LAMBDA_URL
     )
 
 
