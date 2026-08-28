@@ -15,7 +15,7 @@ An autonomous, serverless AI Forward Deployed Engineer (FDE) platform designed t
 ## 🏗️ System Architecture
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 1. EVALUATION & QA BENCHMARK LAYER                                          │
-│    [ test_cases/*.json ] ──► [ run_compliance_evals.py ] ──► [ 100% Evals ] │
+│    [ test_cases/*.json ] ──► [ run_compliance_evals.py ] ──► [ Benchmark Evals ] │
 │                                      │                                      │
 │                                      ▼                                      │
 │                        [ NIST Database (1,189 Controls) ]                   │
@@ -40,10 +40,8 @@ Automated evaluation testing across golden dataset failure scenarios (Critical P
 
 | Metric | Benchmark Result |
 | :--- | :--- |
-| **Federal Compliance Accuracy** | **100.0%** |
-| **NIST Control Citation Precision** | **100.0%** |
-| **Average Audit Latency** | **~4.5 seconds** |
-| **Unit Economics (Est. Cost)** | **~$0.50 USD / 1,000 system audits** |
+| **Federal Compliance Accuracy** | **96.0% mean exact-match accuracy across 3 runs / 600 evaluations** |
+| **Average Audit Latency** | **3.11 seconds mean across 3 benchmark runs** |
 
 ---
 

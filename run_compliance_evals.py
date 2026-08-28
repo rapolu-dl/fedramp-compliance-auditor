@@ -72,7 +72,6 @@ def run_benchmark():
     print(f"Total Scenarios Evaluated:   {total_tests}")
     print(f"Compliance Accuracy:         {accuracy_rate:.1f}%")
     print(f"Average Audit Latency:       {avg_latency:.2f} seconds")
-    print(f"Estimated Cost per 1,000:    $0.50 USD")
     print("=======================================================\n")
 
 if __name__ == "__main__":
