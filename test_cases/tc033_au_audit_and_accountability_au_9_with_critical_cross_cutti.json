@@ -1,0 +1,7 @@
+{
+  "id": "TC-033",
+  "test_name": "Audit and Accountability - AU-9 with Critical Cross-Cutting Failure",
+  "architecture": "System: Identity-Hub-033\nPrimary NIST family: Audit and Accountability (AU); evidence focus: AU-9.\nFamily control evidence: audit records contain actor, source, timestamp, action, target, and outcome fields. Critical observed condition: administrator MFA is disabled for the emergency cloud-admin account. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

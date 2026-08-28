@@ -1,0 +1,7 @@
+{
+  "id": "TC-079",
+  "test_name": "Incident Response - IR-3 Secondary Control Gap",
+  "architecture": "System: Audit-Lake-079\nPrimary NIST family: Incident Response (IR); evidence focus: IR-3.\nEnvironment: AWS Commercial. Network access uses VPC interface endpoints; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: the next incident-response tabletop is scheduled two weeks later than the internal target date. The gap is documented as a secondary control deficiency; there is no plaintext transport, no public database exposure, no unencrypted administrator credential in S3, and privileged MFA remains enabled.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE"
+}

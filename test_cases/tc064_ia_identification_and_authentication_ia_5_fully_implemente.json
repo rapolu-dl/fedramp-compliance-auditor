@@ -1,0 +1,7 @@
+{
+  "id": "TC-064",
+  "test_name": "Identification and Authentication - IA-5 Fully Implemented",
+  "architecture": "System: Grants-Workflow-064\nPrimary NIST family: Identification and Authentication (IA); evidence focus: IA-5.\nEnvironment: AWS GovCloud. Network access uses PrivateLink; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: organizational users are uniquely identified and phishing-resistant MFA is required for privileged access. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

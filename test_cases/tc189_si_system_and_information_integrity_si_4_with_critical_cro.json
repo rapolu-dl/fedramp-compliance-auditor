@@ -1,0 +1,7 @@
+{
+  "id": "TC-189",
+  "test_name": "System and Information Integrity - SI-4 with Critical Cross-Cutting Failure",
+  "architecture": "System: Benefits-Portal-189\nPrimary NIST family: System and Information Integrity (SI); evidence focus: SI-4.\nFamily control evidence: security flaws are tracked, prioritized, patched, and verified within documented remediation windows. Critical observed condition: a shared administrator credential file is stored in an S3 bucket without encryption. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

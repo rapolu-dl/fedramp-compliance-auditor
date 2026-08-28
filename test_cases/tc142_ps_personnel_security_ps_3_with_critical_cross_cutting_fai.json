@@ -1,0 +1,7 @@
+{
+  "id": "TC-142",
+  "test_name": "Personnel Security - PS-3 with Critical Cross-Cutting Failure",
+  "architecture": "System: Records-Service-142\nPrimary NIST family: Personnel Security (PS); evidence focus: PS-3.\nFamily control evidence: termination workflow promptly revokes logical and physical access and recovers organizational assets. Critical observed condition: a shared administrator credential file is stored in an S3 bucket without encryption. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

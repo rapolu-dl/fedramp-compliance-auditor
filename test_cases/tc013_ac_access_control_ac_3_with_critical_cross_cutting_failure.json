@@ -1,0 +1,7 @@
+{
+  "id": "TC-013",
+  "test_name": "Access Control - AC-3 with Critical Cross-Cutting Failure",
+  "architecture": "System: Audit-Lake-013\nPrimary NIST family: Access Control (AC); evidence focus: AC-3.\nFamily control evidence: RBAC enforces approved authorizations and production roles are deny-by-default. Critical observed condition: an internal API transmits credentials over plaintext HTTP with TLS disabled. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

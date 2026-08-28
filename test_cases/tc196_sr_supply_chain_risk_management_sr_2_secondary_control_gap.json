@@ -1,0 +1,7 @@
+{
+  "id": "TC-196",
+  "test_name": "Supply Chain Risk Management - SR-2 Secondary Control Gap",
+  "architecture": "System: Research-Platform-196\nPrimary NIST family: Supply Chain Risk Management (SR); evidence focus: SR-2.\nEnvironment: Azure Government. Network access uses Private Link; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a customer-managed Key Vault key. Control evidence: the supply-chain plan is current but one newly approved supplier has not yet been added to the next review calendar. The gap is documented as a secondary control deficiency; there is no plaintext transport, no public database exposure, no unencrypted administrator credential in S3, and privileged MFA remains enabled.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE"
+}

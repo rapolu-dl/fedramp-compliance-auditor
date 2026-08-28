@@ -1,0 +1,7 @@
+{
+  "id": "TC-141",
+  "test_name": "Personnel Security - PS-2 Secondary Control Gap",
+  "architecture": "System: Operations-Console-141\nPrimary NIST family: Personnel Security (PS); evidence focus: PS-2.\nEnvironment: AWS Commercial. Network access uses VPC interface endpoints; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: one revised position description is awaiting the final recorded risk-designation approval. The gap is documented as a secondary control deficiency; there is no plaintext transport, no public database exposure, no unencrypted administrator credential in S3, and privileged MFA remains enabled.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE"
+}

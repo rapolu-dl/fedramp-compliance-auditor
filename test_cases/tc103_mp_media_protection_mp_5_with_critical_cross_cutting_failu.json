@@ -1,0 +1,7 @@
+{
+  "id": "TC-103",
+  "test_name": "Media Protection - MP-5 with Critical Cross-Cutting Failure",
+  "architecture": "System: Mission-API-103\nPrimary NIST family: Media Protection (MP); evidence focus: MP-5.\nFamily control evidence: media is sanitized or destroyed using approved procedures before disposal or reuse. Critical observed condition: the production PostgreSQL database is publicly accessible from 0.0.0.0/0. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

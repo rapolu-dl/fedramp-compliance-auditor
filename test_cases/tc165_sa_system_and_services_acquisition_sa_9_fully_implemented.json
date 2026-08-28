@@ -1,0 +1,7 @@
+{
+  "id": "TC-165",
+  "test_name": "System and Services Acquisition - SA-9 Fully Implemented",
+  "architecture": "System: Identity-Hub-165\nPrimary NIST family: System and Services Acquisition (SA); evidence focus: SA-9.\nEnvironment: AWS Commercial. Network access uses VPC interface endpoints; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: external service providers are contractually required to meet security requirements and are monitored. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

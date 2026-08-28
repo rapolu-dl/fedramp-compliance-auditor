@@ -1,0 +1,7 @@
+{
+  "id": "TC-185",
+  "test_name": "System and Information Integrity - SI-4 Secondary Control Gap",
+  "architecture": "System: Audit-Lake-185\nPrimary NIST family: System and Information Integrity (SI); evidence focus: SI-4.\nEnvironment: Azure. Network access uses Private Link; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a customer-managed Key Vault key. Control evidence: one low-priority telemetry source is missing a dashboard visualization although alerts are still generated. The gap is documented as a secondary control deficiency; there is no plaintext transport, no public database exposure, no unencrypted administrator credential in S3, and privileged MFA remains enabled.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE"
+}

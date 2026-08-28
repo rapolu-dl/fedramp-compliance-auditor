@@ -1,0 +1,7 @@
+{
+  "id": "TC-124",
+  "test_name": "Program Management - PM-4 Fully Implemented",
+  "architecture": "System: Claims-Processing-124\nPrimary NIST family: Program Management (PM); evidence focus: PM-4.\nEnvironment: Azure Government. Network access uses Private Link; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a customer-managed Key Vault key. Control evidence: the organization operates a defined POA&M process tied to enterprise risk priorities. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

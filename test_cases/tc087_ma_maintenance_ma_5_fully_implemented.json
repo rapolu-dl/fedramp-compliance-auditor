@@ -1,0 +1,7 @@
+{
+  "id": "TC-087",
+  "test_name": "Maintenance - MA-5 Fully Implemented",
+  "architecture": "System: Operations-Console-087\nPrimary NIST family: Maintenance (MA); evidence focus: MA-5.\nEnvironment: Azure. Network access uses Private Link; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a customer-managed Key Vault key. Control evidence: maintenance personnel are authorized and their access is removed when work is complete. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "TC-199",
+  "test_name": "Supply Chain Risk Management - SR-11 with Critical Cross-Cutting Failure",
+  "architecture": "System: Audit-Lake-199\nPrimary NIST family: Supply Chain Risk Management (SR); evidence focus: SR-11.\nFamily control evidence: critical suppliers are periodically assessed for supply-chain risk and corrective actions are tracked. Critical observed condition: an internal API transmits credentials over plaintext HTTP with TLS disabled. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

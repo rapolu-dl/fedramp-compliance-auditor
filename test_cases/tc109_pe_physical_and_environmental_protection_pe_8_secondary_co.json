@@ -1,0 +1,7 @@
+{
+  "id": "TC-109",
+  "test_name": "Physical and Environmental Protection - PE-8 Secondary Control Gap",
+  "architecture": "System: Benefits-Portal-109\nPrimary NIST family: Physical and Environmental Protection (PE); evidence focus: PE-8.\nEnvironment: AWS GovCloud. Network access uses PrivateLink; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: one visitor log entry is missing the host departure acknowledgment. The gap is documented as a secondary control deficiency; there is no plaintext transport, no public database exposure, no unencrypted administrator credential in S3, and privileged MFA remains enabled.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE"
+}

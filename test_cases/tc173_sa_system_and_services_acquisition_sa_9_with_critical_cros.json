@@ -1,0 +1,7 @@
+{
+  "id": "TC-173",
+  "test_name": "System and Services Acquisition - SA-9 with Critical Cross-Cutting Failure",
+  "architecture": "System: Audit-Lake-173\nPrimary NIST family: System and Services Acquisition (SA); evidence focus: SA-9.\nFamily control evidence: external service providers are contractually required to meet security requirements and are monitored. Critical observed condition: an internal API transmits credentials over plaintext HTTP with TLS disabled. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

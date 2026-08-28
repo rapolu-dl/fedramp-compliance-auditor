@@ -1,0 +1,7 @@
+{
+  "id": "TC-191",
+  "test_name": "Supply Chain Risk Management - SR-11 Fully Implemented",
+  "architecture": "System: Identity-Hub-191\nPrimary NIST family: Supply Chain Risk Management (SR); evidence focus: SR-11.\nEnvironment: AWS GovCloud. Network access uses PrivateLink; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: critical suppliers are periodically assessed for supply-chain risk and corrective actions are tracked. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

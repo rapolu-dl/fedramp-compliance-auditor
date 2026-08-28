@@ -1,0 +1,7 @@
+{
+  "id": "TC-082",
+  "test_name": "Incident Response - IR-6 with Critical Cross-Cutting Failure",
+  "architecture": "System: Citizen-Services-082\nPrimary NIST family: Incident Response (IR); evidence focus: IR-6.\nFamily control evidence: security incidents are tracked in a central case system with evidence and status history. Critical observed condition: the production PostgreSQL database is publicly accessible from 0.0.0.0/0. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

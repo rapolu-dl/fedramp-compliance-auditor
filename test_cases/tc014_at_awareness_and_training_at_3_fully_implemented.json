@@ -1,0 +1,7 @@
+{
+  "id": "TC-014",
+  "test_name": "Awareness and Training - AT-3 Fully Implemented",
+  "architecture": "System: Citizen-Services-014\nPrimary NIST family: Awareness and Training (AT); evidence focus: AT-3.\nEnvironment: AWS GovCloud. Network access uses PrivateLink; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: training completion records are retained and reconciled against the active workforce roster. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

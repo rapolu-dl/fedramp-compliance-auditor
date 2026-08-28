@@ -1,0 +1,7 @@
+{
+  "id": "TC-022",
+  "test_name": "Awareness and Training - AT-3 with Critical Cross-Cutting Failure",
+  "architecture": "System: Records-Service-022\nPrimary NIST family: Awareness and Training (AT); evidence focus: AT-3.\nFamily control evidence: training completion records are retained and reconciled against the active workforce roster. Critical observed condition: a shared administrator credential file is stored in an S3 bucket without encryption. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

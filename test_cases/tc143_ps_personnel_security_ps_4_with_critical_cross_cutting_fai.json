@@ -1,0 +1,7 @@
+{
+  "id": "TC-143",
+  "test_name": "Personnel Security - PS-4 with Critical Cross-Cutting Failure",
+  "architecture": "System: Mission-API-143\nPrimary NIST family: Personnel Security (PS); evidence focus: PS-4.\nFamily control evidence: personnel transfers trigger timely access review and adjustment based on the new role. Critical observed condition: the production PostgreSQL database is publicly accessible from 0.0.0.0/0. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

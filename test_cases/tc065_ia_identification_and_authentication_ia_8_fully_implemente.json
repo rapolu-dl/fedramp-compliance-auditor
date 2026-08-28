@@ -1,0 +1,7 @@
+{
+  "id": "TC-065",
+  "test_name": "Identification and Authentication - IA-8 Fully Implemented",
+  "architecture": "System: Audit-Lake-065\nPrimary NIST family: Identification and Authentication (IA); evidence focus: IA-8.\nEnvironment: AWS Commercial. Network access uses VPC interface endpoints; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a KMS CMK. Control evidence: workload identities use short-lived certificates and mutually authenticate before establishing connections. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

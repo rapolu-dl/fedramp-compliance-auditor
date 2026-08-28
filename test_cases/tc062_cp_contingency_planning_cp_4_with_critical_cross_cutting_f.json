@@ -1,0 +1,7 @@
+{
+  "id": "TC-062",
+  "test_name": "Contingency Planning - CP-4 with Critical Cross-Cutting Failure",
+  "architecture": "System: Records-Service-062\nPrimary NIST family: Contingency Planning (CP); evidence focus: CP-4.\nFamily control evidence: encrypted backups are created, integrity-checked, and replicated to an isolated recovery account. Critical observed condition: a shared administrator credential file is stored in an S3 bucket without encryption. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "TC-153",
+  "test_name": "PII Processing and Transparency - PT-5 with Critical Cross-Cutting Failure",
+  "architecture": "System: Identity-Hub-153\nPrimary NIST family: PII Processing and Transparency (PT); evidence focus: PT-5.\nFamily control evidence: PII processing purposes are documented, published where required, and monitored for changes. Critical observed condition: administrator MFA is disabled for the emergency cloud-admin account. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

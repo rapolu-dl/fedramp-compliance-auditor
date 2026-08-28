@@ -1,0 +1,7 @@
+{
+  "id": "TC-125",
+  "test_name": "Program Management - PM-5 Fully Implemented",
+  "architecture": "System: Identity-Hub-125\nPrimary NIST family: Program Management (PM); evidence focus: PM-5.\nEnvironment: Azure. Network access uses Private Link; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a customer-managed Key Vault key. Control evidence: an authoritative inventory of organizational systems is maintained and reviewed. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

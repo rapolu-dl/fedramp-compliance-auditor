@@ -1,0 +1,7 @@
+{
+  "id": "TC-133",
+  "test_name": "Program Management - PM-5 with Critical Cross-Cutting Failure",
+  "architecture": "System: Audit-Lake-133\nPrimary NIST family: Program Management (PM); evidence focus: PM-5.\nFamily control evidence: an authoritative inventory of organizational systems is maintained and reviewed. Critical observed condition: an internal API transmits credentials over plaintext HTTP with TLS disabled. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

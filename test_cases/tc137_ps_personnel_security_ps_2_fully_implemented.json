@@ -1,0 +1,7 @@
+{
+  "id": "TC-137",
+  "test_name": "Personnel Security - PS-2 Fully Implemented",
+  "architecture": "System: Secure-Analytics-137\nPrimary NIST family: Personnel Security (PS); evidence focus: PS-2.\nEnvironment: Azure. Network access uses Private Link; public ingress to managed data services is blocked. Transport uses TLS 1.3 and strict mTLS for service-to-service paths. Privileged administrators use hardware-backed MFA. Sensitive data and secrets are encrypted at rest with a customer-managed Key Vault key. Control evidence: personnel screening is completed before granting access consistent with assigned risk. No exceptions, overdue findings, plaintext channels, public databases, or privileged-authentication gaps are reported.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW"
+}

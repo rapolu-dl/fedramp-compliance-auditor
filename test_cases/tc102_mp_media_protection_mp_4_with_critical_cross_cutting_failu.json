@@ -1,0 +1,7 @@
+{
+  "id": "TC-102",
+  "test_name": "Media Protection - MP-4 with Critical Cross-Cutting Failure",
+  "architecture": "System: Records-Service-102\nPrimary NIST family: Media Protection (MP); evidence focus: MP-4.\nFamily control evidence: media transport uses tracked, authorized channels with custody records. Critical observed condition: a shared administrator credential file is stored in an S3 bucket without encryption. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

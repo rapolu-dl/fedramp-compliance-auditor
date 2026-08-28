@@ -1,0 +1,7 @@
+{
+  "id": "TC-093",
+  "test_name": "Maintenance - MA-3 with Critical Cross-Cutting Failure",
+  "architecture": "System: Audit-Lake-093\nPrimary NIST family: Maintenance (MA); evidence focus: MA-3.\nFamily control evidence: maintenance tools are inventoried, integrity-checked, and restricted to authorized personnel. Critical observed condition: an internal API transmits credentials over plaintext HTTP with TLS disabled. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

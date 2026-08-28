@@ -1,0 +1,7 @@
+{
+  "id": "TC-063",
+  "test_name": "Contingency Planning - CP-9 with Critical Cross-Cutting Failure",
+  "architecture": "System: Mission-API-063\nPrimary NIST family: Contingency Planning (CP); evidence focus: CP-9.\nFamily control evidence: recovery procedures restore the service to a known trusted state within documented objectives. Critical observed condition: the production PostgreSQL database is publicly accessible from 0.0.0.0/0. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

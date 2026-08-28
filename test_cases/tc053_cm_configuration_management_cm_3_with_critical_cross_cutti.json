@@ -1,0 +1,7 @@
+{
+  "id": "TC-053",
+  "test_name": "Configuration Management - CM-3 with Critical Cross-Cutting Failure",
+  "architecture": "System: Audit-Lake-053\nPrimary NIST family: Configuration Management (CM); evidence focus: CM-3.\nFamily control evidence: security-impacting configuration changes require review, approval, and traceable change records. Critical observed condition: an internal API transmits credentials over plaintext HTTP with TLS disabled. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

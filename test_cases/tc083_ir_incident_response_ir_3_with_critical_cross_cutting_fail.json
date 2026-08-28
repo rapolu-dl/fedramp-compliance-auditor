@@ -1,0 +1,7 @@
+{
+  "id": "TC-083",
+  "test_name": "Incident Response - IR-3 with Critical Cross-Cutting Failure",
+  "architecture": "System: Benefits-Portal-083\nPrimary NIST family: Incident Response (IR); evidence focus: IR-3.\nFamily control evidence: suspected incidents are reported through documented internal and external escalation channels. Critical observed condition: a shared administrator credential file is stored in an S3 bucket without encryption. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

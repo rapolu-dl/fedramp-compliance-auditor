@@ -1,0 +1,7 @@
+{
+  "id": "TC-023",
+  "test_name": "Awareness and Training - AT-4 with Critical Cross-Cutting Failure",
+  "architecture": "System: Mission-API-023\nPrimary NIST family: Awareness and Training (AT); evidence focus: AT-4.\nFamily control evidence: phishing exercises and training feedback are reviewed by security leadership and used to update content. Critical observed condition: the production PostgreSQL database is publicly accessible from 0.0.0.0/0. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

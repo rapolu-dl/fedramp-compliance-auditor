@@ -1,0 +1,7 @@
+{
+  "id": "TC-043",
+  "test_name": "Assessment, Authorization, and Monitoring - CA-2 with Critical Cross-Cutting Failure",
+  "architecture": "System: Benefits-Portal-043\nPrimary NIST family: Assessment, Authorization, and Monitoring (CA); evidence focus: CA-2.\nFamily control evidence: internal system connections are authorized, documented, and periodically reviewed. Critical observed condition: a shared administrator credential file is stored in an S3 bucket without encryption. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}

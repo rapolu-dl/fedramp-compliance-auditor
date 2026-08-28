@@ -1,0 +1,7 @@
+{
+  "id": "TC-042",
+  "test_name": "Assessment, Authorization, and Monitoring - CA-9 with Critical Cross-Cutting Failure",
+  "architecture": "System: Citizen-Services-042\nPrimary NIST family: Assessment, Authorization, and Monitoring (CA); evidence focus: CA-9.\nFamily control evidence: continuous monitoring collects security metrics and reports control status to system leadership. Critical observed condition: the production PostgreSQL database is publicly accessible from 0.0.0.0/0. Other controls may be configured correctly, but the observed condition is current production evidence.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL"
+}
