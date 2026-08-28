@@ -26,9 +26,8 @@ with st.sidebar:
     """)
     st.markdown("---")
     st.header("📊 Evaluation Benchmark")
-    st.metric(label="Compliance Accuracy", value="100.0%")
-    st.metric(label="Avg Audit Latency", value="~4.5s")
-    st.metric(label="Cost / 1,000 Audits", value="$0.50 USD")
+    st.metric(label="Compliance Accuracy", value="96.0%", help="Mean exact-match accuracy across 3 runs / 600 evaluations")
+    st.metric(label="Avg Audit Latency", value="3.11 s", help="Mean across 3 benchmark runs")
     st.markdown("---")
     st.markdown("[View Source on GitHub](https://github.com/rapolu-dl/fedramp-compliance-auditor)")
 
