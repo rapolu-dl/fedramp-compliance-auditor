@@ -394,77 +394,117 @@ st.markdown(
 
 
 # ============================================================
-# Empirical Benchmark
+# Current System / Final Blind Evaluation
 # ============================================================
 
-st.subheader("📊 Empirical Evaluation")
+st.subheader("🚀 What This Prototype Demonstrates")
+
+cap1, cap2, cap3, cap4 = st.columns(4)
+
+with cap1:
+    st.metric(
+        label="Decision Engine",
+        value="Deterministic V3",
+        help="The LLM produces structured evidence; Python applies the final severity decision.",
+    )
+
+with cap2:
+    st.metric(
+        label="Severity Model",
+        value="4 Levels",
+        help="LOW · MODERATE · HIGH · CRITICAL",
+    )
+
+with cap3:
+    st.metric(
+        label="NIST Catalog",
+        value="1,196 entries",
+        help="Official NIST SP 800-53 Rev. 5 OSCAL-derived indexed catalog snapshot.",
+    )
+
+with cap4:
+    st.metric(
+        label="Deployment",
+        value="AWS Lambda",
+        help="Streamlit frontend → HTTPS Lambda Function URL → compliance agent.",
+    )
+
+st.caption(
+    "Evidence extraction and NIST lookup are LLM-assisted; "
+    "the final compliance status/risk mapping is deterministic."
+)
+
+st.subheader("📊 Final Blind Evaluation")
 
 metric1, metric2, metric3, metric4 = st.columns(4)
 
 with metric1:
     st.metric(
-        label="Mean Accuracy",
-        value="96.0%",
-        help="Mean exact-match accuracy across three independent benchmark runs.",
+        label="Exact Status + Risk",
+        value="92%",
+        help="92 of 100 previously unseen scenarios matched both expected status and risk.",
     )
 
 with metric2:
     st.metric(
-        label="Mean Audit Latency",
-        value="3.11 s",
-        help="Mean audit latency across the three benchmark runs.",
+        label="Status Accuracy",
+        value="98%",
+        help="98 of 100 blind scenarios matched the expected compliance status.",
     )
 
 with metric3:
     st.metric(
-        label="Test Scenarios",
-        value="200",
-        help="Synthetic benchmark scenarios spanning 20 NIST SP 800-53 Rev. 5 control families.",
+        label="CRITICAL Recall",
+        value="100%",
+        help="All blind CRITICAL scenarios were identified as CRITICAL.",
     )
 
 with metric4:
     st.metric(
-        label="Total Evaluations",
-        value="600",
-        help="200 scenarios executed independently three times.",
+        label="Mean Audit Latency",
+        value="7.70 s",
+        help="Final blind benchmark mean; median 7.43 s and p95 10.13 s.",
     )
 
 st.caption(
-    "200 scenarios × 3 independent runs = 600 evaluations · "
-    "20 NIST SP 800-53 Rev. 5 control families · "
-    "exact-match status/risk classification"
+    "100 previously unseen scenarios · 20 NIST SP 800-53 Rev. 5 control families · "
+    "balanced 25 LOW / 25 MODERATE / 25 HIGH / 25 CRITICAL"
 )
 
-with st.expander("🔬 Benchmark methodology and limitations"):
+with st.expander("🔬 Final blind benchmark methodology and detailed results"):
     st.markdown(
         """
-**Benchmark composition**
+**Blind-test composition**
 
-- 200 synthetic, rubric-aligned security scenarios
-- 80 expected `COMPLIANT / LOW`
-- 80 expected `PARTIALLY_COMPLIANT / MODERATE`
-- 40 expected `NON_COMPLIANT / CRITICAL`
-- Scenarios span 20 NIST SP 800-53 Rev. 5 control families
-- Three independent executions produced 600 total evaluations
+- 100 previously unseen synthetic security scenarios
+- 20 NIST SP 800-53 Rev. 5 control families
+- 5 scenarios per family
+- Balanced expected severity: 25 `LOW`, 25 `MODERATE`, 25 `HIGH`, 25 `CRITICAL`
+- Expected labels were kept separate from the evaluator during execution
 
 **Observed results**
 
-| Run | Exact-match accuracy |
+| Metric | Result |
 |---|---:|
-| Run 1 | 96.5% |
-| Run 2 | 96.0% |
-| Run 3 | 95.5% |
-| **Mean** | **96.0%** |
+| Exact status + risk | **92%** |
+| Status accuracy | **98%** |
+| Risk accuracy | **92%** |
+| LOW recall | **100%** |
+| MODERATE recall | **96%** |
+| HIGH recall | **72%** |
+| CRITICAL recall | **100%** |
+| Mean latency | **7.70 s** |
+| Median latency | **7.43 s** |
+| P95 latency | **10.13 s** |
 
-The current benchmark evaluates exact agreement between the expected
-and generated **overall compliance status and risk classification**.
+The evaluator uses a conservative four-level policy. Most blind-set
+disagreements were **HIGH → CRITICAL over-escalations**, which is consistent
+with the prototype's security-triage posture: potentially severe findings
+are surfaced for human verification rather than silently downgraded.
 
-Critical scenarios remain the most difficult category. Across the
-three runs, critical-case exact-match performance was approximately
-**80.8% (97/120)**.
-
-The benchmark is synthetic and is intended for controlled research
-evaluation. It is not an independent FedRAMP certification dataset.
+The benchmark is synthetic and intended for controlled research evaluation.
+It is not an independent FedRAMP certification dataset and does not constitute
+a FedRAMP authorization, 3PAO assessment, ATO, or government certification.
         """
     )
 
@@ -492,8 +532,8 @@ Streamlit Cloud
 **Backend**  
 AWS Lambda — Serverless
 
-**AI Reasoning**  
-LLM-based compliance agent
+**Decision Architecture**  
+LLM evidence assessment → deterministic Python severity engine
 
 **Security Standard**  
 NIST SP 800-53 Rev. 5
@@ -502,19 +542,24 @@ NIST SP 800-53 Rev. 5
 FedRAMP High-aligned
 
 **Control Knowledge Base**  
-NIST SP 800-53 Rev. 5 catalog
+Official NIST OSCAL-derived catalog · **1,196 indexed entries**
+
+**CI/CD**  
+GitHub Actions → AWS via OIDC
         """
     )
 
     st.divider()
 
-    st.markdown("### 🧪 Research Benchmark")
+    st.markdown("### 🧪 Final Blind Evaluation")
     st.markdown(
         """
-**200 scenarios · 3 runs · 600 evaluations**
+**100 previously unseen scenarios**
 
-**96.0%** mean exact-match accuracy  
-**3.11 s** mean audit latency
+**92%** exact status + risk  
+**98%** status accuracy  
+**100%** CRITICAL recall  
+**7.70 s** mean audit latency
         """
     )
 
