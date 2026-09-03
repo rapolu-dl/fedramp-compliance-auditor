@@ -90,7 +90,7 @@ def _secret_or_env(*names: str) -> Optional[str]:
     return None
 
 
-DEFAULT_LAMBDA_URL = "https://wpxepjworf3scoxhayew3pvvcy0xtyjv.lambda-url.us-east-1.on.aws/"
+DEFAULT_LAMBDA_URL = "https://qsinzk73bnv5r6kb6dcawugjeq0srcot.lambda-url.us-east-1.on.aws/"
 
 
 def get_lambda_url() -> Optional[str]:
@@ -162,7 +162,7 @@ def normalize_backend_response(payload: Any) -> Dict[str, Any]:
 
 
 def invoke_remote_lambda(architecture: str, lambda_url: str) -> Dict[str, Any]:
-    request_body = json.dumps({"architecture_spec": architecture}).encode("utf-8")
+    request_body = json.dumps({"architecture": architecture}).encode("utf-8")
 
     request = urllib.request.Request(
         lambda_url,
