@@ -1,0 +1,16 @@
+{
+  "id": "VAL-087",
+  "test_name": "System and Communications Protection SC-8 Evidence Review 087",
+  "architecture": "System: Payments-Gateway-087\nEnvironment: Azure\nAssessment focus: SC-8 (System and Communications Protection).\nObserved evidence: External and service-to-service connections carrying regulated data require TLS 1.3. Certificate validation is enforced and plaintext listeners are disabled.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "SC-8",
+  "family": "SC",
+  "ground_truth": {
+    "target_control": "SC-8",
+    "decision_basis": "Confidentiality and integrity protections are enforced for data in transit.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

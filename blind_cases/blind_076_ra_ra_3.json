@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-076",
+  "family": "RA",
+  "control_ref": "RA-3",
+  "architecture": "System: RiskAssessment-Service\nAssessment focus: RA-3 (Risk Assessment)\n\nThe system risk assessment identifies threat sources, vulnerabilities, likelihood, impact, existing controls, residual risk, and planned responses. It was updated after the latest architecture change and approved by the risk owner."
+}

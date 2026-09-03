@@ -1,0 +1,16 @@
+{
+  "id": "VAL-072",
+  "test_name": "PII Processing and Transparency PT-3 Evidence Review 072",
+  "architecture": "System: Claims-Hub-072\nEnvironment: Citizen Services\nAssessment focus: PT-3 (PII Processing and Transparency).\nObserved evidence: The application documents the purpose for collecting identity, income, and household information and blocks use of those fields for marketing or unrelated analytics.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PT-3",
+  "family": "PT",
+  "ground_truth": {
+    "target_control": "PT-3",
+    "decision_basis": "PII processing purposes are documented and use is constrained to those purposes.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

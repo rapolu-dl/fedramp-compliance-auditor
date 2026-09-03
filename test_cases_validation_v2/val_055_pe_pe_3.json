@@ -1,0 +1,22 @@
+{
+  "id": "VAL-055",
+  "test_name": "Physical and Environmental Protection PE-3 Evidence Review 055",
+  "architecture": "System: Audit-Lake-055\nEnvironment: Private Data Center\nAssessment focus: PE-3 (Physical and Environmental Protection).\nObserved evidence: A side door to the production datacenter has a failed lock and can be opened without a badge. The defect has remained open for four days and the door leads directly into the controlled equipment area.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "PE-3",
+  "family": "PE",
+  "ground_truth": {
+    "target_control": "PE-3",
+    "decision_basis": "A failed physical barrier permits uncontrolled entry into the production equipment area.",
+    "severity_policy": "R4 — The evidence shows a current/confirmed severe condition: active compromise or destructive activity; actual sensitive-data disclosure/loss; actual unauthorized privileged use; direct public/unencrypted exposure of sensitive data or credentials; an internet-facing known exploitable critical flaw without mitigation; or a confirmed integrity-bypassed/tampered production artifact."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "severity_rule_id": "R4",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

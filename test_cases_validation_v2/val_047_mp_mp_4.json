@@ -1,0 +1,22 @@
+{
+  "id": "VAL-047",
+  "test_name": "Media Protection MP-4 Evidence Review 047",
+  "architecture": "System: Payments-Gateway-047\nEnvironment: Azure\nAssessment focus: MP-4 (Media Protection).\nObserved evidence: Archived encrypted media is stored in an access-controlled facility. The latest inventory found three labeled tapes whose storage location was not updated after a cabinet move.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "MP-4",
+  "family": "MP",
+  "ground_truth": {
+    "target_control": "MP-4",
+    "decision_basis": "Storage protection exists but location/accountability records are incomplete.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

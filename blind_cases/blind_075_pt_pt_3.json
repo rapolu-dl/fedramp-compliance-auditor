@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-075",
+  "family": "PT",
+  "control_ref": "PT-3",
+  "architecture": "System: ResearchReuse-PII\nAssessment focus: PT-3 (Personally Identifiable Information Processing Purposes)\n\nA production data lake contains identifiable benefit records that several internal analytics teams may query. The original collection purpose is documented, but no process exists to approve or record new secondary analytical purposes before access is granted. Network and identity restrictions remain in place and no external transfer is identified."
+}

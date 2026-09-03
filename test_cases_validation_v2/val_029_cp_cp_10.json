@@ -1,0 +1,22 @@
+{
+  "id": "VAL-029",
+  "test_name": "Contingency Planning CP-10 Evidence Review 029",
+  "architecture": "System: Data-Exchange-029\nEnvironment: AWS GovCloud\nAssessment focus: CP-10 (Contingency Planning).\nObserved evidence: Recovery procedures are documented, but the primary application cannot currently start in the alternate region because a required signing key is not replicated there.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "CP-10",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-10",
+    "decision_basis": "Recovery documentation exists but a known dependency prevents full reconstitution.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "adjudication_change_reason": "A known missing signing-key dependency prevents alternate-region reconstitution. The contingency capability is materially ineffective, so this is more than a bounded deficiency; no outage is currently occurring.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

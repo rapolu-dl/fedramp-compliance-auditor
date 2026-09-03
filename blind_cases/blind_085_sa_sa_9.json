@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-085",
+  "family": "SA",
+  "control_ref": "SA-9",
+  "architecture": "System: ExternalEmail-Service\nAssessment focus: SA-9 (External System Services)\n\nThe external notification provider is covered by an approved service agreement, defined security requirements, annual evidence review, incident-notification obligations, and a documented exit process. The latest review was completed and no open high-severity findings remain."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-099",
+  "family": "SR",
+  "control_ref": "SR-11",
+  "architecture": "System: Dependency-Authenticity\nAssessment focus: SR-11 (Component Authenticity)\n\nA developer retrieved a production dependency from an unofficial mirror after the approved repository was unavailable. The downloaded package hash differs from the approved release hash and the package has no valid signature. The exception was accepted without verification and the component is currently loaded in the production service."
+}

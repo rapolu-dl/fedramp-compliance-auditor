@@ -1,0 +1,22 @@
+{
+  "id": "VAL-089",
+  "test_name": "System and Communications Protection SC-28 Evidence Review 089",
+  "architecture": "System: Data-Exchange-089\nEnvironment: AWS\nAssessment focus: SC-28 (System and Communications Protection).\nObserved evidence: A production export bucket containing customer identifiers has server-side encryption disabled. Object versions from the last 11 days are stored unencrypted at rest and are accessible to the analytics service role.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "SC-28",
+  "family": "SC",
+  "ground_truth": {
+    "target_control": "SC-28",
+    "decision_basis": "Sensitive production information is currently stored without at-rest cryptographic protection.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "data_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "adjudication_change_reason": "Sensitive production information is stored without the documented at-rest cryptographic protection. Access remains scoped to an analytics role and no disclosure is stated, so this is HIGH rather than CRITICAL.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

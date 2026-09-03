@@ -1,0 +1,22 @@
+{
+  "id": "VAL-088",
+  "test_name": "System and Communications Protection SC-13 Evidence Review 088",
+  "architecture": "System: Mission-Workflow-088\nEnvironment: GCP\nAssessment focus: SC-13 (System and Communications Protection).\nObserved evidence: Approved cryptographic libraries and managed keys are used for production data. One internal reporting job still uses an older approved algorithm scheduled for replacement next quarter.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "SC-13",
+  "family": "SC",
+  "ground_truth": {
+    "target_control": "SC-13",
+    "decision_basis": "Cryptographic protection is present but one legacy implementation remains within a planned transition.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "VAL-083",
+  "test_name": "System and Services Acquisition SA-5 Evidence Review 083",
+  "architecture": "System: Identity-Core-083\nEnvironment: Enterprise\nAssessment focus: SA-5 (System and Services Acquisition).\nObserved evidence: Current administrator and user documentation exists for the service, but the API security guide still references an authentication flow retired four months ago.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "SA-5",
+  "family": "SA",
+  "ground_truth": {
+    "target_control": "SA-5",
+    "decision_basis": "System documentation exists but a security-relevant section is stale.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

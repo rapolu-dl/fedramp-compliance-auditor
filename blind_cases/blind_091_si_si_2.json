@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-091",
+  "family": "SI",
+  "control_ref": "SI-2",
+  "architecture": "System: PatchManagement\nAssessment focus: SI-2 (Flaw Remediation)\n\nProduction assets are inventoried against vendor advisories daily. Severe security fixes are tested and deployed within the documented timeline, deployment status is verified, and exceptions require risk-owner approval. The current dashboard shows no overdue severe production flaw."
+}

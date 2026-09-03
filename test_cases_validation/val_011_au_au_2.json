@@ -1,0 +1,16 @@
+{
+  "id": "VAL-011",
+  "test_name": "Audit and Accountability AU-2 Evidence Review 011",
+  "architecture": "System: Benefits-API-011\nEnvironment: AWS\nAssessment focus: AU-2 (Audit and Accountability).\nObserved evidence: CloudTrail management events, identity events, object-level access for the regulated data bucket, and database authentication events are enabled. Central collection covers all production accounts.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "AU-2",
+  "family": "AU",
+  "ground_truth": {
+    "target_control": "AU-2",
+    "decision_basis": "Required event categories are affirmatively logged across the production scope.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

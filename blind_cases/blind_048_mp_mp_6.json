@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-048",
+  "family": "MP",
+  "control_ref": "MP-6",
+  "architecture": "System: DiskRetirement-Staging\nAssessment focus: MP-6 (Media Sanitization)\n\nA batch of retired encrypted SSDs has been removed from servers and placed in a locked destruction cage. The sanitization job was skipped because the wiping appliance is offline, and no verification record exists yet. The drives remain on-site under organizational custody and have not been released to a recycler."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-049",
+  "family": "MP",
+  "control_ref": "MP-5",
+  "architecture": "System: OffsiteBackup-Courier\nAssessment focus: MP-5 (Media Transport)\n\nA courier shipment containing an unencrypted backup drive with taxpayer records did not arrive at the approved storage site and cannot be located. The chain-of-custody log shows the drive left the facility yesterday. The drive has no device-level encryption."
+}

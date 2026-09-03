@@ -1,0 +1,16 @@
+{
+  "id": "VAL-040",
+  "test_name": "Incident Response IR-4 Evidence Review 040",
+  "architecture": "System: Ops-Console-040\nEnvironment: AWS\nAssessment focus: IR-4 (Incident Response).\nObserved evidence: Malware is actively encrypting files on a production server. The alert has been open for six hours, no containment action has been initiated, and the affected host remains connected to the production network.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "IR-4",
+  "family": "IR",
+  "ground_truth": {
+    "target_control": "IR-4",
+    "decision_basis": "An active high-impact incident is not being contained while damage continues.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "active_incident",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

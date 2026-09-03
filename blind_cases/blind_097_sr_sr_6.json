@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-097",
+  "family": "SR",
+  "control_ref": "SR-6",
+  "architecture": "System: SupplierReviews\nAssessment focus: SR-6 (Supplier Assessments and Reviews)\n\nSupplier assessments are risk-tiered and tracked centrally. The reassessment of one low-risk office-software provider is 45 days overdue because the provider's evidence package was delayed. The provider does not process regulated data or connect to production, and critical suppliers are current."
+}

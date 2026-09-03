@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-037",
+  "family": "IR",
+  "control_ref": "IR-5",
+  "architecture": "System: SOC-IncidentTracking\nAssessment focus: IR-5 (Incident Monitoring)\n\nAll security incidents receive unique tickets and severity, owner, status, and containment timestamps. For four low-severity events last quarter, the root-cause field was left blank after closure. Timeline and response evidence remain present and high-severity incidents have complete records."
+}

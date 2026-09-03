@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-020",
+  "family": "CA",
+  "control_ref": "CA-8",
+  "architecture": "System: TaxPortal-ExternalTest\nAssessment focus: CA-8 (Penetration Testing)\n\nExternal testing found an API endpoint that accepts an expired session token and allows modification of another taxpayer's mailing address. The exploit was reproduced from a public Internet connection using a normal user account. The affected endpoint remains enabled in production pending the next release."
+}

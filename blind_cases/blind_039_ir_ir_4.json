@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-039",
+  "family": "IR",
+  "control_ref": "IR-4",
+  "architecture": "System: Claims-ActiveIncident\nAssessment focus: IR-4 (Incident Handling)\n\nResponders confirmed that an attacker is exporting claim attachments from a compromised service account. New exports continue to appear in the egress logs. The account has not been disabled and the affected workload remains connected while the team waits for an application owner to approve containment."
+}

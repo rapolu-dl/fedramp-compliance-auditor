@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-055",
+  "family": "PE",
+  "control_ref": "PE-2",
+  "architecture": "System: OperationsCenter-Badges\nAssessment focus: PE-2 (Physical Access Authorizations)\n\nThe quarterly badge review was skipped for two consecutive quarters, leaving 37 active data-center badge holders without current manager recertification. Employment status is current and the facility uses guards and badge logs, but the authorization review process is materially out of date for a broad population."
+}

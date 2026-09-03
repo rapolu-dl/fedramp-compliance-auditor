@@ -1,0 +1,22 @@
+{
+  "id": "VAL-092",
+  "test_name": "System and Information Integrity SI-3 Evidence Review 092",
+  "architecture": "System: Claims-Hub-092\nEnvironment: Azure\nAssessment focus: SI-3 (System and Information Integrity).\nObserved evidence: Endpoint malware protection is enabled on supported servers with real-time scanning and automatic signature updates. A small set of isolated build workers is excluded during image creation and destroyed after each build.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "SI-3",
+  "family": "SI",
+  "ground_truth": {
+    "target_control": "SI-3",
+    "decision_basis": "Malicious-code protection is active with a bounded, isolated exception.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-044",
+  "family": "MA",
+  "control_ref": "MA-4",
+  "architecture": "System: NetworkDevice-Maintenance\nAssessment focus: MA-4 (Nonlocal Maintenance)\n\nThe production firewall's maintenance interface is reachable directly from the Internet. Remote support signs in with a shared administrator password and the interface does not require MFA. The interface can change routing and firewall policy and is currently enabled for remote access."
+}

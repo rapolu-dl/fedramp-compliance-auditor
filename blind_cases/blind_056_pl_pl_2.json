@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-056",
+  "family": "PL",
+  "control_ref": "PL-2",
+  "architecture": "System: Assistance-SystemPlan\nAssessment focus: PL-2 (System Security and Privacy Plans)\n\nThe system plan describes the current boundary, information types, roles, external connections, identity services, encryption approach, logging, contingency dependencies, and responsibility assignments. It was updated after the last architecture release and approved by the system owner."
+}

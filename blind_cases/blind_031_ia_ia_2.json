@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-031",
+  "family": "IA",
+  "control_ref": "IA-2",
+  "architecture": "System: Benefits-Authentication\nAssessment focus: IA-2 (Identification and Authentication)\n\nAll workforce identities authenticate through the enterprise identity provider. Administrators use phishing-resistant hardware-backed MFA, shared administrator accounts are prohibited, and privileged sessions are tied to individual identities. The latest access review found no password-only privileged accounts."
+}

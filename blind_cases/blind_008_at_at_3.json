@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-008",
+  "family": "AT",
+  "control_ref": "AT-3",
+  "architecture": "System: Operations-PrivilegedTraining\nAssessment focus: AT-3 (Role-Based Training)\n\nA newly promoted platform engineer received approved production administrator access before completing the required administrator security course. General awareness training was complete, MFA was enforced, and the administrator account is individually assigned. The role-based course remains outstanding. Review of access logs shows no unauthorized activity."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-004",
+  "test_name": "Access Control AC-6 Evidence Review 004",
+  "architecture": "System: Records-Service-004\nEnvironment: GCP\nAssessment focus: AC-6 (Access Control).\nObserved evidence: Production operators receive read-only access by default. Temporary elevation requires an approved ticket, expires after 60 minutes, and is logged. No standing project-owner assignments were found in the supplied evidence.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "AC-6",
+  "family": "AC",
+  "ground_truth": {
+    "target_control": "AC-6",
+    "decision_basis": "Least-privilege and time-bound elevation are evidenced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

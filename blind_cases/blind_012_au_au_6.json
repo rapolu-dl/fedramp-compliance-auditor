@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-012",
+  "family": "AU",
+  "control_ref": "AU-6",
+  "architecture": "System: Claims-SOCReview\nAssessment focus: AU-6 (Audit Record Review, Analysis, and Reporting)\n\nSecurity alerts and daily automated log correlation are operating. The documented weekly human review was completed two business days late in three of the last twelve weeks because of staffing coverage. High-severity alerts continued to page the on-call team immediately and no alerts were suppressed."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-005",
+  "family": "AC",
+  "control_ref": "AC-20",
+  "architecture": "System: Payments-ExternalTaxAPI\nAssessment focus: AC-20 (Use of External Systems)\n\nThe application calls an external tax-validation service through a documented connection. The service is on the approved external-systems register, outbound traffic is restricted to the provider endpoints, the OAuth token has only the required validation scope, and the connection owner completed the scheduled review this month. No local credentials are stored on the external service."
+}

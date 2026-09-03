@@ -1,0 +1,16 @@
+{
+  "id": "VAL-013",
+  "test_name": "Audit and Accountability AU-6 Evidence Review 013",
+  "architecture": "System: Identity-Core-013\nEnvironment: GCP\nAssessment focus: AU-6 (Audit and Accountability).\nObserved evidence: Security logs are collected centrally, but the weekly review process has not run for five weeks because the assigned analyst position is vacant. Alerts for high-severity identity events remain active.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "AU-6",
+  "family": "AU",
+  "ground_truth": {
+    "target_control": "AU-6",
+    "decision_basis": "Collection and alerting remain active, but scheduled human review is overdue.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

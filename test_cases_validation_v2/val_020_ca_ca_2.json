@@ -1,0 +1,22 @@
+{
+  "id": "VAL-020",
+  "test_name": "Assessment, Authorization, and Monitoring CA-2 Evidence Review 020",
+  "architecture": "System: Ops-Console-020\nEnvironment: Azure\nAssessment focus: CA-2 (Assessment, Authorization, and Monitoring).\nObserved evidence: The last formal control assessment occurred 31 months ago. Since then the system moved to a new identity provider and public API gateway, but no assessment or authorization review was performed after the architecture change.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "CA-2",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-2",
+    "decision_basis": "Major security-relevant architecture changes have operated for an extended period without reassessment.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "high_impact_change",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "adjudication_change_reason": "Major security-relevant architecture changes have operated for an extended period without reassessment. This is a major authorization/assessment failure, but no active compromise is described.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

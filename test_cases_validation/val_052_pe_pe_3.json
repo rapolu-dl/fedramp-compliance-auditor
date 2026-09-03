@@ -1,0 +1,16 @@
+{
+  "id": "VAL-052",
+  "test_name": "Physical and Environmental Protection PE-3 Evidence Review 052",
+  "architecture": "System: Claims-Hub-052\nEnvironment: Private Data Center\nAssessment focus: PE-3 (Physical and Environmental Protection).\nObserved evidence: Server-room entry requires badge plus biometric verification. Door-forced-open alarms are monitored and access logs are retained.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PE-3",
+  "family": "PE",
+  "ground_truth": {
+    "target_control": "PE-3",
+    "decision_basis": "Physical access controls and monitoring are evidenced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

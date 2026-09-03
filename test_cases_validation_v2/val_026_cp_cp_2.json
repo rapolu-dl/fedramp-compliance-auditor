@@ -1,0 +1,22 @@
+{
+  "id": "VAL-026",
+  "test_name": "Contingency Planning CP-2 Evidence Review 026",
+  "architecture": "System: Citizen-Portal-026\nEnvironment: Azure\nAssessment focus: CP-2 (Contingency Planning).\nObserved evidence: The contingency plan defines recovery roles, contact methods, alternate processing steps, recovery priorities, and dependencies. The plan was reviewed after the most recent architecture change.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CP-2",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-2",
+    "decision_basis": "Core contingency-plan elements and maintenance are evidenced.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

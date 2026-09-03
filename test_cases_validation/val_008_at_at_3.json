@@ -1,0 +1,16 @@
+{
+  "id": "VAL-008",
+  "test_name": "Awareness and Training AT-3 Evidence Review 008",
+  "architecture": "System: Mission-Workflow-008\nEnvironment: AWS GovCloud\nAssessment focus: AT-3 (Awareness and Training).\nObserved evidence: Administrators complete role-based cloud security training before privileged access is granted. The training includes incident escalation, key management, and privileged-access handling; completion is renewed annually.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "AT-3",
+  "family": "AT",
+  "ground_truth": {
+    "target_control": "AT-3",
+    "decision_basis": "Role-specific training precedes privileged access and has recurring completion evidence.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

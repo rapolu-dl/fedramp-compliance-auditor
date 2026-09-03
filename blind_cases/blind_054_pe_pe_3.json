@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-054",
+  "family": "PE",
+  "control_ref": "PE-3",
+  "architecture": "System: SecondaryDatacenter-Door\nAssessment focus: PE-3 (Physical Access Control)\n\nThe loading-dock door leading to the production equipment corridor no longer latches after closing. Anyone entering the loading area can push the door open without a badge, and the condition has persisted through the current shift. The production server cages are accessible from that corridor."
+}

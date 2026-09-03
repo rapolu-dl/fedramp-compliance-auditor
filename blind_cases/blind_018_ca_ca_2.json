@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-018",
+  "family": "CA",
+  "control_ref": "CA-2",
+  "architecture": "System: Medicaid-PlatformRefresh\nAssessment focus: CA-2 (Control Assessments)\n\nThe production system moved its identity provider, database service, and network boundary to a new cloud architecture four months ago. The previous annual assessment is still the most recent assessment artifact and does not cover the new identity or network design. Continuous monitoring continues, but a formal assessment of the changed control implementation has not been performed."
+}

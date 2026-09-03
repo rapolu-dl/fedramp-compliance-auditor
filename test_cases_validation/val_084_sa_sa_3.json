@@ -1,0 +1,16 @@
+{
+  "id": "VAL-084",
+  "test_name": "System and Services Acquisition SA-3 Evidence Review 084",
+  "architecture": "System: Records-Service-084\nEnvironment: Enterprise\nAssessment focus: SA-3 (System and Services Acquisition).\nObserved evidence: A new production service went directly from prototype to deployment without threat modeling or security testing because the project skipped the required design and verification gates.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "SA-3",
+  "family": "SA",
+  "ground_truth": {
+    "target_control": "SA-3",
+    "decision_basis": "A production service bypassed required security lifecycle gates before deployment.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_change",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

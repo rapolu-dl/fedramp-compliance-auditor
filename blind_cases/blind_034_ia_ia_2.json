@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-034",
+  "family": "IA",
+  "control_ref": "IA-2",
+  "architecture": "System: HR-IdentityIncident\nAssessment focus: IA-2 (Identification and Authentication)\n\nAn attacker used a stolen production administrator credential to sign in from an unrecognized network and create a new privileged identity. The security team confirmed the sign-in and account creation in the identity logs. The attacker-created account remained enabled when the incident ticket was opened."
+}

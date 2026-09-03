@@ -1,0 +1,22 @@
+{
+  "id": "VAL-079",
+  "test_name": "Risk Assessment RA-7 Evidence Review 079",
+  "architecture": "System: Data-Exchange-079\nEnvironment: Enterprise\nAssessment focus: RA-7 (Risk Assessment).\nObserved evidence: Risk owners choose mitigate, accept, transfer, or avoid responses and document approval. Four accepted low risks have approval records that expired last month and are awaiting renewal.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "RA-7",
+  "family": "RA",
+  "ground_truth": {
+    "target_control": "RA-7",
+    "decision_basis": "Risk response process exists but some acceptance approvals are stale.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

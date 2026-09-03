@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-078",
+  "family": "RA",
+  "control_ref": "RA-2",
+  "architecture": "System: NewService-Categorization\nAssessment focus: RA-2 (Security Categorization)\n\nA production service containing sensitive eligibility data has operated for five months using a provisional impact categorization that was never formally approved. Security controls were selected and deployed based on the provisional rating, but the required categorization decision and approval record remain incomplete."
+}

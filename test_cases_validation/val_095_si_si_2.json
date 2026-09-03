@@ -1,0 +1,16 @@
+{
+  "id": "VAL-095",
+  "test_name": "System and Information Integrity SI-2 Evidence Review 095",
+  "architecture": "System: Audit-Lake-095\nEnvironment: AWS\nAssessment focus: SI-2 (System and Information Integrity).\nObserved evidence: An internet-facing production server has a critical remote-code-execution patch 76 days overdue. Exploit activity for the vulnerability has been observed publicly and the server has no compensating network restriction.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "SI-2",
+  "family": "SI",
+  "ground_truth": {
+    "target_control": "SI-2",
+    "decision_basis": "A severe exploitable flaw remains exposed on an internet-facing production asset.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-074",
+  "test_name": "PII Processing and Transparency PT-5 Evidence Review 074",
+  "architecture": "System: Records-Service-074\nEnvironment: Citizen Services\nAssessment focus: PT-5 (PII Processing and Transparency).\nObserved evidence: The privacy notice describes categories of PII, uses, sharing, and contact information, but the published notice has not been updated to mention a new analytics processor added two months ago.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PT-5",
+  "family": "PT",
+  "ground_truth": {
+    "target_control": "PT-5",
+    "decision_basis": "Privacy notice exists but is stale regarding a new processor.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

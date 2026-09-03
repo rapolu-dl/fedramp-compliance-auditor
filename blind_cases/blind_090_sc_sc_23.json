@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-090",
+  "family": "SC",
+  "control_ref": "SC-23",
+  "architecture": "System: SessionManagement\nAssessment focus: SC-23 (Session Authenticity)\n\nSession tokens are cryptographically signed and bound to the application domain. A token-rotation change scheduled for this quarter is three weeks late, so the maximum token lifetime remains 45 minutes instead of the new 30-minute target. Revocation and MFA remain active and no token replay is reported."
+}

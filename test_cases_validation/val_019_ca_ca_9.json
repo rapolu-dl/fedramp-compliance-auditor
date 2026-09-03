@@ -1,0 +1,16 @@
+{
+  "id": "VAL-019",
+  "test_name": "Assessment, Authorization, and Monitoring CA-9 Evidence Review 019",
+  "architecture": "System: Data-Exchange-019\nEnvironment: GCP\nAssessment focus: CA-9 (Assessment, Authorization, and Monitoring).\nObserved evidence: An internal analytics system connection is documented and approved, but the connection inventory has not been updated after a new service-to-service path was added last month. The new path is private and mutually authenticated.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "CA-9",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-9",
+    "decision_basis": "A private authenticated connection exists but connection inventory/approval documentation is stale.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

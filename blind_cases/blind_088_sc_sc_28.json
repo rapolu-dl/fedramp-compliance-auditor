@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-088",
+  "family": "SC",
+  "control_ref": "SC-28",
+  "architecture": "System: Analytics-Storage\nAssessment focus: SC-28 (Protection of Information at Rest)\n\nA production analytics database containing sensitive case information is stored on volumes without at-rest encryption. Database access is restricted to a dedicated service role on a private network and no public endpoint exists. There is no evidence that the data has been disclosed, but the required storage protection is absent."
+}

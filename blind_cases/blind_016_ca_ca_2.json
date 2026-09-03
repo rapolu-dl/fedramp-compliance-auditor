@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-016",
+  "family": "CA",
+  "control_ref": "CA-2",
+  "architecture": "System: Benefits-ControlAssessment\nAssessment focus: CA-2 (Control Assessments)\n\nThe system completed its scheduled control assessment last month. The assessor recorded test procedures, evidence references, findings, responsible owners, and retest results for closed items. The assessment covered the current production boundary and the major cloud services now in use."
+}

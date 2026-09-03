@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-003",
+  "family": "AC",
+  "control_ref": "AC-6",
+  "architecture": "System: Licensing-AdminPlane\nAssessment focus: AC-6 (Least Privilege)\n\nProduction administrators receive a standing role that includes database administration, secrets management, and network policy changes even when their daily duties require only application deployment. The role is assigned through the approved identity provider and MFA is enforced, but there is no just-in-time elevation or narrower role for routine work. The management plane is reachable only from the private administration network. No misuse is reported."
+}

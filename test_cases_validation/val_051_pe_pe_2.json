@@ -1,0 +1,16 @@
+{
+  "id": "VAL-051",
+  "test_name": "Physical and Environmental Protection PE-2 Evidence Review 051",
+  "architecture": "System: Benefits-API-051\nEnvironment: Private Data Center\nAssessment focus: PE-2 (Physical and Environmental Protection).\nObserved evidence: Datacenter access is granted only after manager and security approval. The authorization list is reviewed monthly and terminated staff are removed automatically from badge access.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PE-2",
+  "family": "PE",
+  "ground_truth": {
+    "target_control": "PE-2",
+    "decision_basis": "Physical access authorization is controlled and maintained.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

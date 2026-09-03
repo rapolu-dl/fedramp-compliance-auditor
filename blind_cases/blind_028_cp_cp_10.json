@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-028",
+  "family": "CP",
+  "control_ref": "CP-10",
+  "architecture": "System: Eligibility-Reconstitution\nAssessment focus: CP-10 (System Recovery and Reconstitution)\n\nThe alternate region contains replicated application images and database backups, but the signing key needed to start the application is not replicated and cannot be reconstructed from the recovery package. A tabletop review verified that the service cannot complete reconstitution without manually rebuilding the key hierarchy. Production is currently operating normally."
+}

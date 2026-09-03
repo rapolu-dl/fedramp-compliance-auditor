@@ -1,0 +1,22 @@
+{
+  "id": "VAL-085",
+  "test_name": "System and Services Acquisition SA-4 Evidence Review 085",
+  "architecture": "System: Audit-Lake-085\nEnvironment: Enterprise\nAssessment focus: SA-4 (System and Services Acquisition).\nObserved evidence: A third-party processor receives production customer data under a purchase order that contains no security, breach-notification, access-control, data-return, or deletion requirements.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "SA-4",
+  "family": "SA",
+  "ground_truth": {
+    "target_control": "SA-4",
+    "decision_basis": "Sensitive production data is provided to a supplier without defined security/privacy contractual requirements.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "supply_chain_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "adjudication_change_reason": "Sensitive production data is provided to a supplier without required contractual security/privacy protections. The exposure potential is significant, but the scenario does not state that the supplier disclosed or misused the data.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

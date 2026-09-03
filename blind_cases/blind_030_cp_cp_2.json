@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-030",
+  "family": "CP",
+  "control_ref": "CP-2",
+  "architecture": "System: PublicHealth-ContingencyPlan\nAssessment focus: CP-2 (Contingency Plan)\n\nThe contingency plan is approved and covers roles, recovery priorities, dependencies, communications, and alternate processing. One external telecom contact changed last month and the old number remains in the contact appendix. Internal escalation paths and alternate provider contacts are current."
+}

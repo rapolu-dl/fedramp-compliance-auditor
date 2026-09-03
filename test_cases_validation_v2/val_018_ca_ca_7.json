@@ -1,0 +1,22 @@
+{
+  "id": "VAL-018",
+  "test_name": "Assessment, Authorization, and Monitoring CA-7 Evidence Review 018",
+  "architecture": "System: Mission-Workflow-018\nEnvironment: AWS\nAssessment focus: CA-7 (Assessment, Authorization, and Monitoring).\nObserved evidence: Continuous monitoring receives daily configuration findings and weekly vulnerability results. Monthly management review is documented and changes to monitoring scope require approval.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CA-7",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-7",
+    "decision_basis": "Ongoing monitoring and management review are evidenced.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

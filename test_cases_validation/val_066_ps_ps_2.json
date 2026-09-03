@@ -1,0 +1,16 @@
+{
+  "id": "VAL-066",
+  "test_name": "Personnel Security PS-2 Evidence Review 066",
+  "architecture": "System: Citizen-Portal-066\nEnvironment: Enterprise\nAssessment focus: PS-2 (Personnel Security).\nObserved evidence: Positions are assigned documented risk designations before recruitment. Privileged cloud administrator roles are designated high risk and linked to enhanced screening requirements.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PS-2",
+  "family": "PS",
+  "ground_truth": {
+    "target_control": "PS-2",
+    "decision_basis": "Position risk designation is defined and drives personnel controls.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

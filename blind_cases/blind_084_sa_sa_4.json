@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-084",
+  "family": "SA",
+  "control_ref": "SA-4",
+  "architecture": "System: Benefits-DataProcessor\nAssessment focus: SA-4 (Acquisition Process)\n\nA new supplier receives production files containing applicant identifiers and financial information. The contract lacks required security and privacy clauses. During review, the supplier confirmed that one of the files was placed in a publicly readable cloud bucket for troubleshooting and the public object remains accessible."
+}

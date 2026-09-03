@@ -1,0 +1,16 @@
+{
+  "id": "VAL-068",
+  "test_name": "Personnel Security PS-4 Evidence Review 068",
+  "architecture": "System: Mission-Workflow-068\nEnvironment: Enterprise\nAssessment focus: PS-4 (Personnel Security).\nObserved evidence: Termination workflow disables SSO and VPN access automatically, but physical badge removal for three remote employees took 6 to 11 days after termination. The badges could not access datacenter spaces.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PS-4",
+  "family": "PS",
+  "ground_truth": {
+    "target_control": "PS-4",
+    "decision_basis": "Logical termination controls are timely but a lower-impact physical-access cleanup delay exists.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

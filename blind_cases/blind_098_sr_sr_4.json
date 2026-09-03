@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-098",
+  "family": "SR",
+  "control_ref": "SR-4",
+  "architecture": "System: ComponentProvenance\nAssessment focus: SR-4 (Provenance)\n\nA production library was obtained from the organization's approved supplier repository and its checksum matches the value recorded at build time, but the supplier did not provide the required provenance attestation for that version. The library is already deployed, no mismatch is observed, and no compromise is known."
+}

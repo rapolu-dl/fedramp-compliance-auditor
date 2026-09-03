@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-013",
+  "family": "AU",
+  "control_ref": "AU-9",
+  "architecture": "System: Revenue-AuditStore\nAssessment focus: AU-9 (Protection of Audit Information)\n\nCentral audit logs are retained in a dedicated account, but the same production platform administrators who manage source systems also hold write and delete permissions on the audit bucket. MFA and private access are enforced. No evidence shows that logs were modified or deleted, but segregation preventing alteration by subjects of the audit is not effective."
+}

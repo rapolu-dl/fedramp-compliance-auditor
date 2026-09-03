@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-047",
+  "family": "MP",
+  "control_ref": "MP-4",
+  "architecture": "System: BackupMedia-Vault\nAssessment focus: MP-4 (Media Storage)\n\nEncrypted backup cartridges are stored in a badge-controlled vault. Two cartridges were found in the correct locked cabinet but their shelf-location field was blank in the media inventory after a cabinet move. Custody logs, encryption, and vault access records are complete."
+}

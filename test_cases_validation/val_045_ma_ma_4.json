@@ -1,0 +1,16 @@
+{
+  "id": "VAL-045",
+  "test_name": "Maintenance MA-4 Evidence Review 045",
+  "architecture": "System: Audit-Lake-045\nEnvironment: Azure\nAssessment focus: MA-4 (Maintenance).\nObserved evidence: A vendor performs remote maintenance on production through an internet-exposed RDP endpoint using a shared local administrator password. MFA and session recording are not enabled.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "MA-4",
+  "family": "MA",
+  "ground_truth": {
+    "target_control": "MA-4",
+    "decision_basis": "Internet-exposed remote maintenance uses shared privileged credentials without MFA or monitoring.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "privileged_access",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

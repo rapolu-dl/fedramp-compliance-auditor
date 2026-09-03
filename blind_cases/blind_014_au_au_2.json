@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-014",
+  "family": "AU",
+  "control_ref": "AU-2",
+  "architecture": "System: Permits-AdminEvents\nAssessment focus: AU-2 (Event Logging)\n\nAdministrative network-policy changes are not captured by the production logging pipeline. During an incident review, responders confirmed that an unauthorized change opened the production document store to anonymous Internet access for several hours. Because the change event was not retained, the actor cannot be attributed from the audit system."
+}

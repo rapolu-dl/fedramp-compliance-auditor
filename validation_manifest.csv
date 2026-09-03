@@ -1,0 +1,101 @@
+id,filename,family,control_ref,expected_status,expected_risk,scenario_style,ground_truth_rationale
+VAL-001,val_001_ac_ac_2.json,AC,AC-2,COMPLIANT,LOW,control_evidence,"Account lifecycle, privileged approval, disablement, and periodic review are affirmatively evidenced."
+VAL-002,val_002_ac_ac_2.json,AC,AC-2,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Account review is overdue while core account disablement and privileged authentication remain in place.
+VAL-003,val_003_ac_ac_3.json,AC,AC-3,NON_COMPLIANT,CRITICAL,high_impact_exposure,"A production database is directly exposed to unrestricted network sources, creating a high-impact access-enforcement failure."
+VAL-004,val_004_ac_ac_6.json,AC,AC-6,COMPLIANT,LOW,control_evidence,Least-privilege and time-bound elevation are evidenced.
+VAL-005,val_005_ac_ac_17.json,AC,AC-17,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Remote access has a defined restriction but a legacy authentication weakness remains without direct production reach.
+VAL-006,val_006_at_at_2.json,AT,AT-2,COMPLIANT,LOW,control_evidence,"Training assignment, records, and timing are evidenced with no overdue population."
+VAL-007,val_007_at_at_2.json,AT,AT-2,PARTIALLY_COMPLIANT,MODERATE,control_evidence,The program exists but a nontrivial active population is overdue.
+VAL-008,val_008_at_at_3.json,AT,AT-3,COMPLIANT,LOW,control_evidence,Role-specific training precedes privileged access and has recurring completion evidence.
+VAL-009,val_009_at_at_4.json,AT,AT-4,COMPLIANT,LOW,control_evidence+adversarial_text,Training records are retained for the required period and reconciled to the current workforce.
+VAL-010,val_010_at_at_3.json,AT,AT-3,NON_COMPLIANT,CRITICAL,privileged_access,An untrained privileged administrator has active high-impact production authority.
+VAL-011,val_011_au_au_2.json,AU,AU-2,COMPLIANT,LOW,control_evidence,Required event categories are affirmatively logged across the production scope.
+VAL-012,val_012_au_au_3.json,AU,AU-3,NON_COMPLIANT,CRITICAL,high_impact_audit_failure,Privileged actions cannot be reliably attributed and the same administrators can alter the audit evidence.
+VAL-013,val_013_au_au_6.json,AU,AU-6,PARTIALLY_COMPLIANT,MODERATE,control_evidence,"Collection and alerting remain active, but scheduled human review is overdue."
+VAL-014,val_014_au_au_9.json,AU,AU-9,COMPLIANT,LOW,control_evidence,Audit information is segregated and protected from modification by ordinary operators.
+VAL-015,val_015_au_au_2.json,AU,AU-2,NON_COMPLIANT,CRITICAL,high_impact_exposure,High-impact administrative changes can occur without retained audit evidence.
+VAL-016,val_016_ca_ca_2.json,CA,CA-2,COMPLIANT,LOW,control_evidence,A documented control assessment with findings and retest tracking is evidenced.
+VAL-017,val_017_ca_ca_5.json,CA,CA-5,PARTIALLY_COMPLIANT,MODERATE,control_evidence,"POA&M exists and is managed, but planned remediation dates have slipped."
+VAL-018,val_018_ca_ca_7.json,CA,CA-7,COMPLIANT,LOW,control_evidence,Ongoing monitoring and management review are evidenced.
+VAL-019,val_019_ca_ca_9.json,CA,CA-9,PARTIALLY_COMPLIANT,MODERATE,control_evidence,A private authenticated connection exists but connection inventory/approval documentation is stale.
+VAL-020,val_020_ca_ca_2.json,CA,CA-2,NON_COMPLIANT,CRITICAL,high_impact_change,Major security-relevant architecture changes have operated for an extended period without reassessment.
+VAL-021,val_021_cm_cm_2.json,CM,CM-2,COMPLIANT,LOW,control_evidence,A maintained baseline and drift monitoring are evidenced.
+VAL-022,val_022_cm_cm_3.json,CM,CM-3,PARTIALLY_COMPLIANT,MODERATE,control_evidence+adversarial_text,Change control exists but required retrospective approval is incomplete.
+VAL-023,val_023_cm_cm_6.json,CM,CM-6,COMPLIANT,LOW,control_evidence,Security configuration settings are centrally defined and enforced.
+VAL-024,val_024_cm_cm_8.json,CM,CM-8,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Inventory coverage is incomplete for ephemeral components with limited exposure.
+VAL-025,val_025_cm_cm_6.json,CM,CM-6,NON_COMPLIANT,CRITICAL,high_impact_exposure,An unauthorized configuration exposes customer data publicly.
+VAL-026,val_026_cp_cp_2.json,CP,CP-2,COMPLIANT,LOW,control_evidence,Core contingency-plan elements and maintenance are evidenced.
+VAL-027,val_027_cp_cp_4.json,CP,CP-4,COMPLIANT,LOW,control_evidence,Contingency capability was exercised and results were documented.
+VAL-028,val_028_cp_cp_9.json,CP,CP-9,PARTIALLY_COMPLIANT,MODERATE,control_evidence,"Backups exist and are protected, but restore testing is overdue."
+VAL-029,val_029_cp_cp_10.json,CP,CP-10,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Recovery documentation exists but a known dependency prevents full reconstitution.
+VAL-030,val_030_cp_cp_9.json,CP,CP-9,NON_COMPLIANT,CRITICAL,availability_exposure,The system currently lacks a dependable recoverable backup for production data.
+VAL-031,val_031_ia_ia_2.json,IA,IA-2,COMPLIANT,LOW,control_evidence,"Organizational users, especially privileged users, have centrally enforced strong authentication."
+VAL-032,val_032_ia_ia_5.json,IA,IA-5,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Authenticator management is largely enforced but one stale non-production credential remains.
+VAL-033,val_033_ia_ia_3.json,IA,IA-3,COMPLIANT,LOW,control_evidence,Devices/workloads are identified and authenticated before connection.
+VAL-034,val_034_ia_ia_8.json,IA,IA-8,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Non-organizational authentication exists but account lifecycle cleanup is late.
+VAL-035,val_035_ia_ia_2.json,IA,IA-2,NON_COMPLIANT,CRITICAL,privileged_access,A shared password-only privileged account has broad production identity authority.
+VAL-036,val_036_ir_ir_3.json,IR,IR-3,COMPLIANT,LOW,control_evidence,Incident response capability is tested through documented exercises.
+VAL-037,val_037_ir_ir_4.json,IR,IR-4,COMPLIANT,LOW,control_evidence+adversarial_text,Incident handling lifecycle is documented and demonstrated in practice.
+VAL-038,val_038_ir_ir_5.json,IR,IR-5,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Incident tracking exists but monitoring records are incomplete.
+VAL-039,val_039_ir_ir_6.json,IR,IR-6,NON_COMPLIANT,CRITICAL,active_incident,A confirmed high-impact incident has exceeded the required external reporting threshold without notification.
+VAL-040,val_040_ir_ir_4.json,IR,IR-4,NON_COMPLIANT,CRITICAL,active_incident,An active high-impact incident is not being contained while damage continues.
+VAL-041,val_041_ma_ma_2.json,MA,MA-2,COMPLIANT,LOW,control_evidence,Controlled maintenance authorization and records are evidenced.
+VAL-042,val_042_ma_ma_3.json,MA,MA-3,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Maintenance tools are controlled but one tool is behind on security updates.
+VAL-043,val_043_ma_ma_4.json,MA,MA-4,COMPLIANT,LOW,control_evidence,Nonlocal maintenance is strongly controlled and monitored.
+VAL-044,val_044_ma_ma_5.json,MA,MA-5,NON_COMPLIANT,CRITICAL,privileged_access,Unauthorized maintenance personnel used shared privileged production credentials.
+VAL-045,val_045_ma_ma_4.json,MA,MA-4,NON_COMPLIANT,CRITICAL,privileged_access,Internet-exposed remote maintenance uses shared privileged credentials without MFA or monitoring.
+VAL-046,val_046_mp_mp_2.json,MP,MP-2,COMPLIANT,LOW,control_evidence,Media access is restricted and reviewed.
+VAL-047,val_047_mp_mp_4.json,MP,MP-4,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Storage protection exists but location/accountability records are incomplete.
+VAL-048,val_048_mp_mp_5.json,MP,MP-5,NON_COMPLIANT,CRITICAL,data_exposure+adversarial_text,Sensitive media was lost in transit without cryptographic protection or adequate transport safeguards.
+VAL-049,val_049_mp_mp_6.json,MP,MP-6,COMPLIANT,LOW,control_evidence,Approved media sanitization and verification are evidenced.
+VAL-050,val_050_mp_mp_6.json,MP,MP-6,NON_COMPLIANT,CRITICAL,data_exposure,Sensitive media left organizational control without verified sanitization.
+VAL-051,val_051_pe_pe_2.json,PE,PE-2,COMPLIANT,LOW,control_evidence,Physical access authorization is controlled and maintained.
+VAL-052,val_052_pe_pe_3.json,PE,PE-3,COMPLIANT,LOW,control_evidence,Physical access controls and monitoring are evidenced.
+VAL-053,val_053_pe_pe_6.json,PE,PE-6,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Physical monitoring has a localized coverage deficiency with compensating staffed access control.
+VAL-054,val_054_pe_pe_8.json,PE,PE-8,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Visitor records exist but required record fields are incomplete.
+VAL-055,val_055_pe_pe_3.json,PE,PE-3,NON_COMPLIANT,CRITICAL,high_impact_exposure,A failed physical barrier permits uncontrolled entry into the production equipment area.
+VAL-056,val_056_pl_pl_2.json,PL,PL-2,COMPLIANT,LOW,control_evidence,The system plan is current and covers core required planning elements.
+VAL-057,val_057_pl_pl_4.json,PL,PL-4,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Rules exist but revised acknowledgement is incomplete.
+VAL-058,val_058_pl_pl_8.json,PL,PL-8,COMPLIANT,LOW,control_evidence,Security architecture and its relationship to the enterprise architecture are documented.
+VAL-059,val_059_pl_pl_2.json,PL,PL-2,PARTIALLY_COMPLIANT,MODERATE,control_evidence,The system plan materially lags the implemented architecture.
+VAL-060,val_060_pl_pl_8.json,PL,PL-8,NON_COMPLIANT,CRITICAL,high_impact_exposure,An unapproved architecture path bypasses security controls and transmits authentication tokens without protected transport.
+VAL-061,val_061_pm_pm_4.json,PM,PM-4,COMPLIANT,LOW,control_evidence,A managed organization-wide POA&M process is evidenced.
+VAL-062,val_062_pm_pm_5.json,PM,PM-5,NON_COMPLIANT,CRITICAL,high_impact_governance_failure,A sensitive production system is outside the enterprise inventory and authorization tracking process.
+VAL-063,val_063_pm_pm_9.json,PM,PM-9,COMPLIANT,LOW,control_evidence+adversarial_text,An organization-wide risk management strategy is current and approved.
+VAL-064,val_064_pm_pm_10.json,PM,PM-10,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Authorization governance exists but a subset of systems exceeded the approved period.
+VAL-065,val_065_pm_pm_5.json,PM,PM-5,NON_COMPLIANT,CRITICAL,high_impact_exposure,An ungoverned internet-facing production system processing sensitive data is outside inventory and authorization oversight.
+VAL-066,val_066_ps_ps_2.json,PS,PS-2,COMPLIANT,LOW,control_evidence,Position risk designation is defined and drives personnel controls.
+VAL-067,val_067_ps_ps_3.json,PS,PS-3,COMPLIANT,LOW,control_evidence,Personnel screening is completed before sensitive access and maintained.
+VAL-068,val_068_ps_ps_4.json,PS,PS-4,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Logical termination controls are timely but a lower-impact physical-access cleanup delay exists.
+VAL-069,val_069_ps_ps_5.json,PS,PS-5,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Transfer review exists but one stale permission persisted temporarily.
+VAL-070,val_070_ps_ps_4.json,PS,PS-4,NON_COMPLIANT,CRITICAL,privileged_access,A terminated privileged identity remained usable and was exercised in production.
+VAL-071,val_071_pt_pt_2.json,PT,PT-2,COMPLIANT,LOW,control_evidence+adversarial_text,Authority to process the collected PII is explicitly documented.
+VAL-072,val_072_pt_pt_3.json,PT,PT-3,COMPLIANT,LOW,control_evidence,PII processing purposes are documented and use is constrained to those purposes.
+VAL-073,val_073_pt_pt_4.json,PT,PT-4,NON_COMPLIANT,CRITICAL,privacy_exposure,Sensitive optional PII is collected and disclosed before an effective consent mechanism is presented.
+VAL-074,val_074_pt_pt_5.json,PT,PT-5,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Privacy notice exists but is stale regarding a new processor.
+VAL-075,val_075_pt_pt_3.json,PT,PT-3,NON_COMPLIANT,CRITICAL,data_exposure,Sensitive PII is used for an unrelated purpose and retained outside the documented processing purpose.
+VAL-076,val_076_ra_ra_2.json,RA,RA-2,COMPLIANT,LOW,control_evidence,Security categorization is documented and approved.
+VAL-077,val_077_ra_ra_3.json,RA,RA-3,COMPLIANT,LOW,control_evidence,Risk assessment content and maintenance are evidenced.
+VAL-078,val_078_ra_ra_5.json,RA,RA-5,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Scanning is active but remediation of some medium findings is late.
+VAL-079,val_079_ra_ra_7.json,RA,RA-7,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Risk response process exists but some acceptance approvals are stale.
+VAL-080,val_080_ra_ra_5.json,RA,RA-5,NON_COMPLIANT,CRITICAL,high_impact_exposure,An internet-facing system has a known exploitable critical vulnerability without mitigation.
+VAL-081,val_081_sa_sa_3.json,SA,SA-3,COMPLIANT,LOW,control_evidence,Security and privacy activities are integrated throughout the lifecycle.
+VAL-082,val_082_sa_sa_4.json,SA,SA-4,COMPLIANT,LOW,control_evidence+adversarial_text,Security/privacy requirements are incorporated into acquisition terms.
+VAL-083,val_083_sa_sa_5.json,SA,SA-5,PARTIALLY_COMPLIANT,MODERATE,control_evidence,System documentation exists but a security-relevant section is stale.
+VAL-084,val_084_sa_sa_3.json,SA,SA-3,NON_COMPLIANT,CRITICAL,high_impact_change,A production service bypassed required security lifecycle gates before deployment.
+VAL-085,val_085_sa_sa_4.json,SA,SA-4,NON_COMPLIANT,CRITICAL,supply_chain_exposure,Sensitive production data is provided to a supplier without defined security/privacy contractual requirements.
+VAL-086,val_086_sc_sc_7.json,SC,SC-7,COMPLIANT,LOW,control_evidence,Network boundaries and ingress/egress paths are controlled.
+VAL-087,val_087_sc_sc_8.json,SC,SC-8,COMPLIANT,LOW,control_evidence,Confidentiality and integrity protections are enforced for data in transit.
+VAL-088,val_088_sc_sc_13.json,SC,SC-13,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Cryptographic protection is present but one legacy implementation remains within a planned transition.
+VAL-089,val_089_sc_sc_28.json,SC,SC-28,NON_COMPLIANT,CRITICAL,data_exposure,Sensitive production information is currently stored without at-rest cryptographic protection.
+VAL-090,val_090_sc_sc_8.json,SC,SC-8,NON_COMPLIANT,CRITICAL,data_exposure,Production authentication secrets are transmitted in plaintext.
+VAL-091,val_091_si_si_2.json,SI,SI-2,COMPLIANT,LOW,control_evidence+adversarial_text,Flaw remediation process is operating within the stated critical-patch timeline.
+VAL-092,val_092_si_si_3.json,SI,SI-3,COMPLIANT,LOW,control_evidence,"Malicious-code protection is active with a bounded, isolated exception."
+VAL-093,val_093_si_si_4.json,SI,SI-4,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Monitoring is comprehensive but operational response timeliness has some misses.
+VAL-094,val_094_si_si_7.json,SI,SI-7,NON_COMPLIANT,CRITICAL,software_integrity_exposure,A failed integrity check was bypassed and a modified artifact was deployed to production.
+VAL-095,val_095_si_si_2.json,SI,SI-2,NON_COMPLIANT,CRITICAL,high_impact_exposure,A severe exploitable flaw remains exposed on an internet-facing production asset.
+VAL-096,val_096_sr_sr_2.json,SR,SR-2,COMPLIANT,LOW,control_evidence+adversarial_text,A maintained supply-chain risk management plan is evidenced.
+VAL-097,val_097_sr_sr_3.json,SR,SR-3,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Supply-chain controls exist but one low-impact supplier review artifact is stale.
+VAL-098,val_098_sr_sr_4.json,SR,SR-4,NON_COMPLIANT,CRITICAL,supply_chain_exposure,An unverifiable and mismatched software component from an unofficial source is running in a sensitive production environment.
+VAL-099,val_099_sr_sr_6.json,SR,SR-6,PARTIALLY_COMPLIANT,MODERATE,control_evidence,Supplier assessment governance exists but one critical reassessment is overdue.
+VAL-100,val_100_sr_sr_11.json,SR,SR-11,NON_COMPLIANT,CRITICAL,supply_chain_exposure+adversarial_text,An unauthenticated component was introduced into the production supply chain and is actively in use.

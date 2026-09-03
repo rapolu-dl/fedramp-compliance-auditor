@@ -1,0 +1,16 @@
+{
+  "id": "VAL-023",
+  "test_name": "Configuration Management CM-6 Evidence Review 023",
+  "architecture": "System: Identity-Core-023\nEnvironment: GCP\nAssessment focus: CM-6 (Configuration Management).\nObserved evidence: Hardened configuration parameters are managed through policy-as-code. The current production policy matches the approved settings and deviations require documented exceptions.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CM-6",
+  "family": "CM",
+  "ground_truth": {
+    "target_control": "CM-6",
+    "decision_basis": "Security configuration settings are centrally defined and enforced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-051",
+  "family": "PE",
+  "control_ref": "PE-3",
+  "architecture": "System: PrimaryDatacenter-Entry\nAssessment focus: PE-3 (Physical Access Control)\n\nThe production equipment floor requires a facility badge and biometric verification. Security staff monitor the staffed entrance, tailgating alarms are enabled, and door events are logged. The latest access review found all active badge holders mapped to approved roles."
+}

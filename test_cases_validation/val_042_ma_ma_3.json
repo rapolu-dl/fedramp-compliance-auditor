@@ -1,0 +1,16 @@
+{
+  "id": "VAL-042",
+  "test_name": "Maintenance MA-3 Evidence Review 042",
+  "architecture": "System: Claims-Hub-042\nEnvironment: Azure\nAssessment focus: MA-3 (Maintenance).\nObserved evidence: Diagnostic tools used for production maintenance are approved and scanned before use. One approved tool is running a version that is 38 days behind the current security patch level.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "MA-3",
+  "family": "MA",
+  "ground_truth": {
+    "target_control": "MA-3",
+    "decision_basis": "Maintenance tools are controlled but one tool is behind on security updates.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

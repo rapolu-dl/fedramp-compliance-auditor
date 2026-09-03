@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-011",
+  "family": "AU",
+  "control_ref": "AU-3",
+  "architecture": "System: Appeals-AuditTrail\nAssessment focus: AU-3 (Content of Audit Records)\n\nProduction audit events record timestamp, source, user or service identity, event type, affected object, outcome, and originating network context. Administrative changes include the before-and-after configuration values. Sampling across authentication, data export, and configuration events found all required fields populated."
+}

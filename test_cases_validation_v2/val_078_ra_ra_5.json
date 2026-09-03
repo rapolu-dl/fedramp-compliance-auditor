@@ -1,0 +1,22 @@
+{
+  "id": "VAL-078",
+  "test_name": "Risk Assessment RA-5 Evidence Review 078",
+  "architecture": "System: Mission-Workflow-078\nEnvironment: GCP\nAssessment focus: RA-5 (Risk Assessment).\nObserved evidence: Authenticated vulnerability scans run weekly on production servers. Two medium findings are 12 days beyond the internal remediation target; neither has known exploitation in the environment.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "RA-5",
+  "family": "RA",
+  "ground_truth": {
+    "target_control": "RA-5",
+    "decision_basis": "Scanning is active but remediation of some medium findings is late.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

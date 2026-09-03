@@ -1,0 +1,16 @@
+{
+  "id": "VAL-036",
+  "test_name": "Incident Response IR-3 Evidence Review 036",
+  "architecture": "System: Citizen-Portal-036\nEnvironment: AWS\nAssessment focus: IR-3 (Incident Response).\nObserved evidence: The incident response team conducted a ransomware tabletop and a technical failover exercise this quarter. Timing, participants, observations, and corrective actions are recorded.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "IR-3",
+  "family": "IR",
+  "ground_truth": {
+    "target_control": "IR-3",
+    "decision_basis": "Incident response capability is tested through documented exercises.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

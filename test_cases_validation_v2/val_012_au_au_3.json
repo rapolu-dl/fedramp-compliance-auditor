@@ -1,0 +1,22 @@
+{
+  "id": "VAL-012",
+  "test_name": "Audit and Accountability AU-3 Evidence Review 012",
+  "architecture": "System: Claims-Hub-012\nEnvironment: Azure\nAssessment focus: AU-3 (Audit and Accountability).\nObserved evidence: Privileged administrative changes are retained, but the audit records omit the initiating user identity for policy changes and database grants. Administrators can also edit those records in the same workspace used for operations.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "AU-3",
+  "family": "AU",
+  "ground_truth": {
+    "target_control": "AU-3",
+    "decision_basis": "Privileged actions cannot be reliably attributed and the same administrators can alter the audit evidence.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "high_impact_audit_failure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "adjudication_change_reason": "Privileged actions cannot be reliably attributed and administrators can alter audit evidence. This materially defeats accountability, but no active compromise or confirmed destructive event is stated.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

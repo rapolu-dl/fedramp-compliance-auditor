@@ -1,0 +1,16 @@
+{
+  "id": "VAL-077",
+  "test_name": "Risk Assessment RA-3 Evidence Review 077",
+  "architecture": "System: Payments-Gateway-077\nEnvironment: Azure\nAssessment focus: RA-3 (Risk Assessment).\nObserved evidence: The annual risk assessment identifies threats, vulnerabilities, likelihood, impact, existing safeguards, and planned responses. It was updated after the identity architecture change.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "RA-3",
+  "family": "RA",
+  "ground_truth": {
+    "target_control": "RA-3",
+    "decision_basis": "Risk assessment content and maintenance are evidenced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

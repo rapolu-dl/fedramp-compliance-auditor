@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-015",
+  "family": "AU",
+  "control_ref": "AU-2",
+  "architecture": "System: ProviderPortal-Logging\nAssessment focus: AU-2 (Event Logging)\n\nApplication authentication and business events are logged, but production identity-provider administrative changes and cloud network-policy changes are excluded from the logging configuration. The gap applies across the production environment. Existing perimeter controls and MFA remain in place, and there is no evidence of a current incident."
+}

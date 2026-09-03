@@ -1,0 +1,16 @@
+{
+  "id": "VAL-032",
+  "test_name": "Identification and Authentication IA-5 Evidence Review 032",
+  "architecture": "System: Claims-Hub-032\nEnvironment: Azure\nAssessment focus: IA-5 (Identification and Authentication).\nObserved evidence: Secrets are rotated automatically every 90 days and revoked on owner termination. One non-production integration secret is 17 days past rotation because its application is awaiting an upgrade.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "IA-5",
+  "family": "IA",
+  "ground_truth": {
+    "target_control": "IA-5",
+    "decision_basis": "Authenticator management is largely enforced but one stale non-production credential remains.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

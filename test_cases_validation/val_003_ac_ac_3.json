@@ -1,0 +1,16 @@
+{
+  "id": "VAL-003",
+  "test_name": "Access Control AC-3 Evidence Review 003",
+  "architecture": "System: Identity-Core-003\nEnvironment: AWS GovCloud\nAssessment focus: AC-3 (Access Control).\nObserved evidence: The production database security group allows TCP 5432 from 0.0.0.0/0. Database authentication is enabled and data at rest is encrypted, but the network rule is active in production.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "AC-3",
+  "family": "AC",
+  "ground_truth": {
+    "target_control": "AC-3",
+    "decision_basis": "A production database is directly exposed to unrestricted network sources, creating a high-impact access-enforcement failure.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

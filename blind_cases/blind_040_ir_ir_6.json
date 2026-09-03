@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-040",
+  "family": "IR",
+  "control_ref": "IR-6",
+  "architecture": "System: Breach-Notification\nAssessment focus: IR-6 (Incident Reporting)\n\nA confirmed incident exposed regulated health records and the organization's reporting procedure requires external notification within the applicable threshold. The threshold was exceeded yesterday, but the required external notification has not been submitted. Internal leadership is aware and the incident record documents the missed deadline."
+}

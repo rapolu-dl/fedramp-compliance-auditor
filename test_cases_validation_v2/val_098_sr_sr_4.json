@@ -1,0 +1,22 @@
+{
+  "id": "VAL-098",
+  "test_name": "Supply Chain Risk Management SR-4 Evidence Review 098",
+  "architecture": "System: Mission-Workflow-098\nEnvironment: Enterprise\nAssessment focus: SR-4 (Supply Chain Risk Management).\nObserved evidence: A production software package has no verifiable source/build provenance. Its checksum differs from the approved vendor release, and the package was installed from an unofficial mirror on systems that process regulated records.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "SR-4",
+  "family": "SR",
+  "ground_truth": {
+    "target_control": "SR-4",
+    "decision_basis": "An unverifiable and mismatched software component from an unofficial source is running in a sensitive production environment.",
+    "severity_policy": "R4 — The evidence shows a current/confirmed severe condition: active compromise or destructive activity; actual sensitive-data disclosure/loss; actual unauthorized privileged use; direct public/unencrypted exposure of sensitive data or credentials; an internet-facing known exploitable critical flaw without mitigation; or a confirmed integrity-bypassed/tampered production artifact."
+  },
+  "scenario_style": "supply_chain_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "severity_rule_id": "R4",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

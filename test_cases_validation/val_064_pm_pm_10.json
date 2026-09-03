@@ -1,0 +1,16 @@
+{
+  "id": "VAL-064",
+  "test_name": "Program Management PM-10 Evidence Review 064",
+  "architecture": "System: Records-Service-064\nEnvironment: Enterprise\nAssessment focus: PM-10 (Program Management).\nObserved evidence: The authorization process is documented, but two low-impact internal systems have been operating for 64 days beyond their authorization expiration while renewal packages are under review.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PM-10",
+  "family": "PM",
+  "ground_truth": {
+    "target_control": "PM-10",
+    "decision_basis": "Authorization governance exists but a subset of systems exceeded the approved period.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

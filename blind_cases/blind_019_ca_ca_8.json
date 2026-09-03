@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-019",
+  "family": "CA",
+  "control_ref": "CA-8",
+  "architecture": "System: CitizenPortal-Pentest\nAssessment focus: CA-8 (Penetration Testing)\n\nA penetration test demonstrated that a crafted unauthenticated request to the Internet-facing portal reaches an administrator-only API and returns protected case data. The test team reproduced the path after the initial report. The endpoint remains deployed while a code fix is being prepared, and no compensating network block is active."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-017",
+  "test_name": "Assessment, Authorization, and Monitoring CA-5 Evidence Review 017",
+  "architecture": "System: Payments-Gateway-017\nEnvironment: Azure\nAssessment focus: CA-5 (Assessment, Authorization, and Monitoring).\nObserved evidence: The POA&M contains open weaknesses, owners, planned remediation dates, and status. Three low-severity items are 18 to 31 days past their planned dates, with approved extensions recorded.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "CA-5",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-5",
+    "decision_basis": "POA&M exists and is managed, but planned remediation dates have slipped.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

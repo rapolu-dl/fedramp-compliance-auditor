@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-053",
+  "family": "PE",
+  "control_ref": "PE-2",
+  "architecture": "System: Facility-AccessAuthorizations\nAssessment focus: PE-2 (Physical Access Authorizations)\n\nA review found that 14 contractor badges still provide data-center access even though their most recent physical-access approval records cannot be located. The contractors are active, the facility remains guarded, and badge use is logged, but authorization evidence for those active badges is missing."
+}

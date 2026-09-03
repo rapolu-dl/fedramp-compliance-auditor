@@ -1,0 +1,16 @@
+{
+  "id": "VAL-010",
+  "test_name": "Awareness and Training AT-3 Evidence Review 010",
+  "architecture": "System: Ops-Console-010\nEnvironment: Azure\nAssessment focus: AT-3 (Awareness and Training).\nObserved evidence: A newly hired production administrator was granted global administrative privileges before completing required role-based security training. The account is active and has modified identity policies in production.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "AT-3",
+  "family": "AT",
+  "ground_truth": {
+    "target_control": "AT-3",
+    "decision_basis": "An untrained privileged administrator has active high-impact production authority.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "privileged_access",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

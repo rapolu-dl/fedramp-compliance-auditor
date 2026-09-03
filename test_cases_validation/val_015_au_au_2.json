@@ -1,0 +1,16 @@
+{
+  "id": "VAL-015",
+  "test_name": "Audit and Accountability AU-2 Evidence Review 015",
+  "architecture": "System: Audit-Lake-015\nEnvironment: Azure\nAssessment focus: AU-2 (Audit and Accountability).\nObserved evidence: Diagnostic logging is disabled on the production identity provider and the primary administrative activity log is not exported anywhere. Administrators can change authentication policy without a retained audit record.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "AU-2",
+  "family": "AU",
+  "ground_truth": {
+    "target_control": "AU-2",
+    "decision_basis": "High-impact administrative changes can occur without retained audit evidence.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

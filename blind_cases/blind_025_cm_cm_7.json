@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-025",
+  "family": "CM",
+  "control_ref": "CM-7",
+  "architecture": "System: SecureBuild-Hosts\nAssessment focus: CM-7 (Least Functionality)\n\nProduction build hosts use an approved minimal image. Interactive compilers, consumer browsers, peer-to-peer software, and unused network services are removed. Package allowlisting is enforced and the latest scan found no unauthorized services enabled."
+}

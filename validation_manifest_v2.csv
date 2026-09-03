@@ -1,0 +1,101 @@
+id,filename,family,control_ref,v1_expected_status,v1_expected_risk,v2_expected_status,v2_expected_risk,severity_rule_id,changed,adjudication_reason,scenario_style
+VAL-001,val_001_ac_ac_2.json,AC,AC-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-002,val_002_ac_ac_2.json,AC,AC-2,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-003,val_003_ac_ac_3.json,AC,AC-3,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,high_impact_exposure
+VAL-004,val_004_ac_ac_6.json,AC,AC-6,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-005,val_005_ac_ac_17.json,AC,AC-17,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-006,val_006_at_at_2.json,AT,AT-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-007,val_007_at_at_2.json,AT,AT-2,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-008,val_008_at_at_3.json,AT,AT-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-009,val_009_at_at_4.json,AT,AT-4,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-010,val_010_at_at_3.json,AT,AT-3,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"Required role-based training was bypassed for a production global administrator. This is a major privileged-governance failure, but the scenario does not show compromise, data disclosure, or unauthorized privileged misuse.",privileged_access
+VAL-011,val_011_au_au_2.json,AU,AU-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-012,val_012_au_au_3.json,AU,AU-3,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"Privileged actions cannot be reliably attributed and administrators can alter audit evidence. This materially defeats accountability, but no active compromise or confirmed destructive event is stated.",high_impact_audit_failure
+VAL-013,val_013_au_au_6.json,AU,AU-6,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-014,val_014_au_au_9.json,AU,AU-9,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-015,val_015_au_au_2.json,AU,AU-2,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"Identity-provider and administrative logging are absent, creating a major monitoring and accountability failure. The scenario does not state that compromise or data loss has already occurred.",high_impact_exposure
+VAL-016,val_016_ca_ca_2.json,CA,CA-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-017,val_017_ca_ca_5.json,CA,CA-5,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-018,val_018_ca_ca_7.json,CA,CA-7,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-019,val_019_ca_ca_9.json,CA,CA-9,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-020,val_020_ca_ca_2.json,CA,CA-2,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"Major security-relevant architecture changes have operated for an extended period without reassessment. This is a major authorization/assessment failure, but no active compromise is described.",high_impact_change
+VAL-021,val_021_cm_cm_2.json,CM,CM-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-022,val_022_cm_cm_3.json,CM,CM-3,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-023,val_023_cm_cm_6.json,CM,CM-6,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-024,val_024_cm_cm_8.json,CM,CM-8,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-025,val_025_cm_cm_6.json,CM,CM-6,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,high_impact_exposure
+VAL-026,val_026_cp_cp_2.json,CP,CP-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-027,val_027_cp_cp_4.json,CP,CP-4,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-028,val_028_cp_cp_9.json,CP,CP-9,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-029,val_029_cp_cp_10.json,CP,CP-10,PARTIALLY_COMPLIANT,MODERATE,NON_COMPLIANT,HIGH,R3,YES,"A known missing signing-key dependency prevents alternate-region reconstitution. The contingency capability is materially ineffective, so this is more than a bounded deficiency; no outage is currently occurring.",control_evidence
+VAL-030,val_030_cp_cp_9.json,CP,CP-9,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"Production backups have failed for 19 consecutive days and lack independent protection. This is a major recoverability failure, but the scenario does not state that a current outage or irreversible data loss is occurring.",availability_exposure
+VAL-031,val_031_ia_ia_2.json,IA,IA-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-032,val_032_ia_ia_5.json,IA,IA-5,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-033,val_033_ia_ia_3.json,IA,IA-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-034,val_034_ia_ia_8.json,IA,IA-8,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-035,val_035_ia_ia_2.json,IA,IA-2,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,A shared password-only global administrator credential with MFA disabled is a major privileged-access failure. The supplied evidence does not state that the credential was misused or externally exposed.,privileged_access
+VAL-036,val_036_ir_ir_3.json,IR,IR-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-037,val_037_ir_ir_4.json,IR,IR-4,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-038,val_038_ir_ir_5.json,IR,IR-5,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-039,val_039_ir_ir_6.json,IR,IR-6,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,active_incident
+VAL-040,val_040_ir_ir_4.json,IR,IR-4,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,active_incident
+VAL-041,val_041_ma_ma_2.json,MA,MA-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-042,val_042_ma_ma_3.json,MA,MA-3,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-043,val_043_ma_ma_4.json,MA,MA-4,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-044,val_044_ma_ma_5.json,MA,MA-5,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,privileged_access
+VAL-045,val_045_ma_ma_4.json,MA,MA-4,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,privileged_access
+VAL-046,val_046_mp_mp_2.json,MP,MP-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-047,val_047_mp_mp_4.json,MP,MP-4,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-048,val_048_mp_mp_5.json,MP,MP-5,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,data_exposure+adversarial_text
+VAL-049,val_049_mp_mp_6.json,MP,MP-6,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-050,val_050_mp_mp_6.json,MP,MP-6,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,data_exposure
+VAL-051,val_051_pe_pe_2.json,PE,PE-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-052,val_052_pe_pe_3.json,PE,PE-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-053,val_053_pe_pe_6.json,PE,PE-6,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-054,val_054_pe_pe_8.json,PE,PE-8,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-055,val_055_pe_pe_3.json,PE,PE-3,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,high_impact_exposure
+VAL-056,val_056_pl_pl_2.json,PL,PL-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-057,val_057_pl_pl_4.json,PL,PL-4,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-058,val_058_pl_pl_8.json,PL,PL-8,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-059,val_059_pl_pl_2.json,PL,PL-2,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-060,val_060_pl_pl_8.json,PL,PL-8,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,high_impact_exposure
+VAL-061,val_061_pm_pm_4.json,PM,PM-4,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-062,val_062_pm_pm_5.json,PM,PM-5,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"A sensitive production system is outside enterprise inventory and authorization tracking. This is a major governance failure, but no direct compromise or disclosure is stated.",high_impact_governance_failure
+VAL-063,val_063_pm_pm_9.json,PM,PM-9,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-064,val_064_pm_pm_10.json,PM,PM-10,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-065,val_065_pm_pm_5.json,PM,PM-5,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"An internet-facing sensitive production system lacks inventory, ownership, and authorization records. The governance failure is major, but the evidence does not identify a current exploit, breach, or exposed data path.",high_impact_exposure
+VAL-066,val_066_ps_ps_2.json,PS,PS-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-067,val_067_ps_ps_3.json,PS,PS-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-068,val_068_ps_ps_4.json,PS,PS-4,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-069,val_069_ps_ps_5.json,PS,PS-5,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-070,val_070_ps_ps_4.json,PS,PS-4,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,privileged_access
+VAL-071,val_071_pt_pt_2.json,PT,PT-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-072,val_072_pt_pt_3.json,PT,PT-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-073,val_073_pt_pt_4.json,PT,PT-4,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,privacy_exposure
+VAL-074,val_074_pt_pt_5.json,PT,PT-5,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-075,val_075_pt_pt_3.json,PT,PT-3,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,data_exposure
+VAL-076,val_076_ra_ra_2.json,RA,RA-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-077,val_077_ra_ra_3.json,RA,RA-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-078,val_078_ra_ra_5.json,RA,RA-5,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-079,val_079_ra_ra_7.json,RA,RA-7,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-080,val_080_ra_ra_5.json,RA,RA-5,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,high_impact_exposure
+VAL-081,val_081_sa_sa_3.json,SA,SA-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-082,val_082_sa_sa_4.json,SA,SA-4,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-083,val_083_sa_sa_5.json,SA,SA-5,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-084,val_084_sa_sa_3.json,SA,SA-3,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"A production service bypassed required threat-modeling and security-testing gates. This is a major SDLC control failure, but no active vulnerability exploitation or compromise is demonstrated.",high_impact_change
+VAL-085,val_085_sa_sa_4.json,SA,SA-4,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"Sensitive production data is provided to a supplier without required contractual security/privacy protections. The exposure potential is significant, but the scenario does not state that the supplier disclosed or misused the data.",supply_chain_exposure
+VAL-086,val_086_sc_sc_7.json,SC,SC-7,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-087,val_087_sc_sc_8.json,SC,SC-8,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-088,val_088_sc_sc_13.json,SC,SC-13,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-089,val_089_sc_sc_28.json,SC,SC-28,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,HIGH,R3,YES,"Sensitive production information is stored without the documented at-rest cryptographic protection. Access remains scoped to an analytics role and no disclosure is stated, so this is HIGH rather than CRITICAL.",data_exposure
+VAL-090,val_090_sc_sc_8.json,SC,SC-8,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,data_exposure
+VAL-091,val_091_si_si_2.json,SI,SI-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-092,val_092_si_si_3.json,SI,SI-3,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-093,val_093_si_si_4.json,SI,SI-4,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-094,val_094_si_si_7.json,SI,SI-7,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,software_integrity_exposure
+VAL-095,val_095_si_si_2.json,SI,SI-2,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,high_impact_exposure
+VAL-096,val_096_sr_sr_2.json,SR,SR-2,COMPLIANT,LOW,COMPLIANT,LOW,R1,NO,V1 label retained under the four-level severity rubric.,control_evidence+adversarial_text
+VAL-097,val_097_sr_sr_3.json,SR,SR-3,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-098,val_098_sr_sr_4.json,SR,SR-4,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,supply_chain_exposure
+VAL-099,val_099_sr_sr_6.json,SR,SR-6,PARTIALLY_COMPLIANT,MODERATE,PARTIALLY_COMPLIANT,MODERATE,R2,NO,V1 label retained under the four-level severity rubric.,control_evidence
+VAL-100,val_100_sr_sr_11.json,SR,SR-11,NON_COMPLIANT,CRITICAL,NON_COMPLIANT,CRITICAL,R4,NO,V1 label retained under the four-level severity rubric.,supply_chain_exposure+adversarial_text

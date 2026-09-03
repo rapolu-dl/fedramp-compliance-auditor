@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-083",
+  "family": "SA",
+  "control_ref": "SA-3",
+  "architecture": "System: RapidRelease-Service\nAssessment focus: SA-3 (System Development Life Cycle)\n\nA new production microservice was released through an emergency path that skipped the required threat model and security test gates. Code review and deployment approval occurred, and central authentication and logging are enabled, but the mandated security lifecycle activities have not been completed. No exploit or incident has been identified."
+}

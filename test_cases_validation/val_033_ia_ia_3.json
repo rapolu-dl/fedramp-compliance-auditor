@@ -1,0 +1,16 @@
+{
+  "id": "VAL-033",
+  "test_name": "Identification and Authentication IA-3 Evidence Review 033",
+  "architecture": "System: Identity-Core-033\nEnvironment: GCP\nAssessment focus: IA-3 (Identification and Authentication).\nObserved evidence: Production workloads authenticate to each other using short-lived workload certificates bound to registered service identities. Unregistered workloads are rejected by the service mesh.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "IA-3",
+  "family": "IA",
+  "ground_truth": {
+    "target_control": "IA-3",
+    "decision_basis": "Devices/workloads are identified and authenticated before connection.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

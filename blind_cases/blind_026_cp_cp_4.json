@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-026",
+  "family": "CP",
+  "control_ref": "CP-4",
+  "architecture": "System: ChildSupport-RecoveryExercise\nAssessment focus: CP-4 (Contingency Plan Testing)\n\nThe recovery team completed a scheduled exercise that restored the application, database, identity integration, and outbound notification path in the alternate region. Recovery objectives were met, exceptions were documented, and the two findings were retested after correction."
+}

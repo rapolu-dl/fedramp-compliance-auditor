@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-066",
+  "family": "PS",
+  "control_ref": "PS-3",
+  "architecture": "System: PersonnelScreening\nAssessment focus: PS-3 (Personnel Screening)\n\nPersonnel screening is completed before access to sensitive systems, with re-screening intervals based on position risk. The current privileged-user sample has completed screening records and no access was granted before the required determination."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-082",
+  "family": "SA",
+  "control_ref": "SA-5",
+  "architecture": "System: Platform-Documentation\nAssessment focus: SA-5 (System Documentation)\n\nAdministrator, operator, and recovery documentation is maintained in the controlled repository. The network troubleshooting section still references the previous monitoring dashboard after a tooling migration, but the current dashboard link is available in the operations runbook and control procedures are unchanged."
+}

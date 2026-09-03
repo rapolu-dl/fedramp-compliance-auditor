@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-077",
+  "family": "RA",
+  "control_ref": "RA-5",
+  "architecture": "System: VulnerabilityProgram\nAssessment focus: RA-5 (Vulnerability Monitoring and Scanning)\n\nAuthenticated scanning runs weekly across production and findings are tracked to closure. Six medium-severity findings are between 8 and 16 days beyond the internal remediation target. Internet-facing severe findings remain within target and no scanning coverage gap is present."
+}

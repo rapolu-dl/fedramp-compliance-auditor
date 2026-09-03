@@ -1,0 +1,16 @@
+{
+  "id": "VAL-061",
+  "test_name": "Program Management PM-4 Evidence Review 061",
+  "architecture": "System: Benefits-API-061\nEnvironment: Enterprise\nAssessment focus: PM-4 (Program Management).\nObserved evidence: The organization maintains a centralized POA&M process with severity, owner, target date, dependencies, and management review. Monthly governance minutes show active oversight.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PM-4",
+  "family": "PM",
+  "ground_truth": {
+    "target_control": "PM-4",
+    "decision_basis": "A managed organization-wide POA&M process is evidenced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

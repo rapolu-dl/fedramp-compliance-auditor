@@ -1,0 +1,22 @@
+{
+  "id": "VAL-065",
+  "test_name": "Program Management PM-5 Evidence Review 065",
+  "architecture": "System: Audit-Lake-065\nEnvironment: Enterprise\nAssessment focus: PM-5 (Program Management).\nObserved evidence: The organization discovered an internet-facing production application processing customer identifiers that is absent from the enterprise system inventory, has no named system owner, and has no recorded authorization status.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "PM-5",
+  "family": "PM",
+  "ground_truth": {
+    "target_control": "PM-5",
+    "decision_basis": "An ungoverned internet-facing production system processing sensitive data is outside inventory and authorization oversight.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "adjudication_change_reason": "An internet-facing sensitive production system lacks inventory, ownership, and authorization records. The governance failure is major, but the evidence does not identify a current exploit, breach, or exposed data path.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

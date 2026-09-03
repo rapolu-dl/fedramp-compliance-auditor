@@ -1,0 +1,22 @@
+{
+  "id": "VAL-031",
+  "test_name": "Identification and Authentication IA-2 Evidence Review 031",
+  "architecture": "System: Benefits-API-031\nEnvironment: AWS GovCloud\nAssessment focus: IA-2 (Identification and Authentication).\nObserved evidence: All workforce users authenticate through the enterprise identity provider. Privileged users require phishing-resistant hardware MFA and direct local-console passwords are disabled.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "IA-2",
+  "family": "IA",
+  "ground_truth": {
+    "target_control": "IA-2",
+    "decision_basis": "Organizational users, especially privileged users, have centrally enforced strong authentication.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

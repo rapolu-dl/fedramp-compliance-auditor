@@ -1,0 +1,22 @@
+{
+  "id": "VAL-058",
+  "test_name": "Planning PL-8 Evidence Review 058",
+  "architecture": "System: Mission-Workflow-058\nEnvironment: GCP\nAssessment focus: PL-8 (Planning).\nObserved evidence: The security architecture documents trust boundaries, identity flows, encryption boundaries, logging paths, and external dependencies and is aligned to the enterprise architecture.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PL-8",
+  "family": "PL",
+  "ground_truth": {
+    "target_control": "PL-8",
+    "decision_basis": "Security architecture and its relationship to the enterprise architecture are documented.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

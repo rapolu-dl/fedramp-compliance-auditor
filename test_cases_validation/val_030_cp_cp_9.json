@@ -1,0 +1,16 @@
+{
+  "id": "VAL-030",
+  "test_name": "Contingency Planning CP-9 Evidence Review 030",
+  "architecture": "System: Ops-Console-030\nEnvironment: AWS\nAssessment focus: CP-9 (Contingency Planning).\nObserved evidence: The only production database backup is stored in the same account and region as the database, has no separate retention lock, and has been failing for 19 consecutive days.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "CP-9",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-9",
+    "decision_basis": "The system currently lacks a dependable recoverable backup for production data.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "availability_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

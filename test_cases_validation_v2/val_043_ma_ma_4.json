@@ -1,0 +1,22 @@
+{
+  "id": "VAL-043",
+  "test_name": "Maintenance MA-4 Evidence Review 043",
+  "architecture": "System: Identity-Core-043\nEnvironment: GCP\nAssessment focus: MA-4 (Maintenance).\nObserved evidence: Remote maintenance sessions require a ticket, MFA, a managed jump host, session recording, and automatic termination after the approved window.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "MA-4",
+  "family": "MA",
+  "ground_truth": {
+    "target_control": "MA-4",
+    "decision_basis": "Nonlocal maintenance is strongly controlled and monitored.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

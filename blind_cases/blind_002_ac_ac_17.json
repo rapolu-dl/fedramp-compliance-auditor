@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-002",
+  "family": "AC",
+  "control_ref": "AC-17",
+  "architecture": "System: Grants-RemoteSupport\nAssessment focus: AC-17 (Remote Access)\n\nRemote support enters through a managed VPN using MFA and device certificates. Vendor sessions are restricted to a support subnet and cannot reach the production database. One vendor account that has not been used for 45 days remained enabled for 12 days beyond the documented removal window. Session recording and network restrictions remained active during that period."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "VAL-030",
+  "test_name": "Contingency Planning CP-9 Evidence Review 030",
+  "architecture": "System: Ops-Console-030\nEnvironment: AWS\nAssessment focus: CP-9 (Contingency Planning).\nObserved evidence: The only production database backup is stored in the same account and region as the database, has no separate retention lock, and has been failing for 19 consecutive days.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "CP-9",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-9",
+    "decision_basis": "The system currently lacks a dependable recoverable backup for production data.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "availability_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "adjudication_change_reason": "Production backups have failed for 19 consecutive days and lack independent protection. This is a major recoverability failure, but the scenario does not state that a current outage or irreversible data loss is occurring.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

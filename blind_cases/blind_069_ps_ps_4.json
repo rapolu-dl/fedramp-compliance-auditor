@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-069",
+  "family": "PS",
+  "control_ref": "PS-4",
+  "architecture": "System: Termination-Incident\nAssessment focus: PS-4 (Personnel Termination)\n\nA terminated administrator's account remained active after separation. Two hours after termination, that identity authenticated to production and deleted centralized audit-log retention policies. The sign-in and policy changes are confirmed in the control-plane event history."
+}

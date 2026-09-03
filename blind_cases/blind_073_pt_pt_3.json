@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-073",
+  "family": "PT",
+  "control_ref": "PT-3",
+  "architecture": "System: CaseAnalytics-Purpose\nAssessment focus: PT-3 (Personally Identifiable Information Processing Purposes)\n\nThe analytics platform processes sensitive case attributes in production, but the organization has not documented the approved processing purposes for several derived data sets or established a review that prevents new analytics uses from being added. Access is internal and role-restricted, and there is no evidence of external disclosure."
+}

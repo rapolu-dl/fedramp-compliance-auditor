@@ -1,0 +1,22 @@
+{
+  "id": "VAL-099",
+  "test_name": "Supply Chain Risk Management SR-6 Evidence Review 099",
+  "architecture": "System: Data-Exchange-099\nEnvironment: Enterprise\nAssessment focus: SR-6 (Supply Chain Risk Management).\nObserved evidence: Critical suppliers are assessed annually. One critical hosting supplier is 43 days overdue for reassessment, but current contractual controls, monitoring, and incident-notification requirements remain active.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "SR-6",
+  "family": "SR",
+  "ground_truth": {
+    "target_control": "SR-6",
+    "decision_basis": "Supplier assessment governance exists but one critical reassessment is overdue.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

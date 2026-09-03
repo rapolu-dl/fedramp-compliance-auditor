@@ -1,0 +1,22 @@
+{
+  "id": "VAL-070",
+  "test_name": "Personnel Security PS-4 Evidence Review 070",
+  "architecture": "System: Ops-Console-070\nEnvironment: Enterprise\nAssessment focus: PS-4 (Personnel Security).\nObserved evidence: A terminated cloud administrator account remained active for nine days after separation and was used after termination to create a new access key in the production account.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "PS-4",
+  "family": "PS",
+  "ground_truth": {
+    "target_control": "PS-4",
+    "decision_basis": "A terminated privileged identity remained usable and was exercised in production.",
+    "severity_policy": "R4 — The evidence shows a current/confirmed severe condition: active compromise or destructive activity; actual sensitive-data disclosure/loss; actual unauthorized privileged use; direct public/unencrypted exposure of sensitive data or credentials; an internet-facing known exploitable critical flaw without mitigation; or a confirmed integrity-bypassed/tampered production artifact."
+  },
+  "scenario_style": "privileged_access",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "severity_rule_id": "R4",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-058",
+  "test_name": "Planning PL-8 Evidence Review 058",
+  "architecture": "System: Mission-Workflow-058\nEnvironment: GCP\nAssessment focus: PL-8 (Planning).\nObserved evidence: The security architecture documents trust boundaries, identity flows, encryption boundaries, logging paths, and external dependencies and is aligned to the enterprise architecture.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PL-8",
+  "family": "PL",
+  "ground_truth": {
+    "target_control": "PL-8",
+    "decision_basis": "Security architecture and its relationship to the enterprise architecture are documented.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

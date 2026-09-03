@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-038",
+  "family": "IR",
+  "control_ref": "IR-6",
+  "architecture": "System: Regulatory-Notification\nAssessment focus: IR-6 (Incident Reporting)\n\nThe incident process defines internal escalation, but the production team has no tested method or current contact list for required external regulatory notification. No reportable incident is currently open. Security events are still logged and escalated internally."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "VAL-036",
+  "test_name": "Incident Response IR-3 Evidence Review 036",
+  "architecture": "System: Citizen-Portal-036\nEnvironment: AWS\nAssessment focus: IR-3 (Incident Response).\nObserved evidence: The incident response team conducted a ransomware tabletop and a technical failover exercise this quarter. Timing, participants, observations, and corrective actions are recorded.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "IR-3",
+  "family": "IR",
+  "ground_truth": {
+    "target_control": "IR-3",
+    "decision_basis": "Incident response capability is tested through documented exercises.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

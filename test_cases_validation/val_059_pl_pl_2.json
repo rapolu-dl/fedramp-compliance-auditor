@@ -1,0 +1,16 @@
+{
+  "id": "VAL-059",
+  "test_name": "Planning PL-2 Evidence Review 059",
+  "architecture": "System: Data-Exchange-059\nEnvironment: AWS\nAssessment focus: PL-2 (Planning).\nObserved evidence: The plan still describes a single-region deployment and legacy identity service, while production has operated multi-region with a different identity provider for nine months.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PL-2",
+  "family": "PL",
+  "ground_truth": {
+    "target_control": "PL-2",
+    "decision_basis": "The system plan materially lags the implemented architecture.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

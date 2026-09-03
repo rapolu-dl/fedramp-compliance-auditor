@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-032",
+  "family": "IA",
+  "control_ref": "IA-5",
+  "architecture": "System: DevTools-Authenticators\nAssessment focus: IA-5 (Authenticator Management)\n\nAuthenticator issuance, revocation, and rotation are centrally managed. One non-production service credential exceeded its 90-day rotation interval by seven days after an automation failure. The credential is limited to a synthetic-data environment and cannot access production. Rotation has been scheduled and monitoring remains active."
+}

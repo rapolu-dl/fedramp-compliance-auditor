@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-074",
+  "family": "PT",
+  "control_ref": "PT-4",
+  "architecture": "System: DisabilityBenefits-Consent\nAssessment focus: PT-4 (Consent)\n\nThe application asks applicants for optional disability and ethnicity information. The fields are collected before the consent screen is displayed, and the submitted values are sent with the applicant identifier to a third-party analytics service immediately after form submission. This behavior is confirmed in the production request trace."
+}

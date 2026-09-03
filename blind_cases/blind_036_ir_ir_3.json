@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-036",
+  "family": "IR",
+  "control_ref": "IR-3",
+  "architecture": "System: IncidentResponse-Exercises\nAssessment focus: IR-3 (Incident Response Testing)\n\nThe incident-response team conducts semiannual exercises covering cloud account compromise, data exfiltration, and service disruption. The latest exercise included technical containment actions, executive communications, evidence preservation, and after-action remediation tracking. Corrective actions from the prior exercise are closed."
+}

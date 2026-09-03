@@ -1,0 +1,22 @@
+{
+  "id": "VAL-062",
+  "test_name": "Program Management PM-5 Evidence Review 062",
+  "architecture": "System: Claims-Hub-062\nEnvironment: Enterprise\nAssessment focus: PM-5 (Program Management).\nObserved evidence: A production application processing customer identifiers has operated for four months without appearing in the enterprise system inventory. It has a system owner, but its authorization status and data classification have not been recorded.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "HIGH",
+  "control_ref": "PM-5",
+  "family": "PM",
+  "ground_truth": {
+    "target_control": "PM-5",
+    "decision_basis": "A sensitive production system is outside the enterprise inventory and authorization tracking process.",
+    "severity_policy": "R3 — A major control requirement is absent or materially ineffective in production, creating significant impact potential, but no confirmed active compromise, disclosure, destructive event, or immediate severe exposure is shown."
+  },
+  "scenario_style": "high_impact_governance_failure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "adjudication_change_reason": "A sensitive production system is outside enterprise inventory and authorization tracking. This is a major governance failure, but no direct compromise or disclosure is stated.",
+  "severity_rule_id": "R3",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

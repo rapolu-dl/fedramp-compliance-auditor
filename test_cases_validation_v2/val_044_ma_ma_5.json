@@ -1,0 +1,22 @@
+{
+  "id": "VAL-044",
+  "test_name": "Maintenance MA-5 Evidence Review 044",
+  "architecture": "System: Records-Service-044\nEnvironment: AWS\nAssessment focus: MA-5 (Maintenance).\nObserved evidence: A third-party technician whose authorization expired two months ago was given a shared production administrator credential to perform emergency maintenance. The session was not individually attributable.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "MA-5",
+  "family": "MA",
+  "ground_truth": {
+    "target_control": "MA-5",
+    "decision_basis": "Unauthorized maintenance personnel used shared privileged production credentials.",
+    "severity_policy": "R4 — The evidence shows a current/confirmed severe condition: active compromise or destructive activity; actual sensitive-data disclosure/loss; actual unauthorized privileged use; direct public/unencrypted exposure of sensitive data or credentials; an internet-facing known exploitable critical flaw without mitigation; or a confirmed integrity-bypassed/tampered production artifact."
+  },
+  "scenario_style": "privileged_access",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "severity_rule_id": "R4",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

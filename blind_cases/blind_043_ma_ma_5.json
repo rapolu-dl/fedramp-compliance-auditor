@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-043",
+  "family": "MA",
+  "control_ref": "MA-5",
+  "architecture": "System: VendorMaintenance-Personnel\nAssessment focus: MA-5 (Maintenance Personnel)\n\nAn approved vendor technician performs database maintenance using a shared production administrator credential supplied by the operations team. The work order and technician identity are known and the session is supervised, but the database action log records only the shared account and MFA is not required on that database credential. No unauthorized work is identified."
+}

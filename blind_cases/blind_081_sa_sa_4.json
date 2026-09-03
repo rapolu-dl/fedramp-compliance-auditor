@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-081",
+  "family": "SA",
+  "control_ref": "SA-4",
+  "architecture": "System: Procurement-SecurityTerms\nAssessment focus: SA-4 (Acquisition Process)\n\nThe contract for the managed database service includes security and privacy requirements, incident notification, vulnerability remediation, data-location restrictions, evidence access, subcontractor obligations, and service termination requirements. The security office approved the final terms before service activation."
+}

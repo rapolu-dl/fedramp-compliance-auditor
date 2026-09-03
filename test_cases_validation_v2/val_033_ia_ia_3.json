@@ -1,0 +1,22 @@
+{
+  "id": "VAL-033",
+  "test_name": "Identification and Authentication IA-3 Evidence Review 033",
+  "architecture": "System: Identity-Core-033\nEnvironment: GCP\nAssessment focus: IA-3 (Identification and Authentication).\nObserved evidence: Production workloads authenticate to each other using short-lived workload certificates bound to registered service identities. Unregistered workloads are rejected by the service mesh.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "IA-3",
+  "family": "IA",
+  "ground_truth": {
+    "target_control": "IA-3",
+    "decision_basis": "Devices/workloads are identified and authenticated before connection.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

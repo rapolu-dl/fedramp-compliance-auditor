@@ -1,0 +1,16 @@
+{
+  "id": "VAL-039",
+  "test_name": "Incident Response IR-6 Evidence Review 039",
+  "architecture": "System: Data-Exchange-039\nEnvironment: AWS GovCloud\nAssessment focus: IR-6 (Incident Response).\nObserved evidence: A confirmed incident involving unauthorized disclosure of regulated records met the organization's external-reporting threshold 72 hours ago. Internal responders documented the incident, but the required external notification has not been sent.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "IR-6",
+  "family": "IR",
+  "ground_truth": {
+    "target_control": "IR-6",
+    "decision_basis": "A confirmed high-impact incident has exceeded the required external reporting threshold without notification.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "active_incident",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

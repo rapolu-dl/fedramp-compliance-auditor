@@ -1,0 +1,16 @@
+{
+  "id": "VAL-020",
+  "test_name": "Assessment, Authorization, and Monitoring CA-2 Evidence Review 020",
+  "architecture": "System: Ops-Console-020\nEnvironment: Azure\nAssessment focus: CA-2 (Assessment, Authorization, and Monitoring).\nObserved evidence: The last formal control assessment occurred 31 months ago. Since then the system moved to a new identity provider and public API gateway, but no assessment or authorization review was performed after the architecture change.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "CA-2",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-2",
+    "decision_basis": "Major security-relevant architecture changes have operated for an extended period without reassessment.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_change",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-057",
+  "test_name": "Planning PL-4 Evidence Review 057",
+  "architecture": "System: Payments-Gateway-057\nEnvironment: Azure\nAssessment focus: PL-4 (Planning).\nObserved evidence: Users acknowledge rules of behavior before receiving access. The rules were updated after a remote-work policy change, but 8% of existing users have not acknowledged the revised version after 75 days.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PL-4",
+  "family": "PL",
+  "ground_truth": {
+    "target_control": "PL-4",
+    "decision_basis": "Rules exist but revised acknowledgement is incomplete.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

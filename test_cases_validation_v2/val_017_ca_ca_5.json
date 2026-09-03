@@ -1,0 +1,22 @@
+{
+  "id": "VAL-017",
+  "test_name": "Assessment, Authorization, and Monitoring CA-5 Evidence Review 017",
+  "architecture": "System: Payments-Gateway-017\nEnvironment: Azure\nAssessment focus: CA-5 (Assessment, Authorization, and Monitoring).\nObserved evidence: The POA&M contains open weaknesses, owners, planned remediation dates, and status. Three low-severity items are 18 to 31 days past their planned dates, with approved extensions recorded.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "CA-5",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-5",
+    "decision_basis": "POA&M exists and is managed, but planned remediation dates have slipped.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

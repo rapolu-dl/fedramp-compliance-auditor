@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-045",
+  "family": "MA",
+  "control_ref": "MA-2",
+  "architecture": "System: Infrastructure-MaintenanceRecords\nAssessment focus: MA-2 (Controlled Maintenance)\n\nMaintenance windows require owner approval and are recorded with technician identity, affected components, start/end times, and validation results. Sampling the last quarter found approved tickets for all production maintenance and no work outside approved windows."
+}

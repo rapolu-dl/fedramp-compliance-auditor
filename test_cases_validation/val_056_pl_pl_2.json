@@ -1,0 +1,16 @@
+{
+  "id": "VAL-056",
+  "test_name": "Planning PL-2 Evidence Review 056",
+  "architecture": "System: Citizen-Portal-056\nEnvironment: AWS GovCloud\nAssessment focus: PL-2 (Planning).\nObserved evidence: The system security and privacy plan documents system boundaries, information types, control responsibilities, interconnections, and the current architecture. It was approved after the last major release.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "PL-2",
+  "family": "PL",
+  "ground_truth": {
+    "target_control": "PL-2",
+    "decision_basis": "The system plan is current and covers core required planning elements.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

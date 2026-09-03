@@ -1,0 +1,301 @@
+id,control_ref,expected_status,actual_status,expected_risk,actual_risk,exact_match,latency_seconds,violated_controls,audit_findings
+VAL-001,AC-2,COMPLIANT,COMPLIANT,LOW,LOW,True,9.931,,"The identity service disables terminated employee accounts within 30 minutes of the HR termination event, requires separate approval for privileged accounts, and conducts monthly reviews of dormant accounts, with the last review completed 12 days ago. This demonstrates effective account management practices in line with AC-2 and AC-2.1.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-002,AC-2,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.669,AC-2,"Automated deprovisioning is active, and there is no evidence of unauthorized access or compromised accounts. However, the documented quarterly account review is overdue by 154 days, indicating a lapse in compliance with the review requirement.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-003,AC-3,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,9.4,AC-3,"The production database security group allows TCP 5432 from 0.0.0.0/0, indicating direct public exposure of a sensitive resource, which violates the access enforcement requirement of AC-3. While database authentication is enabled and data at rest is encrypted, the open network rule poses a significant security risk.
+
+Deterministic severity rule R4 was triggered by: direct public exposure of a sensitive production resource."
+VAL-004,AC-6,COMPLIANT,COMPLIANT,LOW,LOW,True,6.162,,"Production operators receive read-only access by default, and temporary elevation requires an approved ticket, expiring after 60 minutes. No standing project-owner assignments were found, supporting the principle of least privilege.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-005,AC-17,PARTIALLY_COMPLIANT,NON_COMPLIANT,MODERATE,CRITICAL,False,7.58,AC-17,"Remote administrative access is restricted to the corporate VPN and device-compliant endpoints. However, a legacy vendor support account uses password-only authentication, which is a weak authentication method. This account cannot reach production databases, which mitigates some risk, but the weak authentication is a concern.
+
+Deterministic severity rule R4 was triggered by: internet-exposed privileged interface with materially weak authentication."
+VAL-006,AT-2,COMPLIANT,COMPLIANT,LOW,LOW,True,5.937,,"Annual security awareness training is assigned to all workforce members with a 99.4% completion rate, and six new hires are within the 30-day completion window, indicating compliance with AT-2 requirements.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-007,AT-2,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.453,AT-2,"Security awareness training is required annually, but eleven active employees are 45 to 92 days overdue. Managers receive weekly reminders, and the training system records completion, indicating a bounded deficiency in compliance with the training requirement.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-008,AT-3,COMPLIANT,COMPLIANT,LOW,LOW,True,5.218,,"Administrators complete role-based cloud security training before being granted privileged access, covering incident escalation, key management, and privileged-access handling, with annual renewal. This supports compliance with AT-3 as the training is provided prior to access authorization and is updated regularly.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-009,AT-4,COMPLIANT,COMPLIANT,LOW,LOW,True,10.144,,"Training completion records for employees and contractors are retained for the required two-year period. Monthly reconciliation confirms current personnel records match the learning system, and prior-year records remain retrievable, supporting compliance with AT-4.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-010,AT-3,NON_COMPLIANT,NON_COMPLIANT,HIGH,CRITICAL,False,6.335,AT-3,"A newly hired production administrator was granted global administrative privileges before completing the required role-based security training, indicating unauthorized privileged use of the account.
+
+Deterministic severity rule R4 was triggered by: actual unauthorized privileged use."
+VAL-011,AU-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.206,,"The system has enabled logging for CloudTrail management events, identity events, object-level access for the regulated data bucket, and database authentication events, with central collection covering all production accounts. This supports the requirements of AU-2 for event logging.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-012,AU-3,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,7.87,AU-3,"The audit records for privileged administrative changes omit the initiating user identity for policy changes and database grants, which is a core requirement of AU-3. Additionally, administrators have the ability to edit these records, compromising the integrity of the audit logs.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-013,AU-6,PARTIALLY_COMPLIANT,NON_COMPLIANT,MODERATE,HIGH,False,6.643,AU-6,"Security logs are collected centrally, but the weekly review process has not run for five weeks due to a vacant analyst position, indicating a significant gap in the review and analysis of audit records as required by AU-6.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-014,AU-9,COMPLIANT,COMPLIANT,LOW,LOW,True,9.829,,"The central audit logs are stored in a dedicated account with restricted write access, read-only access for analysts, and object-lock retention enabled, which supports the requirements of AU-9 without any material deficiencies.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-015,AU-2,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,7.988,AU-2,"Diagnostic logging is disabled on the production identity provider, and the primary administrative activity log is not exported anywhere. Administrators can change authentication policy without a retained audit record, indicating a major deficiency in audit and accountability controls.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-016,CA-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.271,,"The latest security control assessment for Citizen-Portal-016 included sampling of access management, logging, encryption, incident response, and configuration management. Findings were documented with owners and retest dates, indicating that the assessment process is being followed as required by CA-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-017,CA-5,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.451,CA-5,"The POA&M contains open weaknesses, owners, planned remediation dates, and status. Three low-severity items are 18 to 31 days past their planned dates, with approved extensions recorded, indicating a bounded deficiency in the management of remediation timelines.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-018,CA-7,COMPLIANT,COMPLIANT,LOW,LOW,True,7.478,,"The system has established a continuous monitoring strategy with daily configuration findings, weekly vulnerability results, and monthly management reviews, which supports the requirements of CA-7. No deficiencies are noted in the provided evidence.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-019,CA-9,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.518,CA-9,"The internal analytics system connection is documented and approved, but the connection inventory has not been updated after a new service-to-service path was added last month. This indicates a bounded deficiency in maintaining up-to-date documentation for internal connections as required by CA-9.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-020,CA-2,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,7.541,CA-2,"The last formal control assessment occurred 31 months ago, and no assessment or authorization review was performed after significant architectural changes, indicating a major gap in the assessment and authorization process.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-021,CM-2,COMPLIANT,COMPLIANT,LOW,LOW,True,6.341,,"The approved production baseline is stored in version control, deployed infrastructure is built from the tagged baseline, and nightly drift detection reports no unauthorized differences, supporting compliance with CM-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-022,CM-3,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.85,CM-3,"Production changes require peer review and an approved change ticket, which supports the control. However, two emergency changes from last month lack the required retrospective approval, indicating a bounded deficiency in the change control process.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-023,CM-6,COMPLIANT,COMPLIANT,LOW,LOW,True,5.848,,"The system has hardened configuration parameters managed through policy-as-code, with the current production policy matching approved settings and requiring documented exceptions for deviations. This supports compliance with CM-6 as configuration settings are established and deviations are managed appropriately.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-024,CM-8,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.17,CM-8,"The component inventory includes compute, database, storage, and network resources, but twelve short-lived build workers are not captured, indicating a bounded deficiency in the completeness of the inventory as required by CM-8.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-025,CM-6,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,6.696,CM-6,"The production object store has public read access enabled due to a manually applied configuration change that is not represented in the approved baseline, exposing sensitive customer export files to unrestricted access.
+
+Deterministic severity rule R4 was triggered by: direct public exposure of a sensitive production resource."
+VAL-026,CP-2,COMPLIANT,COMPLIANT,LOW,LOW,True,6.207,,"The contingency plan defines recovery roles, contact methods, alternate processing steps, recovery priorities, and dependencies. The plan was reviewed after the most recent architecture change, supporting the requirements of CP-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-027,CP-4,COMPLIANT,COMPLIANT,LOW,LOW,True,6.654,,"A recovery exercise successfully restored the application and database in the alternate region within the stated objective. Exercise results, defects, and corrective actions are documented, supporting the effectiveness of the contingency plan.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-028,CP-9,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,5.939,CP-9,"Nightly database backups are completed successfully and are encrypted. However, the monthly restore test is 47 days overdue, indicating a deficiency in the testing schedule, although the previous six restore tests succeeded.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-029,CP-10,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,10.145,CP-10,"Recovery procedures are documented, but the primary application cannot currently start in the alternate region because a required signing key is not replicated there, indicating a major deficiency in recovery capability.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-030,CP-9,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,8.085,CP-9,"The only production database backup is stored in the same account and region as the database, lacks a separate retention lock, and has been failing for 19 consecutive days, indicating a significant deficiency in backup practices and recovery capability.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-031,IA-2,COMPLIANT,COMPLIANT,LOW,LOW,True,6.143,,"All workforce users authenticate through the enterprise identity provider, and privileged users are required to use phishing-resistant hardware MFA. Direct local-console passwords are disabled, supporting compliance with IA-2 and IA-2.1.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-032,IA-5,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.726,IA-5,"Secrets are rotated automatically every 90 days and revoked on owner termination, supporting compliance with IA-5. However, one non-production integration secret is 17 days past its rotation schedule, indicating a bounded deficiency.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-033,IA-3,COMPLIANT,COMPLIANT,LOW,LOW,True,5.788,,"Production workloads authenticate to each other using short-lived workload certificates bound to registered service identities, and unregistered workloads are rejected by the service mesh, affirmatively supporting the requirement for identification and authentication.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-034,IA-8,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.065,IA-8,"External support users authenticate through federated identities with MFA, supporting compliance with IA-8. However, two vendor accounts were found active 21 days post-contract expiration, indicating a bounded deficiency in account management practices.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-035,IA-2,NON_COMPLIANT,NON_COMPLIANT,HIGH,CRITICAL,False,7.407,IA-2|IA-2.1,"The emergency global-administrator account uses a shared password stored in the operations wiki, which violates the requirement for unique identification and authentication. Additionally, MFA is disabled for this account, which violates the requirement for multi-factor authentication for privileged accounts.
+
+Deterministic severity rule R4 was triggered by: internet-exposed privileged interface with materially weak authentication."
+VAL-036,IR-3,COMPLIANT,COMPLIANT,LOW,LOW,True,5.11,,"The incident response team conducted a ransomware tabletop and a technical failover exercise, with timing, participants, observations, and corrective actions recorded, demonstrating effective incident response testing as required by control IR-3.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-037,IR-4,COMPLIANT,COMPLIANT,LOW,LOW,True,6.53,,"The incident response procedure includes all necessary components: preparation, detection, analysis, containment, eradication, recovery, and post-incident review. A recent phishing incident was handled according to this procedure, and lessons learned were documented, indicating effective compliance with the control.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-038,IR-5,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,5.531,IR-5,"Incident tickets are tracked centrally, but severity changes are not consistently recorded; 14 of 73 reviewed tickets lack a timestamp for the severity transition, indicating a deficiency in the tracking and documentation of incidents as required by IR-5.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-039,IR-6,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,7.371,IR-6,"A confirmed incident involving unauthorized disclosure of regulated records occurred 72 hours ago, and while internal documentation was completed, the required external notification has not been sent, indicating a significant gap in compliance with the incident reporting requirements.
+
+Deterministic severity rule R4 was triggered by: confirmed sensitive-data disclosure or loss; active/confirmed high-impact incident with containment or required-notification failure."
+VAL-040,IR-4,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,7.27,IR-4,"Malware is actively encrypting files on a production server, and the alert has been open for six hours without any containment action initiated. The affected host remains connected to the production network, indicating a major deficiency in incident response capabilities.
+
+Deterministic severity rule R4 was triggered by: active compromise or destructive activity; active/confirmed high-impact incident with containment or required-notification failure."
+VAL-041,MA-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.608,,"Production maintenance requires an approved work order, scheduled window, named technician, and completion record. The last five maintenance events have complete authorization and closeout evidence, supporting compliance with MA-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-042,MA-3,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.829,MA-3,"Diagnostic tools used for production maintenance are approved and scanned before use. However, one approved tool is running a version that is 38 days behind the current security patch level, indicating a bounded deficiency in maintaining up-to-date tools.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-043,MA-4,COMPLIANT,COMPLIANT,LOW,LOW,True,6.487,,"The system requires a ticket for remote maintenance sessions, employs multi-factor authentication (MFA), utilizes a managed jump host, records sessions, and automatically terminates sessions after the approved window, which supports compliance with MA-4.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-044,MA-5,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,9.486,MA-5,"A third-party technician with an expired authorization was granted shared production administrator credentials for emergency maintenance, and the session was not individually attributable, indicating unauthorized privileged use and a failure to maintain proper authorization processes.
+
+Deterministic severity rule R4 was triggered by: actual unauthorized privileged use."
+VAL-045,MA-4,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,8.651,MA-4|MA-4.1,"The vendor performs remote maintenance on a production system through an internet-exposed RDP endpoint using a shared local administrator password. MFA and session recording are not enabled, indicating a significant deficiency in the control requirements for nonlocal maintenance and logging/review of maintenance activities.
+
+Deterministic severity rule R4 was triggered by: internet-exposed privileged interface with materially weak authentication."
+VAL-046,MP-2,COMPLIANT,COMPLIANT,LOW,LOW,True,5.687,,"Access to removable media containing regulated data is limited to an approved operations group. Access events are logged and quarterly membership review is current, supporting compliance with MP-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-047,MP-4,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.513,MP-4,"Archived encrypted media is stored in an access-controlled facility, which supports secure storage. However, the latest inventory found three labeled tapes whose storage location was not updated after a cabinet move, indicating a deficiency in inventory management and physical control.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-048,MP-5,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,7.723,MP-5,"A courier shipment containing an unencrypted removable drive with applicant records was lost in transit, confirming a loss of sensitive data. The shipment lacked cryptographic protection and a sealed chain-of-custody package, indicating a major deficiency in media transport controls.
+
+Deterministic severity rule R4 was triggered by: confirmed sensitive-data disclosure or loss."
+VAL-049,MP-6,COMPLIANT,COMPLIANT,LOW,LOW,True,5.529,,"Decommissioned solid-state drives are sanitized using an approved cryptographic erase procedure, and the sanitization record includes device ID, date, method, and verifier, which supports compliance with MP-6.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-050,MP-6,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,7.069,MP-6,"A retired storage device containing production customer records was sold without proper sanitization, with no sanitization record and an active encryption key at the time of disposal. This indicates a confirmed sensitive data disclosure or loss.
+
+Deterministic severity rule R4 was triggered by: confirmed sensitive-data disclosure or loss."
+VAL-051,PE-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.006,,"Datacenter access is granted only after manager and security approval. The authorization list is reviewed monthly, and terminated staff are removed automatically from badge access, supporting compliance with PE-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-052,PE-3,COMPLIANT,COMPLIANT,LOW,LOW,True,5.761,,"The server-room entry requires badge plus biometric verification, and door-forced-open alarms are monitored with access logs retained, which supports the enforcement of physical access authorizations as required by PE-3.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-053,PE-6,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.825,PE-6,"Camera and badge monitoring is operational, but one loading-dock camera has been offline for nine days. The dock requires staffed badge access and no server racks are directly accessible from it. This indicates a bounded deficiency in monitoring physical access as per PE-6.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-054,PE-8,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,5.187,PE-8,"Five visitor access records from last month are missing the sponsor field, indicating a deficiency in maintaining complete visitor access records as required by PE-8.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-055,PE-3,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,6.447,PE-3,"The side door to the production datacenter has a failed lock and can be opened without a badge, allowing uncontrolled access to the controlled equipment area. This defect has remained unaddressed for four days, indicating a significant security vulnerability.
+
+Deterministic severity rule R4 was triggered by: uncontrolled physical access to a sensitive production area."
+VAL-056,PL-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.488,,"The system security and privacy plan documents system boundaries, information types, control responsibilities, interconnections, and the current architecture, and it was approved after the last major release, supporting compliance with PL-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-057,PL-4,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.157,PL-4,"Users acknowledge rules of behavior before receiving access, but 8% of existing users have not acknowledged the revised version after 75 days, indicating a bounded deficiency in compliance with the requirement to ensure all users acknowledge updated rules.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-058,PL-8,COMPLIANT,COMPLIANT,LOW,LOW,True,6.56,,"The security architecture documents trust boundaries, identity flows, encryption boundaries, logging paths, and external dependencies, and is aligned to the enterprise architecture, which supports the requirements of PL-8.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-059,PL-2,PARTIALLY_COMPLIANT,NON_COMPLIANT,MODERATE,HIGH,False,9.722,PL-2,"The security and privacy plan for Data-Exchange-059 is outdated, describing a single-region deployment and a legacy identity service, while the production environment has been operating in a multi-region setup with a different identity provider for nine months. This indicates a significant misalignment with the current operational context and architecture, leading to a major deficiency in the planning control.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-060,PL-8,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,6.74,PL-8,"A new internet-facing payment path was deployed that bypasses the approved security architecture, sending authentication tokens directly to a legacy backend over HTTP, indicating a major deficiency in the security architecture and active plaintext transmission of sensitive data.
+
+Deterministic severity rule R4 was triggered by: active plaintext transmission of sensitive data or credentials."
+VAL-061,PM-4,COMPLIANT,COMPLIANT,LOW,LOW,True,7.804,,"The organization maintains a centralized POA&M process that includes severity, owner, target date, dependencies, and management review, along with monthly governance minutes showing active oversight, which supports compliance with PM-4.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-062,PM-5,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,7.109,PM-5,"The application has been operating for four months without being recorded in the enterprise system inventory, indicating a significant gap in compliance with the system inventory control (PM-5).
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-063,PM-9,COMPLIANT,COMPLIANT,LOW,LOW,True,10.833,,"The risk management strategy defines risk appetite, assessment methods, response options, roles, and reporting cadence, and it was reviewed this year by executive leadership, affirmatively supporting compliance with PM-9.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-064,PM-10,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.964,PM-10,"The authorization process is documented; however, two low-impact internal systems have been operating for 64 days beyond their authorization expiration while renewal packages are under review, indicating a bounded deficiency in the authorization process.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-065,PM-5,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,6.757,PM-5,"The organization discovered an internet-facing production application processing customer identifiers that is absent from the enterprise system inventory, has no named system owner, and has no recorded authorization status, indicating a major deficiency in the system inventory control.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-066,PS-2,COMPLIANT,COMPLIANT,LOW,LOW,True,8.501,,"Positions are assigned documented risk designations before recruitment, and privileged cloud administrator roles are designated high risk with enhanced screening requirements, supporting compliance with PS-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-067,PS-3,COMPLIANT,COMPLIANT,LOW,LOW,True,4.936,,"Required screening completed before personnel received production access. Re-screening is current for privileged staff and evidence is retained by HR security.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-068,PS-4,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.426,PS-4,"The termination workflow disables SSO and VPN access automatically, which supports the control. However, the physical badge removal for three remote employees took 6 to 11 days after termination, indicating a delay in retrieving security-related property, which is a bounded deficiency.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-069,PS-5,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,8.662,PS-5,"Transferred staff have access reviewed by both old and new managers, but one employee retained read access to a previous project repository for 23 days after transfer, indicating a deficiency in timely access modification.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-070,PS-4,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,8.134,PS-4,"A terminated cloud administrator account remained active for nine days after separation and was used to create a new access key in the production account, indicating unauthorized privileged use.
+
+Deterministic severity rule R4 was triggered by: actual unauthorized privileged use."
+VAL-071,PT-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.067,,"The privacy record identifies the statutory and program authority for each category of PII collected by the benefits application and links each data element to that authority, supporting compliance with PT-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-072,PT-3,COMPLIANT,COMPLIANT,LOW,LOW,True,6.953,,"The application documents the purpose for collecting identity, income, and household information and restricts the use of these fields for marketing or unrelated analytics, which supports compliance with PT-3.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-073,PT-4,NON_COMPLIANT,PARTIALLY_COMPLIANT,CRITICAL,MODERATE,False,5.573,PT-4,"The system collects demographic information before presenting consent choices, which may not fully align with the requirement for informed consent prior to PII processing. This indicates a bounded deficiency in the consent process.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-074,PT-5,PARTIALLY_COMPLIANT,NON_COMPLIANT,MODERATE,CRITICAL,False,11.026,PT-5,"The privacy notice describes categories of PII, uses, sharing, and contact information, but it has not been updated to include a new analytics processor added two months ago, indicating a failure to fully comply with the requirements of PT-5.
+
+Deterministic severity rule R4 was triggered by: actual sensitive-PII use/disclosure outside authorized purpose or effective consent."
+VAL-075,PT-3,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,8.702,PT-3,"A production analytics job copies applicant Social Security numbers into a marketing dataset, which is outside the documented purpose of eligibility determination. The copied values are retained indefinitely, indicating a confirmed sensitive data disclosure or loss.
+
+Deterministic severity rule R4 was triggered by: confirmed sensitive-data disclosure or loss."
+VAL-076,RA-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.886,,"The system is categorized using documented impact values for confidentiality, integrity, and availability. The categorization is approved and matches the types of information processed, supporting compliance with RA-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-077,RA-3,COMPLIANT,COMPLIANT,LOW,LOW,True,7.318,,"The annual risk assessment identifies threats, vulnerabilities, likelihood, impact, existing safeguards, and planned responses. It was updated after the identity architecture change, supporting compliance with RA-3.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-078,RA-5,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,13.777,RA-5,"Authenticated vulnerability scans are conducted weekly on production servers. There are two medium findings that are 12 days beyond the internal remediation target, but there is no known exploitation in the environment.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-079,RA-7,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,11.274,RA-7,"Risk owners have documented their risk responses, but four accepted low risks have approval records that expired last month and are awaiting renewal, indicating a bounded deficiency in maintaining current risk acceptance documentation.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-080,RA-5,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,7.37,RA-5,"The public web application is running a component with a known remotely exploitable critical vulnerability. A working exploit is available, the service is internet-facing, and no compensating control or remediation plan is in place.
+
+Deterministic severity rule R4 was triggered by: internet-facing known exploitable critical vulnerability without mitigation."
+VAL-081,SA-3,COMPLIANT,COMPLIANT,LOW,LOW,True,5.935,,"The development lifecycle for Benefits-API-081 includes defined security and privacy activities across all stages, with evidence showing that these activities are required by stage gates, thus supporting compliance with SA-3.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-082,SA-4,COMPLIANT,COMPLIANT,LOW,LOW,True,8.296,,"The cloud-service contracts specify encryption, incident notification, access control, vulnerability handling, data return, and deletion obligations. Security requirements are reviewed before award, supporting compliance with SA-4.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-083,SA-5,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,8.402,SA-5,"Current administrator and user documentation exists for the service, but the API security guide references an authentication flow that was retired four months ago, indicating a deficiency in the accuracy of the documentation.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-084,SA-3,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,6.854,SA-3,"The new production service was deployed without threat modeling or security testing, skipping required design and verification gates, indicating a significant deficiency in the system development life cycle process.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-085,SA-4,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,10.03,SA-4,"The third-party processor receives production customer data under a purchase order that lacks essential security, breach-notification, access-control, data-return, or deletion requirements, indicating a significant deficiency in the acquisition process.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-086,SC-7,COMPLIANT,COMPLIANT,LOW,LOW,True,10.984,,"The production subnets deny unsolicited inbound internet traffic, public access terminates at the approved gateway, databases use private endpoints, and egress is restricted by destination policy, supporting compliance with SC-7.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-087,SC-8,COMPLIANT,COMPLIANT,LOW,LOW,True,6.782,,"External and service-to-service connections carrying regulated data require TLS 1.3, certificate validation is enforced, and plaintext listeners are disabled, supporting the confidentiality and integrity of transmitted information as required by SC-8.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-088,SC-13,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,6.871,SC-13,"The system uses approved cryptographic libraries and managed keys for production data, which supports compliance with SC-13. However, there is one internal reporting job that still uses an older approved algorithm, which is scheduled for replacement next quarter, indicating a bounded deficiency.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-089,SC-28,NON_COMPLIANT,NON_COMPLIANT,HIGH,HIGH,True,8.777,SC-28,"The production export bucket containing customer identifiers has server-side encryption disabled, and object versions from the last 11 days are stored unencrypted at rest, indicating a significant deficiency in protecting sensitive information as required by SC-28.
+
+Deterministic severity rule R3 applies: the evidence shows a major control failure with significant impact potential, but no R4 active/direct severe condition was established."
+VAL-090,SC-8,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,6.334,SC-8,"Database credentials are transmitted in an HTTP header over an internal plaintext connection with TLS disabled, making the credentials readable in packet captures.
+
+Deterministic severity rule R4 was triggered by: active plaintext transmission of sensitive data or credentials."
+VAL-091,SI-2,COMPLIANT,COMPLIANT,LOW,LOW,True,6.743,,"Critical security patches are evaluated within 24 hours and deployed under the defined remediation SLA. The current fleet has no critical patches past due, supporting compliance with SI-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-092,SI-3,COMPLIANT,COMPLIANT,LOW,LOW,True,10.035,,"Endpoint malware protection is enabled on supported servers with real-time scanning and automatic signature updates, which supports the requirements of SI-3. The isolated build workers are excluded during image creation and destroyed after each build, further mitigating risks associated with malicious code.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-093,SI-4,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,9.01,SI-4,"The system has security monitoring in place, covering identity, network, workload, and data events. However, the on-call acknowledgment target was missed for three medium alerts last month, indicating a deficiency in the alert response process.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-094,SI-7,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,6.864,SI-7,"A production deployment artifact failed signature verification after its digest changed, and the modified binary was deployed despite this failure, indicating a major deficiency in integrity verification controls.
+
+Deterministic severity rule R4 was triggered by: integrity verification bypassed or tampered artifact running in production."
+VAL-095,SI-2,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,7.474,SI-2,"The internet-facing production server has a critical remote-code-execution patch that is 76 days overdue, with observed exploit activity for the vulnerability and no compensating network restrictions in place.
+
+Deterministic severity rule R4 was triggered by: internet-facing known exploitable critical vulnerability without mitigation."
+VAL-096,SR-2,COMPLIANT,COMPLIANT,LOW,LOW,True,7.164,,"The supply-chain risk management plan identifies critical suppliers, assessment cadence, responsible roles, reporting, incident escalation, and component provenance requirements. It was reviewed this year, supporting compliance with SR-2.
+
+Deterministic severity rule R1 applies: no material in-scope deficiency was established by the supplied evidence."
+VAL-097,SR-3,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.695,SR-3,"Supplier security requirements are included in procurement and tracked through onboarding. However, one low-impact SaaS supplier was found missing the newest questionnaire version, indicating a deficiency in the supply chain management process.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-098,SR-4,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,8.688,SR-4,"The production software package lacks verifiable source/build provenance, with a checksum differing from the approved vendor release and being installed from an unofficial mirror. This indicates a failure to maintain valid provenance as required by SR-4.
+
+Deterministic severity rule R4 was triggered by: integrity verification bypassed or tampered artifact running in production."
+VAL-099,SR-6,PARTIALLY_COMPLIANT,PARTIALLY_COMPLIANT,MODERATE,MODERATE,True,7.619,SR-6,"The organization conducts annual assessments of critical suppliers, but one critical hosting supplier is 43 days overdue for reassessment. Current contractual controls, monitoring, and incident-notification requirements remain active, indicating that while there is a deficiency, it is bounded and mitigated by existing controls.
+
+Deterministic severity rule R2 applies: the evidence shows a bounded deficiency or limited exception without an R4 active/direct severe condition."
+VAL-100,SR-11,NON_COMPLIANT,NON_COMPLIANT,CRITICAL,CRITICAL,True,8.976,SR-11,"The firmware image for the production network appliance failed the vendor signature check and was installed from an unverified mirror, indicating a major deficiency in the integrity verification process.
+
+Deterministic severity rule R4 was triggered by: integrity verification bypassed or tampered artifact running in production."

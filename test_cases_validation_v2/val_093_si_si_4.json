@@ -1,0 +1,22 @@
+{
+  "id": "VAL-093",
+  "test_name": "System and Information Integrity SI-4 Evidence Review 093",
+  "architecture": "System: Identity-Core-093\nEnvironment: GCP\nAssessment focus: SI-4 (System and Information Integrity).\nObserved evidence: Security monitoring covers identity, network, workload, and data events. Alert routing works, but the on-call acknowledgement target was missed for three medium alerts last month.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "SI-4",
+  "family": "SI",
+  "ground_truth": {
+    "target_control": "SI-4",
+    "decision_basis": "Monitoring is comprehensive but operational response timeliness has some misses.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

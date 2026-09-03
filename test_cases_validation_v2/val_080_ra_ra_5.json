@@ -1,0 +1,22 @@
+{
+  "id": "VAL-080",
+  "test_name": "Risk Assessment RA-5 Evidence Review 080",
+  "architecture": "System: Ops-Console-080\nEnvironment: AWS\nAssessment focus: RA-5 (Risk Assessment).\nObserved evidence: The public web application is running a component with a known remotely exploitable critical vulnerability. A working exploit is available, the service is internet-facing, and no compensating control or remediation plan is in place.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "RA-5",
+  "family": "RA",
+  "ground_truth": {
+    "target_control": "RA-5",
+    "decision_basis": "An internet-facing system has a known exploitable critical vulnerability without mitigation.",
+    "severity_policy": "R4 — The evidence shows a current/confirmed severe condition: active compromise or destructive activity; actual sensitive-data disclosure/loss; actual unauthorized privileged use; direct public/unencrypted exposure of sensitive data or credentials; an internet-facing known exploitable critical flaw without mitigation; or a confirmed integrity-bypassed/tampered production artifact."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "severity_rule_id": "R4",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

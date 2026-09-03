@@ -1,0 +1,16 @@
+{
+  "id": "VAL-098",
+  "test_name": "Supply Chain Risk Management SR-4 Evidence Review 098",
+  "architecture": "System: Mission-Workflow-098\nEnvironment: Enterprise\nAssessment focus: SR-4 (Supply Chain Risk Management).\nObserved evidence: A production software package has no verifiable source/build provenance. Its checksum differs from the approved vendor release, and the package was installed from an unofficial mirror on systems that process regulated records.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "SR-4",
+  "family": "SR",
+  "ground_truth": {
+    "target_control": "SR-4",
+    "decision_basis": "An unverifiable and mismatched software component from an unofficial source is running in a sensitive production environment.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "supply_chain_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

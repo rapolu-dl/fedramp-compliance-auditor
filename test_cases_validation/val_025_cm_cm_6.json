@@ -1,0 +1,16 @@
+{
+  "id": "VAL-025",
+  "test_name": "Configuration Management CM-6 Evidence Review 025",
+  "architecture": "System: Audit-Lake-025\nEnvironment: AWS\nAssessment focus: CM-6 (Configuration Management).\nObserved evidence: The production object store has public read access enabled by a manually applied configuration change that is not represented in the approved baseline. The bucket contains customer export files.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "CM-6",
+  "family": "CM",
+  "ground_truth": {
+    "target_control": "CM-6",
+    "decision_basis": "An unauthorized configuration exposes customer data publicly.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

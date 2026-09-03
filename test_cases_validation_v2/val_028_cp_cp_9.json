@@ -1,0 +1,22 @@
+{
+  "id": "VAL-028",
+  "test_name": "Contingency Planning CP-9 Evidence Review 028",
+  "architecture": "System: Mission-Workflow-028\nEnvironment: GCP\nAssessment focus: CP-9 (Contingency Planning).\nObserved evidence: Nightly database backups complete successfully and are encrypted. The monthly restore test is 47 days overdue, but the previous six restore tests succeeded.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "CP-9",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-9",
+    "decision_basis": "Backups exist and are protected, but restore testing is overdue.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

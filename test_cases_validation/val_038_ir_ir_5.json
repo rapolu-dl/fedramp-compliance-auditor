@@ -1,0 +1,16 @@
+{
+  "id": "VAL-038",
+  "test_name": "Incident Response IR-5 Evidence Review 038",
+  "architecture": "System: Mission-Workflow-038\nEnvironment: GCP\nAssessment focus: IR-5 (Incident Response).\nObserved evidence: Incident tickets are tracked centrally, but severity changes are not consistently recorded; 14 of 73 reviewed tickets lack a timestamp for the severity transition.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "IR-5",
+  "family": "IR",
+  "ground_truth": {
+    "target_control": "IR-5",
+    "decision_basis": "Incident tracking exists but monitoring records are incomplete.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

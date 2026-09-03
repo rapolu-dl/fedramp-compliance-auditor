@@ -1,0 +1,16 @@
+{
+  "id": "VAL-024",
+  "test_name": "Configuration Management CM-8 Evidence Review 024",
+  "architecture": "System: Records-Service-024\nEnvironment: AWS GovCloud\nAssessment focus: CM-8 (Configuration Management).\nObserved evidence: The component inventory lists compute, database, storage, and network resources. Twelve short-lived build workers are not captured in the inventory, although they are isolated from production data.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "CM-8",
+  "family": "CM",
+  "ground_truth": {
+    "target_control": "CM-8",
+    "decision_basis": "Inventory coverage is incomplete for ephemeral components with limited exposure.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

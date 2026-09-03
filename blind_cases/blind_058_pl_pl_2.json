@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-058",
+  "family": "PL",
+  "control_ref": "PL-2",
+  "architecture": "System: DataPlatform-Plan\nAssessment focus: PL-2 (System Security and Privacy Plans)\n\nThe authorization plan still describes the retired on-premises identity service and omits the cloud administrator boundary, production encryption design, and current external analytics connection. Those components have been in production for six months. Technical safeguards exist, but the approved plan is no longer a reliable description of the implemented system."
+}

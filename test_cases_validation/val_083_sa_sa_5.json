@@ -1,0 +1,16 @@
+{
+  "id": "VAL-083",
+  "test_name": "System and Services Acquisition SA-5 Evidence Review 083",
+  "architecture": "System: Identity-Core-083\nEnvironment: Enterprise\nAssessment focus: SA-5 (System and Services Acquisition).\nObserved evidence: Current administrator and user documentation exists for the service, but the API security guide still references an authentication flow retired four months ago.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "SA-5",
+  "family": "SA",
+  "ground_truth": {
+    "target_control": "SA-5",
+    "decision_basis": "System documentation exists but a security-relevant section is stale.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-073",
+  "test_name": "PII Processing and Transparency PT-4 Evidence Review 073",
+  "architecture": "System: Identity-Core-073\nEnvironment: Citizen Services\nAssessment focus: PT-4 (PII Processing and Transparency).\nObserved evidence: An optional demographic survey collects disability and ethnicity information before presenting any consent choice. The responses are then sent to a third-party analytics service and retained with the applicant identifier.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "PT-4",
+  "family": "PT",
+  "ground_truth": {
+    "target_control": "PT-4",
+    "decision_basis": "Sensitive optional PII is collected and disclosed before an effective consent mechanism is presented.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "privacy_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

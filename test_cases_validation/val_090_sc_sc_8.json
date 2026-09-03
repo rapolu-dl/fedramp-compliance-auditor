@@ -1,0 +1,16 @@
+{
+  "id": "VAL-090",
+  "test_name": "System and Communications Protection SC-8 Evidence Review 090",
+  "architecture": "System: Ops-Console-090\nEnvironment: Azure\nAssessment focus: SC-8 (System and Communications Protection).\nObserved evidence: A production integration transmits database credentials in an HTTP header over an internal plaintext connection. TLS is disabled on both endpoints and packet capture confirms the credential is readable.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "SC-8",
+  "family": "SC",
+  "ground_truth": {
+    "target_control": "SC-8",
+    "decision_basis": "Production authentication secrets are transmitted in plaintext.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "data_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

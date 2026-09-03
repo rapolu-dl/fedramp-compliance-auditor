@@ -1,0 +1,22 @@
+{
+  "id": "VAL-021",
+  "test_name": "Configuration Management CM-2 Evidence Review 021",
+  "architecture": "System: Benefits-API-021\nEnvironment: AWS\nAssessment focus: CM-2 (Configuration Management).\nObserved evidence: The approved production baseline is stored in version control. Deployed infrastructure is built from the tagged baseline, and nightly drift detection reports no unauthorized differences.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CM-2",
+  "family": "CM",
+  "ground_truth": {
+    "target_control": "CM-2",
+    "decision_basis": "A maintained baseline and drift monitoring are evidenced.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

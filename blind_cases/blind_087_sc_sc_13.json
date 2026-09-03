@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-087",
+  "family": "SC",
+  "control_ref": "SC-13",
+  "architecture": "System: CryptoTransition\nAssessment focus: SC-13 (Cryptographic Protection)\n\nThe environment uses approved cryptographic libraries for production data. One isolated internal legacy service still uses an older approved algorithm while a replacement is tested. The service handles operational metadata only, cannot receive customer records, and is reachable only from its application subnet."
+}

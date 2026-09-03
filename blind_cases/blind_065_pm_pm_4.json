@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-065",
+  "family": "PM",
+  "control_ref": "PM-4",
+  "architecture": "System: Enterprise-POAM\nAssessment focus: PM-4 (Plan of Action and Milestones Process)\n\nThe organization maintains a centralized POA&M process with risk descriptions, owners, milestones, dependencies, approval history, and closure evidence. Monthly governance meetings review aging items and the sample reviewed contained no unowned or untracked findings."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-076",
+  "test_name": "Risk Assessment RA-2 Evidence Review 076",
+  "architecture": "System: Citizen-Portal-076\nEnvironment: AWS GovCloud\nAssessment focus: RA-2 (Risk Assessment).\nObserved evidence: The system is categorized using documented impact values for confidentiality, integrity, and availability. The categorization is approved and matches the types of information processed.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "RA-2",
+  "family": "RA",
+  "ground_truth": {
+    "target_control": "RA-2",
+    "decision_basis": "Security categorization is documented and approved.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

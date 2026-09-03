@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-089",
+  "family": "SC",
+  "control_ref": "SC-8",
+  "architecture": "System: SessionRelay\nAssessment focus: SC-8 (Transmission Confidentiality and Integrity)\n\nThe production web tier sends live bearer session tokens to an external troubleshooting collector using HTTP. Network traces show the Authorization header in plaintext on the outbound connection. The collector is outside the organization's private network and the route is active."
+}

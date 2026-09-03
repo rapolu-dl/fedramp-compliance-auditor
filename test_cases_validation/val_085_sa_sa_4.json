@@ -1,0 +1,16 @@
+{
+  "id": "VAL-085",
+  "test_name": "System and Services Acquisition SA-4 Evidence Review 085",
+  "architecture": "System: Audit-Lake-085\nEnvironment: Enterprise\nAssessment focus: SA-4 (System and Services Acquisition).\nObserved evidence: A third-party processor receives production customer data under a purchase order that contains no security, breach-notification, access-control, data-return, or deletion requirements.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "SA-4",
+  "family": "SA",
+  "ground_truth": {
+    "target_control": "SA-4",
+    "decision_basis": "Sensitive production data is provided to a supplier without defined security/privacy contractual requirements.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "supply_chain_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

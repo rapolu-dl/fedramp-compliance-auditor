@@ -1,0 +1,22 @@
+{
+  "id": "VAL-074",
+  "test_name": "PII Processing and Transparency PT-5 Evidence Review 074",
+  "architecture": "System: Records-Service-074\nEnvironment: Citizen Services\nAssessment focus: PT-5 (PII Processing and Transparency).\nObserved evidence: The privacy notice describes categories of PII, uses, sharing, and contact information, but the published notice has not been updated to mention a new analytics processor added two months ago.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PT-5",
+  "family": "PT",
+  "ground_truth": {
+    "target_control": "PT-5",
+    "decision_basis": "Privacy notice exists but is stale regarding a new processor.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

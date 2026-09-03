@@ -1,0 +1,16 @@
+{
+  "id": "VAL-034",
+  "test_name": "Identification and Authentication IA-8 Evidence Review 034",
+  "architecture": "System: Records-Service-034\nEnvironment: AWS\nAssessment focus: IA-8 (Identification and Authentication).\nObserved evidence: External support users authenticate through federated identities with MFA. Quarterly review found two vendor accounts that remained active 21 days after their contracts ended; both are restricted to a support portal.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "IA-8",
+  "family": "IA",
+  "ground_truth": {
+    "target_control": "IA-8",
+    "decision_basis": "Non-organizational authentication exists but account lifecycle cleanup is late.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

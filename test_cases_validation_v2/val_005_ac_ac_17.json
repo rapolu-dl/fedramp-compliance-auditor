@@ -1,0 +1,22 @@
+{
+  "id": "VAL-005",
+  "test_name": "Access Control AC-17 Evidence Review 005",
+  "architecture": "System: Audit-Lake-005\nEnvironment: Azure\nAssessment focus: AC-17 (Access Control).\nObserved evidence: Remote administrative access is restricted to the corporate VPN and device-compliant endpoints, but one legacy vendor support account still uses password-only authentication. The account cannot reach production databases.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "AC-17",
+  "family": "AC",
+  "ground_truth": {
+    "target_control": "AC-17",
+    "decision_basis": "Remote access has a defined restriction but a legacy authentication weakness remains without direct production reach.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

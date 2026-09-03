@@ -1,0 +1,16 @@
+{
+  "id": "VAL-075",
+  "test_name": "PII Processing and Transparency PT-3 Evidence Review 075",
+  "architecture": "System: Audit-Lake-075\nEnvironment: Citizen Services\nAssessment focus: PT-3 (PII Processing and Transparency).\nObserved evidence: A production analytics job copies applicant Social Security numbers into a marketing dataset even though the documented collection purpose is eligibility determination. The copied values are retained indefinitely.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "PT-3",
+  "family": "PT",
+  "ground_truth": {
+    "target_control": "PT-3",
+    "decision_basis": "Sensitive PII is used for an unrelated purpose and retained outside the documented processing purpose.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "data_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

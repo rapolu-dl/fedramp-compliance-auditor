@@ -1,0 +1,16 @@
+{
+  "id": "VAL-086",
+  "test_name": "System and Communications Protection SC-7 Evidence Review 086",
+  "architecture": "System: Citizen-Portal-086\nEnvironment: AWS GovCloud\nAssessment focus: SC-7 (System and Communications Protection).\nObserved evidence: Production subnets deny unsolicited inbound internet traffic. Public access terminates at the approved gateway, databases use private endpoints, and egress is restricted by destination policy.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "SC-7",
+  "family": "SC",
+  "ground_truth": {
+    "target_control": "SC-7",
+    "decision_basis": "Network boundaries and ingress/egress paths are controlled.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

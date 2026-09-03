@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-092",
+  "family": "SI",
+  "control_ref": "SI-4",
+  "architecture": "System: SecurityMonitoring\nAssessment focus: SI-4 (System Monitoring)\n\nEndpoint, identity, network, and application telemetry feed the central monitoring platform. A staffing shortage caused response to several low-severity anomaly alerts to exceed the internal triage target by up to one day. High-severity alerts continue to page immediately and monitoring coverage is unchanged."
+}

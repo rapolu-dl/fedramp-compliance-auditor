@@ -1,0 +1,31 @@
+{
+  "benchmark": "FedRAMP/NIST Final Blind Candidate 100",
+  "blind_protocol": "Expected labels withheld from cases and runner.",
+  "started_utc": "2026-09-02T12:19:25.288906+00:00",
+  "ended_utc": "2026-09-02T12:32:14.808385+00:00",
+  "case_count": 100,
+  "model_name": "gpt-4o-mini",
+  "severity_policy_version": "V2_FOUR_LEVEL_2026-09-02",
+  "python_version": "3.11.7",
+  "agent_sha256": "8c531e4c84f952ee5d5e7d1eff3a82e249c975e9f8654f00e435241099cc288a",
+  "catalog_file": "nist_full_catalog.json",
+  "catalog_sha256": "116687127de6f49904e2e142a81cc7b08e017520c5bb9cf71b2df6e788de5f5c",
+  "catalog_metadata_file": "nist_catalog_metadata.json",
+  "catalog_metadata_sha256": "f7fdc74ba601a4dea792b52fcad0a56e22168c8ad0a243f43e866553e47c3e7c",
+  "average_latency_seconds": 7.69512665414717,
+  "median_latency_seconds": 7.431712458375841,
+  "p95_latency_seconds": 10.127828089147805,
+  "max_latency_seconds": 14.28979237517342,
+  "actual_status_distribution": {
+    "COMPLIANT": 26,
+    "PARTIALLY_COMPLIANT": 25,
+    "NON_COMPLIANT": 49
+  },
+  "actual_risk_distribution": {
+    "LOW": 26,
+    "MODERATE": 25,
+    "HIGH": 18,
+    "CRITICAL": 31
+  },
+  "output_csv": "final_blind_run1.csv"
+}

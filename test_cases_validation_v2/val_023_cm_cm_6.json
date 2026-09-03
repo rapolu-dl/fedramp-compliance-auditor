@@ -1,0 +1,22 @@
+{
+  "id": "VAL-023",
+  "test_name": "Configuration Management CM-6 Evidence Review 023",
+  "architecture": "System: Identity-Core-023\nEnvironment: GCP\nAssessment focus: CM-6 (Configuration Management).\nObserved evidence: Hardened configuration parameters are managed through policy-as-code. The current production policy matches the approved settings and deviations require documented exceptions.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CM-6",
+  "family": "CM",
+  "ground_truth": {
+    "target_control": "CM-6",
+    "decision_basis": "Security configuration settings are centrally defined and enforced.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

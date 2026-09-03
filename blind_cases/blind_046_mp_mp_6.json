@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-046",
+  "family": "MP",
+  "control_ref": "MP-6",
+  "architecture": "System: StorageMedia-Disposal\nAssessment focus: MP-6 (Media Sanitization)\n\nRetired storage devices are sanitized using the approved method, the sanitization result is verified, and the asset record is updated before the device leaves the secure area. The latest disposal batch includes device identifiers, operator signatures, verification results, and destruction-chain records."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-093",
+  "family": "SI",
+  "control_ref": "SI-7",
+  "architecture": "System: ReleaseIntegrity\nAssessment focus: SI-7 (Software, Firmware, and Information Integrity)\n\nThe build pipeline records artifact hashes, but release signatures are not verified automatically before deployment. Operations currently performs a manual comparison to the approved release record before promoting production builds. No mismatch or unauthorized artifact has been found, but the required automated integrity gate is absent."
+}

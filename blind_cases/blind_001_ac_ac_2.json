@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-001",
+  "family": "AC",
+  "control_ref": "AC-2",
+  "architecture": "System: CitizenBenefits-Identity\nAssessment focus: AC-2 (Account Management)\n\nHuman resources events are synchronized to the identity platform every fifteen minutes. New accounts require manager and system-owner approval. Terminated users are disabled automatically, privileged assignments expire unless renewed, and the most recent quarterly account review reconciled all active identities to the workforce roster. No orphaned privileged accounts were found in the review evidence."
+}

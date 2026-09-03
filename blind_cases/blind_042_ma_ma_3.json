@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-042",
+  "family": "MA",
+  "control_ref": "MA-3",
+  "architecture": "System: MaintenanceTools-Enclave\nAssessment focus: MA-3 (Maintenance Tools)\n\nMaintenance utilities are stored in a controlled enclave and scanned before use. One approved diagnostic package is 21 days behind its vendor security update because the new version is incompatible with a test appliance. The tool can operate only from the maintenance enclave and cannot initiate Internet connections."
+}

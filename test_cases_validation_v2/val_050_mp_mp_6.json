@@ -1,0 +1,22 @@
+{
+  "id": "VAL-050",
+  "test_name": "Media Protection MP-6 Evidence Review 050",
+  "architecture": "System: Ops-Console-050\nEnvironment: AWS\nAssessment focus: MP-6 (Media Protection).\nObserved evidence: A retired storage device that contained production customer records was sold through an equipment recycler. There is no sanitization record and the device encryption key was still active at disposal time.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "MP-6",
+  "family": "MP",
+  "ground_truth": {
+    "target_control": "MP-6",
+    "decision_basis": "Sensitive media left organizational control without verified sanitization.",
+    "severity_policy": "R4 — The evidence shows a current/confirmed severe condition: active compromise or destructive activity; actual sensitive-data disclosure/loss; actual unauthorized privileged use; direct public/unencrypted exposure of sensitive data or credentials; an internet-facing known exploitable critical flaw without mitigation; or a confirmed integrity-bypassed/tampered production artifact."
+  },
+  "scenario_style": "data_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "NON_COMPLIANT",
+  "original_expected_risk_v1": "CRITICAL",
+  "severity_rule_id": "R4",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

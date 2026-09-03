@@ -1,0 +1,16 @@
+{
+  "id": "VAL-029",
+  "test_name": "Contingency Planning CP-10 Evidence Review 029",
+  "architecture": "System: Data-Exchange-029\nEnvironment: AWS GovCloud\nAssessment focus: CP-10 (Contingency Planning).\nObserved evidence: Recovery procedures are documented, but the primary application cannot currently start in the alternate region because a required signing key is not replicated there.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "CP-10",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-10",
+    "decision_basis": "Recovery documentation exists but a known dependency prevents full reconstitution.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

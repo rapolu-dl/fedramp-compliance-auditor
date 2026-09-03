@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-068",
+  "family": "PS",
+  "control_ref": "PS-4",
+  "architecture": "System: Termination-Identity\nAssessment focus: PS-4 (Personnel Termination)\n\nA terminated platform engineer's individually assigned production administrator account remained enabled for 24 hours after the termination timestamp because the HR feed failed. The administration interface is private and MFA remains required. Log review found no sign-in by that identity after termination."
+}

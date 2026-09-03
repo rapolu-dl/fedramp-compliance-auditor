@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-035",
+  "family": "IA",
+  "control_ref": "IA-8",
+  "architecture": "System: Partner-CaseAccess\nAssessment focus: IA-8 (Identification and Authentication of Non-Organizational Users)\n\nThree external partner organizations access a sensitive case-management application through one shared federation identity per organization. The partners are approved and network access is restricted, but the application cannot distinguish which individual partner employee performed an action. No misuse has been reported."
+}

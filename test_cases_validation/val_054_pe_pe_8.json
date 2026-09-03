@@ -1,0 +1,16 @@
+{
+  "id": "VAL-054",
+  "test_name": "Physical and Environmental Protection PE-8 Evidence Review 054",
+  "architecture": "System: Records-Service-054\nEnvironment: Private Data Center\nAssessment focus: PE-8 (Physical and Environmental Protection).\nObserved evidence: Visitor access records include identity, sponsor, entry, and exit time. Five records from last month are missing the sponsor field, although visitor badges and escorts were recorded.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PE-8",
+  "family": "PE",
+  "ground_truth": {
+    "target_control": "PE-8",
+    "decision_basis": "Visitor records exist but required record fields are incomplete.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

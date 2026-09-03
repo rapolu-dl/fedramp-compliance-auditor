@@ -1,0 +1,22 @@
+{
+  "id": "VAL-016",
+  "test_name": "Assessment, Authorization, and Monitoring CA-2 Evidence Review 016",
+  "architecture": "System: Citizen-Portal-016\nEnvironment: AWS GovCloud\nAssessment focus: CA-2 (Assessment, Authorization, and Monitoring).\nObserved evidence: The latest security control assessment sampled access management, logging, encryption, incident response, and configuration management. Findings were documented with owners and retest dates.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CA-2",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-2",
+    "decision_basis": "A documented control assessment with findings and retest tracking is evidenced.",
+    "severity_policy": "R1 — No material in-scope deficiency. The supplied evidence affirmatively supports the target requirement."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "COMPLIANT",
+  "original_expected_risk_v1": "LOW",
+  "severity_rule_id": "R1",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

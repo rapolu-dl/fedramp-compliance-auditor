@@ -1,0 +1,22 @@
+{
+  "id": "VAL-038",
+  "test_name": "Incident Response IR-5 Evidence Review 038",
+  "architecture": "System: Mission-Workflow-038\nEnvironment: GCP\nAssessment focus: IR-5 (Incident Response).\nObserved evidence: Incident tickets are tracked centrally, but severity changes are not consistently recorded; 14 of 73 reviewed tickets lack a timestamp for the severity transition.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "IR-5",
+  "family": "IR",
+  "ground_truth": {
+    "target_control": "IR-5",
+    "decision_basis": "Incident tracking exists but monitoring records are incomplete.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VAL-080",
+  "test_name": "Risk Assessment RA-5 Evidence Review 080",
+  "architecture": "System: Ops-Console-080\nEnvironment: AWS\nAssessment focus: RA-5 (Risk Assessment).\nObserved evidence: The public web application is running a component with a known remotely exploitable critical vulnerability. A working exploit is available, the service is internet-facing, and no compensating control or remediation plan is in place.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "RA-5",
+  "family": "RA",
+  "ground_truth": {
+    "target_control": "RA-5",
+    "decision_basis": "An internet-facing system has a known exploitable critical vulnerability without mitigation.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

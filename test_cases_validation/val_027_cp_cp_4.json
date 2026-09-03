@@ -1,0 +1,16 @@
+{
+  "id": "VAL-027",
+  "test_name": "Contingency Planning CP-4 Evidence Review 027",
+  "architecture": "System: Payments-Gateway-027\nEnvironment: AWS\nAssessment focus: CP-4 (Contingency Planning).\nObserved evidence: A recovery exercise restored the application and database in the alternate region within the stated objective. Exercise results, defects, and corrective actions are documented.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CP-4",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-4",
+    "decision_basis": "Contingency capability was exercised and results were documented.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

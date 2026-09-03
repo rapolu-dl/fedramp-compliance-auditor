@@ -1,0 +1,16 @@
+{
+  "id": "VAL-002",
+  "test_name": "Access Control AC-2 Evidence Review 002",
+  "architecture": "System: Claims-Hub-002\nEnvironment: Azure\nAssessment focus: AC-2 (Access Control).\nObserved evidence: Automated deprovisioning is active, but the documented quarterly account review was last completed 154 days ago. There is no evidence of unauthorized access and privileged MFA remains enabled.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "AC-2",
+  "family": "AC",
+  "ground_truth": {
+    "target_control": "AC-2",
+    "decision_basis": "Account review is overdue while core account disablement and privileged authentication remain in place.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

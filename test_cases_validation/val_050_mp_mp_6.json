@@ -1,0 +1,16 @@
+{
+  "id": "VAL-050",
+  "test_name": "Media Protection MP-6 Evidence Review 050",
+  "architecture": "System: Ops-Console-050\nEnvironment: AWS\nAssessment focus: MP-6 (Media Protection).\nObserved evidence: A retired storage device that contained production customer records was sold through an equipment recycler. There is no sanitization record and the device encryption key was still active at disposal time.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "MP-6",
+  "family": "MP",
+  "ground_truth": {
+    "target_control": "MP-6",
+    "decision_basis": "Sensitive media left organizational control without verified sanitization.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "data_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

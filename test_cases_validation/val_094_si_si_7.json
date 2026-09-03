@@ -1,0 +1,16 @@
+{
+  "id": "VAL-094",
+  "test_name": "System and Information Integrity SI-7 Evidence Review 094",
+  "architecture": "System: Records-Service-094\nEnvironment: AWS GovCloud\nAssessment focus: SI-7 (System and Information Integrity).\nObserved evidence: A production deployment artifact failed signature verification after its digest changed in the artifact repository. The release pipeline override was used to deploy it anyway, and the modified binary is now running in production.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "SI-7",
+  "family": "SI",
+  "ground_truth": {
+    "target_control": "SI-7",
+    "decision_basis": "A failed integrity check was bypassed and a modified artifact was deployed to production.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "software_integrity_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

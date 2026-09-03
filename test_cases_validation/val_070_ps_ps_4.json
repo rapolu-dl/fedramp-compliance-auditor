@@ -1,0 +1,16 @@
+{
+  "id": "VAL-070",
+  "test_name": "Personnel Security PS-4 Evidence Review 070",
+  "architecture": "System: Ops-Console-070\nEnvironment: Enterprise\nAssessment focus: PS-4 (Personnel Security).\nObserved evidence: A terminated cloud administrator account remained active for nine days after separation and was used after termination to create a new access key in the production account.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "PS-4",
+  "family": "PS",
+  "ground_truth": {
+    "target_control": "PS-4",
+    "decision_basis": "A terminated privileged identity remained usable and was exercised in production.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "privileged_access",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

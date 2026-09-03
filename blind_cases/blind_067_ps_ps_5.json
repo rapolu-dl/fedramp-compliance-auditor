@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-067",
+  "family": "PS",
+  "control_ref": "PS-5",
+  "architecture": "System: EmployeeTransfer-Access\nAssessment focus: PS-5 (Personnel Transfer)\n\nWhen a user transferred from finance support to customer service, privileged finance access was removed on the transfer date. A read-only team file-share permission remained for two additional days until the weekly group sync. The share did not contain credentials or regulated records and the user did not access it during the interval."
+}

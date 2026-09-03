@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-095",
+  "family": "SI",
+  "control_ref": "SI-4",
+  "architecture": "System: DetectionCoverage\nAssessment focus: SI-4 (System Monitoring)\n\nProduction database audit telemetry and cloud identity events stopped reaching the monitoring platform after a collector migration six weeks ago. Application logs still arrive, but the missing sources cover privileged identity and database activity across the production environment. No active incident is currently known."
+}

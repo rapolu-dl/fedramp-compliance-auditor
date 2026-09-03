@@ -1,0 +1,16 @@
+{
+  "id": "VAL-016",
+  "test_name": "Assessment, Authorization, and Monitoring CA-2 Evidence Review 016",
+  "architecture": "System: Citizen-Portal-016\nEnvironment: AWS GovCloud\nAssessment focus: CA-2 (Assessment, Authorization, and Monitoring).\nObserved evidence: The latest security control assessment sampled access management, logging, encryption, incident response, and configuration management. Findings were documented with owners and retest dates.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CA-2",
+  "family": "CA",
+  "ground_truth": {
+    "target_control": "CA-2",
+    "decision_basis": "A documented control assessment with findings and retest tracking is evidenced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

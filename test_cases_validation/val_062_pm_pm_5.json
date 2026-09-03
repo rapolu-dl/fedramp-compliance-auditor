@@ -1,0 +1,16 @@
+{
+  "id": "VAL-062",
+  "test_name": "Program Management PM-5 Evidence Review 062",
+  "architecture": "System: Claims-Hub-062\nEnvironment: Enterprise\nAssessment focus: PM-5 (Program Management).\nObserved evidence: A production application processing customer identifiers has operated for four months without appearing in the enterprise system inventory. It has a system owner, but its authorization status and data classification have not been recorded.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "PM-5",
+  "family": "PM",
+  "ground_truth": {
+    "target_control": "PM-5",
+    "decision_basis": "A sensitive production system is outside the enterprise inventory and authorization tracking process.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_governance_failure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

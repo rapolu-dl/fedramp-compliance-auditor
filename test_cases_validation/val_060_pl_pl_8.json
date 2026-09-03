@@ -1,0 +1,16 @@
+{
+  "id": "VAL-060",
+  "test_name": "Planning PL-8 Evidence Review 060",
+  "architecture": "System: Ops-Console-060\nEnvironment: Azure\nAssessment focus: PL-8 (Planning).\nObserved evidence: A new internet-facing payment path was deployed outside the approved security architecture. It bypasses the documented API gateway and sends authentication tokens directly to a legacy backend over HTTP.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "PL-8",
+  "family": "PL",
+  "ground_truth": {
+    "target_control": "PL-8",
+    "decision_basis": "An unapproved architecture path bypasses security controls and transmits authentication tokens without protected transport.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "high_impact_exposure",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

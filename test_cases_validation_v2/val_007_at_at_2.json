@@ -1,0 +1,22 @@
+{
+  "id": "VAL-007",
+  "test_name": "Awareness and Training AT-2 Evidence Review 007",
+  "architecture": "System: Payments-Gateway-007\nEnvironment: Azure\nAssessment focus: AT-2 (Awareness and Training).\nObserved evidence: Security awareness training is required annually. Eleven active employees are 45 to 92 days overdue, although managers receive weekly reminders and the training system records completion.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "AT-2",
+  "family": "AT",
+  "ground_truth": {
+    "target_control": "AT-2",
+    "decision_basis": "The program exists but a nontrivial active population is overdue.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

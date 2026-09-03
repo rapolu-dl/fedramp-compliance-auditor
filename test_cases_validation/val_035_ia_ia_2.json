@@ -1,0 +1,16 @@
+{
+  "id": "VAL-035",
+  "test_name": "Identification and Authentication IA-2 Evidence Review 035",
+  "architecture": "System: Audit-Lake-035\nEnvironment: Azure\nAssessment focus: IA-2 (Identification and Authentication).\nObserved evidence: The emergency global-administrator account uses a shared password stored in the operations wiki. MFA is disabled for that account and it can modify production identity and conditional-access policies.",
+  "expected_status": "NON_COMPLIANT",
+  "expected_risk": "CRITICAL",
+  "control_ref": "IA-2",
+  "family": "IA",
+  "ground_truth": {
+    "target_control": "IA-2",
+    "decision_basis": "A shared password-only privileged account has broad production identity authority.",
+    "severity_policy": "CRITICAL: evidence shows an active or direct high-impact security, privacy, privileged-access, availability, audit-integrity, or supply-chain exposure."
+  },
+  "scenario_style": "privileged_access",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

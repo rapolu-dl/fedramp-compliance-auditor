@@ -1,0 +1,16 @@
+{
+  "id": "VAL-078",
+  "test_name": "Risk Assessment RA-5 Evidence Review 078",
+  "architecture": "System: Mission-Workflow-078\nEnvironment: GCP\nAssessment focus: RA-5 (Risk Assessment).\nObserved evidence: Authenticated vulnerability scans run weekly on production servers. Two medium findings are 12 days beyond the internal remediation target; neither has known exploitation in the environment.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "RA-5",
+  "family": "RA",
+  "ground_truth": {
+    "target_control": "RA-5",
+    "decision_basis": "Scanning is active but remediation of some medium findings is late.",
+    "severity_policy": "MODERATE: a real but bounded deficiency exists without evidence of immediate high-impact exposure."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

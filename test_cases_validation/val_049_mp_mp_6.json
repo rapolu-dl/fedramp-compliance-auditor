@@ -1,0 +1,16 @@
+{
+  "id": "VAL-049",
+  "test_name": "Media Protection MP-6 Evidence Review 049",
+  "architecture": "System: Data-Exchange-049\nEnvironment: AWS GovCloud\nAssessment focus: MP-6 (Media Protection).\nObserved evidence: Decommissioned solid-state drives are sanitized using the approved cryptographic erase procedure and the sanitization record includes device ID, date, method, and verifier.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "MP-6",
+  "family": "MP",
+  "ground_truth": {
+    "target_control": "MP-6",
+    "decision_basis": "Approved media sanitization and verification are evidenced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

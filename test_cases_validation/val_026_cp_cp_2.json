@@ -1,0 +1,16 @@
+{
+  "id": "VAL-026",
+  "test_name": "Contingency Planning CP-2 Evidence Review 026",
+  "architecture": "System: Citizen-Portal-026\nEnvironment: Azure\nAssessment focus: CP-2 (Contingency Planning).\nObserved evidence: The contingency plan defines recovery roles, contact methods, alternate processing steps, recovery priorities, and dependencies. The plan was reviewed after the most recent architecture change.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "CP-2",
+  "family": "CP",
+  "ground_truth": {
+    "target_control": "CP-2",
+    "decision_basis": "Core contingency-plan elements and maintenance are evidenced.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

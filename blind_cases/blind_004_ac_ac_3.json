@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-004",
+  "family": "AC",
+  "control_ref": "AC-3",
+  "architecture": "System: CaseRecords-DB\nAssessment focus: AC-3 (Access Enforcement)\n\nThe production PostgreSQL security group currently allows TCP/5432 from 0.0.0.0/0. The database stores applicant identity and eligibility records. Database authentication is enabled, but there is no network allowlist or private endpoint in front of the service. The rule is active in the deployed production account."
+}

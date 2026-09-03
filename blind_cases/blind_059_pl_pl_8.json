@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-059",
+  "family": "PL",
+  "control_ref": "PL-8",
+  "architecture": "System: IdentityMesh-Architecture\nAssessment focus: PL-8 (Security and Privacy Architectures)\n\nAn unapproved service-mesh route bypasses the authentication gateway and forwards live session tokens to an external troubleshooting endpoint over HTTP. The route is present in the production configuration and requests are currently traversing it."
+}

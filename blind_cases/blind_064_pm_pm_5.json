@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-064",
+  "family": "PM",
+  "control_ref": "PM-5",
+  "architecture": "System: UnregisteredPublicService\nAssessment focus: PM-5 (System Inventory)\n\nAn Internet-accessible production service processing regulated applicant data is not present in the enterprise system inventory and has no assigned system owner. Its export endpoint currently permits anonymous download of daily applicant files through a public URL discovered during asset discovery."
+}

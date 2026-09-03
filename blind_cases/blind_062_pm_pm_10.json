@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-062",
+  "family": "PM",
+  "control_ref": "PM-10",
+  "architecture": "System: AuthorizationGovernance\nAssessment focus: PM-10 (Authorization Process)\n\nThe enterprise authorization process tracks system owners, authorizing officials, review dates, and monitoring status. One low-complexity internal subsystem is 30 days beyond its scheduled review date, but its continuous-monitoring feed remains active and no boundary or service change occurred during the delay."
+}

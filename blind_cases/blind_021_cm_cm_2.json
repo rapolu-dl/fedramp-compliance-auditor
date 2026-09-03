@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-021",
+  "family": "CM",
+  "control_ref": "CM-2",
+  "architecture": "System: Courts-Baseline\nAssessment focus: CM-2 (Baseline Configuration)\n\nThe infrastructure baseline is version-controlled, approved, and deployed through the same pipeline used for production. Daily drift checks compare running resources with the baseline and automatically open a ticket for unapproved differences. The current report shows no unresolved production drift."
+}

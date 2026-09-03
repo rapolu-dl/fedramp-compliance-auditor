@@ -1,0 +1,16 @@
+{
+  "id": "VAL-014",
+  "test_name": "Audit and Accountability AU-9 Evidence Review 014",
+  "architecture": "System: Records-Service-014\nEnvironment: AWS GovCloud\nAssessment focus: AU-9 (Audit and Accountability).\nObserved evidence: Central audit logs are stored in a dedicated account with write access restricted to the logging service. Analysts have read-only access and object-lock retention is enabled.",
+  "expected_status": "COMPLIANT",
+  "expected_risk": "LOW",
+  "control_ref": "AU-9",
+  "family": "AU",
+  "ground_truth": {
+    "target_control": "AU-9",
+    "decision_basis": "Audit information is segregated and protected from modification by ordinary operators.",
+    "severity_policy": "LOW: target requirement affirmatively evidenced with no material defect in scope."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack."
+}

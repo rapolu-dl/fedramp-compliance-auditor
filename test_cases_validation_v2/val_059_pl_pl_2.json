@@ -1,0 +1,22 @@
+{
+  "id": "VAL-059",
+  "test_name": "Planning PL-2 Evidence Review 059",
+  "architecture": "System: Data-Exchange-059\nEnvironment: AWS\nAssessment focus: PL-2 (Planning).\nObserved evidence: The plan still describes a single-region deployment and legacy identity service, while production has operated multi-region with a different identity provider for nine months.",
+  "expected_status": "PARTIALLY_COMPLIANT",
+  "expected_risk": "MODERATE",
+  "control_ref": "PL-2",
+  "family": "PL",
+  "ground_truth": {
+    "target_control": "PL-2",
+    "decision_basis": "The system plan materially lags the implemented architecture.",
+    "severity_policy": "R2 — A real but bounded deficiency exists. Scope is limited and/or compensating controls remain effective; no immediate severe exposure is shown."
+  },
+  "scenario_style": "control_evidence",
+  "provenance": "Synthetic holdout-candidate scenario authored independently of the original rubric-aligned 200-case pack.",
+  "original_expected_status_v1": "PARTIALLY_COMPLIANT",
+  "original_expected_risk_v1": "MODERATE",
+  "severity_rule_id": "R2",
+  "adjudication_change_reason": "V1 label retained under the four-level severity rubric.",
+  "adjudication_version": "V2_POSTHOC_FOUR_LEVEL_2026-09-02",
+  "holdout_status": "POSTHOC_ADJUDICATED_REGRESSION_SET"
+}

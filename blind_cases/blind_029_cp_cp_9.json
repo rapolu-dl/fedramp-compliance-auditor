@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-029",
+  "family": "CP",
+  "control_ref": "CP-9",
+  "architecture": "System: Records-Ransomware\nAssessment focus: CP-9 (System Backup)\n\nA ransomware event is actively encrypting the production file service. The only recent backup repository is mounted read-write to the same environment and encryption activity is now visible in the backup directory as well. There is no isolated immutable copy of the affected data set."
+}

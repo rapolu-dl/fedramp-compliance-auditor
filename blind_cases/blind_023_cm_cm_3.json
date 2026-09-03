@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-023",
+  "family": "CM",
+  "control_ref": "CM-3",
+  "architecture": "System: EmergencyChange-Pipeline\nAssessment focus: CM-3 (Configuration Change Control)\n\nA production emergency-change path permits senior engineers to deploy network and application configuration changes without prior approval. The path has become routine and was used 27 times last quarter. Changes are individually authenticated and logged, but retrospective review occurs inconsistently and there is no enforced separation between requester and approver. No incident is tied to the changes."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-060",
+  "family": "PL",
+  "control_ref": "PL-8",
+  "architecture": "System: LegacyBridge-Architecture\nAssessment focus: PL-8 (Security and Privacy Architectures)\n\nA temporary production bridge was added outside the approved security architecture to connect an Internet-facing legacy service directly to the internal administration API. The bridge has no authentication proxy and permits requests from the public service tier to invoke administrator functions. It remains enabled."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-007",
+  "family": "AT",
+  "control_ref": "AT-4",
+  "architecture": "System: Workforce-TrainingRecords\nAssessment focus: AT-4 (Training Records)\n\nTraining completion is retained for employees and contractors and reconciled monthly. The latest reconciliation found that records for four contractors who completed training were not exported from a subsidiary learning portal into the central archive. Their completion can be verified in the source portal and their access controls were not affected. The archive correction is open."
+}

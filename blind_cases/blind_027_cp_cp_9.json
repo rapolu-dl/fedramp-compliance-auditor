@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-027",
+  "family": "CP",
+  "control_ref": "CP-9",
+  "architecture": "System: Payments-BackupTesting\nAssessment focus: CP-9 (System Backup)\n\nEncrypted daily backups and immutable weekly copies are being created successfully. The quarterly restore test is six weeks overdue because the test environment was unavailable. Backup integrity checks and replication alerts remain healthy, and the last restore test succeeded."
+}

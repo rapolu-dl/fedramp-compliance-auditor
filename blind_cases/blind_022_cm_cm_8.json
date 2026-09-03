@@ -1,0 +1,6 @@
+{
+  "id": "BLIND-022",
+  "family": "CM",
+  "control_ref": "CM-8",
+  "architecture": "System: BatchWorkers-Inventory\nAssessment focus: CM-8 (System Component Inventory)\n\nThe component inventory includes accounts, clusters, databases, queues, and persistent workloads. Short-lived batch workers that exist for less than ten minutes are represented by their managed worker group rather than as individual instances. Two recent jobs were not visible as individual inventory records, but they ran in an isolated subnet with the same approved image and role."
+}
